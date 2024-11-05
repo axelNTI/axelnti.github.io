@@ -13,5 +13,11 @@
     "bugs": {
         "url": "https://github.com/axelNTI/axelNTI/issues"
     },
-    "homepage": "https://github.com/axelNTI/axelNTI#readme"
+    "homepage": "https://github.com/axelNTI/axelNTI#readme",
+    "dependencies": {
+        "gulp": "^5.0.0",
+        "gulp-cli": "^3.0.0",
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.80.6"
+    }
 }
