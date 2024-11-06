@@ -38,6 +38,11 @@ gulp.task("scss", () => {
                fs.unlinkSync(file.path);
             }
          })
+      )
+      .pipe(
+         tap(() => {
+            console.clear();
+         })
       );
 });
 
@@ -69,7 +74,12 @@ gulp.task("handlebars", () => {
             removeRedundantAttributes: true,
          })
       )
-      .pipe(gulp.dest("./dist"));
+      .pipe(gulp.dest("./dist"))
+      .pipe(
+         tap(() => {
+            console.clear();
+         })
+      );
 });
 
 gulp.task("handlebars:watch", () => {
@@ -86,7 +96,12 @@ gulp.task("js", () => {
             },
          })
       )
-      .pipe(gulp.dest("./dist/js"));
+      .pipe(gulp.dest("./dist/js"))
+      .pipe(
+         tap(() => {
+            console.clear();
+         })
+      );
 });
 
 gulp.task("js:watch", () => {
