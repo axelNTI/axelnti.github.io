@@ -5,19 +5,21 @@ body {
    @include mixin.background($color: variables.$color-background);
    & > header {
       & > h1 {
-         @include mixin.size($width: fit-content, $height: fit-content);
          @include mixin.center($horizontal: true);
+         @include mixin.size($width: fit-content, $height: fit-content);
       }
    }
    & > main {
-      @include mixin.background($color: variables.$color-main, $shadow: true);
       @include mixin.grid;
       @include mixin.center($horizontal: true);
-      @include mixin.size($width: 70svw, $height: fit-content);
       @include mixin.margin($top: 10svh, $bottom: 10svh);
+      @include mixin.size($width: 70svw, $height: fit-content);
+      @include mixin.background($color: variables.$color-main, $shadow: true);
       & > aside {
-         @include mixin.grid-item($column-start: 2, $width: 1, $row-start: 1, $height: auto);
-         @include mixin.size($width: fit-content, $height: fit-content);
+         @include mixin.size($height: fit-content);
+         @include mixin.margin($top: 1rem, $horizontal: 1rem);
+         @include mixin.background($color: variables.$color-main, $shadow: true);
+         @include mixin.grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
          & > p {
             & > a {
             }
@@ -28,23 +30,46 @@ body {
          }
       }
       & > section {
-         @include mixin.size($width: fit-content, $height: fit-content);
+         @include mixin.flex;
+         @include mixin.margin($all: 1rem);
+         @include mixin.size($height: fit-content);
+         @include mixin.background($color: variables.$color-main, $shadow: true);
          @for $index from 1 through variables.$section-count {
             &:nth-of-type(#{$index}) {
                @include mixin.grid-item($column-start: 1, $width: 1, $row-start: #{$index}, $height: 1);
             }
          }
          & > h2 {
+            @include mixin.margin($all: 1rem);
          }
          & > section {
-            @include mixin.margin($top: 1rem, $horizontal: 1rem);
+            @include mixin.flex;
+            @include mixin.margin($all: 1rem);
+            @include mixin.size($height: fit-content);
             @include mixin.background($color: variables.$color-main, $shadow: true);
             & > h3 {
+               @include mixin.margin($all: 0.5rem);
+            }
+            & > h4 {
             }
             & > P {
+               @include mixin.margin($all: 0.25rem);
             }
             & > ul {
                & > li {
+                  @include mixin.margin($all: 0.25rem);
+               }
+            }
+            & > section {
+               @include mixin.flex;
+               @include mixin.margin($all: 1rem);
+               @include mixin.size($height: fit-content);
+               @include mixin.background($color: variables.$color-main, $shadow: true);
+               & > h4 {
+                  @include mixin.margin($all: 0.5rem);
+               }
+               & > p {
+                  @include mixin.margin($all: 0.25rem);
                }
             }
          }
