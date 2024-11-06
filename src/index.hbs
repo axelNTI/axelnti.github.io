@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="{{locale.language}}">
    <head>
       <meta charset="UTF-8" />
@@ -7,6 +6,7 @@
          <meta http-equiv="refresh" content="0;url=/noscript" />
       </noscript>
       <script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/masonry.js"></script>
 
       <title>{{locale.portfolio}}</title>
 
@@ -62,7 +62,35 @@
             <h2>{{locale.experience}}</h2>
             {{#each data.experience}}
                <section>
+                  <p>{{@root.locale.position}}: {{translate this.position @root.locale}}</p>
+                  <p>{{@root.locale.type}}: {{translate this.type @root.locale}}</p>
+                  <p>{{@root.locale.employer}}: {{this.employer}}</p>
+               </section>
+            {{/each}}
+         </section>
 
+         <section>
+            <h2>{{locale.projects}}</h2>
+            {{#each data.projects}}
+               <section>
+                  <h3>{{translate this.name @root.locale}}</h3>
+                  <p>{{@root.locale.description}}: {{translate this.description @root.locale}}</p>
+                  <p>{{@root.locale.type}}: {{translate this.type @root.locale}}</p>
+                  {{#if this.course}}
+                     <p>{{@root.locale.course}}: {{translate this.course @root.locale}}</p>
+                  {{/if}}
+                  {{#if this.url}}
+                     <p>{{@root.locale.url}}: <a target="_blank" href="{{this.url}}">{{this.url}}</a></p>
+                  {{/if}}
+                  {{#if this.repository}}
+                     <p>{{@root.locale.repository}}: <a target="_blank" href="{{this.repository}}">{{this.repository}}</a></p>
+                  {{/if}}
+                  <p>{{@root.locale.technologies}}:</p>
+                  <ul>
+                     {{#each this.technologies}}
+                        <li>{{translate this @root.locale}}</li>
+                     {{/each}}
+                  </ul>
                </section>
             {{/each}}
          </section>
@@ -78,25 +106,6 @@
                         <p>{{@root.locale.date}}: {{this.date}}</p>
                      </section>
                   {{/each}}
-               </section>
-            {{/each}}
-         </section>
-         <section>
-            <h2>{{locale.projects}}</h2>
-            {{#each data.projects}}
-               <section>
-                  <h3>{{translate this.name @root.locale}}</h3>
-                  <p>{{@root.locale.description}}: {{translate this.description @root.locale}}</p>
-                  <p>{{@root.locale.type}}: {{translate this.type @root.locale}}</p>
-                  {{#if this.course}}
-                     <p>{{@root.locale.course}}: {{translate this.course @root.locale}}</p>
-                  {{/if}}
-                  <p>{{@root.locale.technologies}}:</p>
-                  <ul>
-                     {{#each this.technologies}}
-                        <li>{{translate this @root.locale}}</li>
-                     {{/each}}
-                  </ul>
                </section>
             {{/each}}
          </section>
