@@ -21,7 +21,15 @@ gulp.task("scss", () => {
             cb(null, file);
          })
       )
-      .pipe(cleanCSS())
+      .pipe(
+         cleanCSS({
+            level: {
+               2: {
+                  all: true,
+               },
+            },
+         })
+      )
       .pipe(gulp.dest("./dist/css"))
       .pipe(
          tap((file) => {
