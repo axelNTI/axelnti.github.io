@@ -5,13 +5,15 @@ body {
    @include mixin.background($color: variables.$color-background);
    & > header {
       & > h1 {
+         @include mixin.size($width: fit-content, $height: fit-content);
+         @include mixin.center($horizontal: true);
       }
    }
    & > main {
       @include mixin.background($color: variables.$color-main, $shadow: true);
       @include mixin.grid;
       @include mixin.center($horizontal: true);
-      @include mixin.size($width: 70%, $height: fit-content);
+      @include mixin.size($width: 70svw, $height: fit-content);
       @include mixin.margin($top: 10svh, $bottom: 10svh);
       & > aside {
          @include mixin.grid-item($column-start: 2, $width: 1, $row-start: 1, $height: auto);
@@ -35,6 +37,8 @@ body {
          & > h2 {
          }
          & > section {
+            @include mixin.margin($top: 1rem, $horizontal: 1rem);
+            @include mixin.background($color: variables.$color-main, $shadow: true);
             & > h3 {
             }
             & > P {
