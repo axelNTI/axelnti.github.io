@@ -59,7 +59,13 @@
    }
 }
 
-@mixin size($width, $height) {
-   width: $width;
-   height: $height;
+@mixin size($width: false, $height: false) {
+   @if $height {
+      height: $height;
+   }
+   @if $width {
+      width: $width;
+   }
+}
+
 }
