@@ -1,7 +1,9 @@
 {
    "name": "axelnti",
    "version": "1.0.0",
-   "scripts": {},
+   "scripts": {
+      "npm run build": "gulp build"
+   },
    "repository": {
       "type": "git",
       "url": "git+https://github.com/axelNTI/axelNTI.git"
