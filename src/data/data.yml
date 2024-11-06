@@ -1,12 +1,12 @@
 projects:
    - name: "florista"
      description: "florista_description"
-     technologies: ["HTML", "CSS", "JavaScript", "yaml", "Python", "Playwright Python", "Github Actions"]
+     technologies: ["HTML", "CSS", "JavaScript", "yaml", "Python", "Playwright Python", "GitHub Actions"]
      type: "group"
      course: "te4"
    - name: "ntb_car_rental"
      description: "ntb_car_rental_description"
-     technologies: ["HTML", "CSS", "JavaScript", "Handlebars", "Node.js", "yaml", "Python", "Playwright Python", "Github Actions", "nginx", "Prisma", "MySQL"]
+     technologies: ["HTML", "CSS", "JavaScript", "Handlebars", "Node.js", "yaml", "Python", "Playwright Python", "GitHub Actions", "nginx", "MySQL"]
      type: "group"
      course: "te4"
    - name: "webbserverprogramming_final_project"
@@ -16,7 +16,7 @@ projects:
      course: "webbserverprogramming_1"
    - name: "portfolio"
      description: "portfolio_description"
-     technologies: ["Handlebars", "SCSS", "TypeScript", "Node.js", "Express", "yaml", "JQuery"]
+     technologies: ["Handlebars", "SCSS", "JavaScript", "Node.js", "yaml", "JQuery", "GitHub Actions", "Gulp"]
      type: "solo"
 certification_categories:
    - category: "Information Technology Specialist"
@@ -37,6 +37,7 @@ certification_categories:
 name: "Axel Thornberg"
 email: "taxel@thornberg.se"
 phone_number: "+46 79-342 10 39"
+birth_date: "2005-12-08"
 languages:
    - language: "swedish"
      proficiency: "native"
@@ -59,3 +60,22 @@ skills:
    - skill: "yaml"
    - skill: "Playwright Python"
    - skill: "Github Actions"
+
+education:
+   - institution: "NTI Gymnasiet Uppsala"
+     program: "certified_upper_secondary_school_engineering_program"
+     start_year: "2024"
+     start_month: "august"
+     end: false
+     city: "uppsala"
+     country: "sweden"
+
+   - institution: "NTI Gymnasiet Uppsala"
+     program: "techology_program"
+     start_year: "2021"
+     start_month: "august"
+     end: true
+     end_year: "2024"
+     end_month: "june"
+     city: "uppsala"
+     country: "sweden"
