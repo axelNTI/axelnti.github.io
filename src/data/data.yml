@@ -1,0 +1,61 @@
+projects:
+   - name: "florista"
+     description: "florista_description"
+     technologies: ["HTML", "CSS", "JavaScript", "yaml", "Python", "Playwright Python", "Github Actions"]
+     type: "group"
+     course: "te4"
+   - name: "ntb_car_rental"
+     description: "ntb_car_rental_description"
+     technologies: ["HTML", "CSS", "JavaScript", "Handlebars", "Node.js", "yaml", "Python", "Playwright Python", "Github Actions", "nginx", "Prisma", "MySQL"]
+     type: "group"
+     course: "te4"
+   - name: "webbserverprogramming_final_project"
+     description: "webbserverprogramming_final_project_description"
+     technologies: ["Handlebars", "CSS", "SCSS", "JavaScript", "Node.js", "Express", "MySQL", "Bootstrap", "JQuery", "discord.js"]
+     type: "solo"
+     course: "webbserverprogramming_1"
+   - name: "portfolio"
+     description: "portfolio_description"
+     technologies: ["Handlebars", "SCSS", "TypeScript", "Node.js", "Express", "yaml", "JQuery"]
+     type: "solo"
+certification_categories:
+   - category: "Information Technology Specialist"
+     certifications:
+        - name: "JavaScript"
+          score: 880
+          max_score: 1000
+          date: "2023-09-22"
+        - name: "Python"
+          score: 920
+          max_score: 1000
+          date: "2024-03-13"
+        - name: "Networking"
+          score: 720
+          max_score: 1000
+          date: "2024-05-07"
+
+name: "Axel Thornberg"
+email: "taxel@thornberg.se"
+phone_number: "+46 79-342 10 39"
+languages:
+   - language: "swedish"
+     proficiency: "native"
+   - language: "english"
+     proficiency: "fluent"
+   - language: "german"
+     proficiency: "intermediate"
+
+skills:
+   - skill: "HTML"
+   - skill: "CSS"
+   - skill: "JavaScript"
+   - skill: "Python"
+   - skill: "MySQL"
+   - skill: "Express"
+   - skill: "Handlebars"
+   - skill: "SCSS"
+   - skill: "JQuery"
+   - skill: "Bootstrap"
+   - skill: "yaml"
+   - skill: "Playwright Python"
+   - skill: "Github Actions"
