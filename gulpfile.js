@@ -4,6 +4,11 @@ const cleanCSS = require("gulp-clean-css");
 const through2 = require("through2");
 const fs = require("fs");
 const tap = require("gulp-tap");
+const handlebars = require("handlebars");
+const yaml = require("js-yaml");
+const htmlMinifier = require("gulp-htmlmin");
+
+const handlebarsHelpers = require("./src/helpers/handlebars");
 
 gulp.task("scss", () => {
    return gulp
@@ -31,4 +36,37 @@ gulp.task("scss:watch", () => {
    gulp.watch("./src/scss/**/*.scss", gulp.series("scss"));
 });
 
-gulp.task("default", gulp.parallel("scss", "scss:watch"));
+gulp.task("handlebars", () => {
+   return gulp
+      .src("./src/index.hbs")
+      .pipe(
+         through2.obj((file, _, cb) => {
+            Object.keys(handlebarsHelpers).forEach((helperName) => {
+               handlebars.registerHelper(helperName, handlebarsHelpers[helperName]);
+            });
+            const locale = yaml.load(fs.readFileSync("./src/locale/en.yml", "utf8"));
+            const data = yaml.load(fs.readFileSync("./src/data/data.yml", "utf8"));
+            const template = handlebars.compile(file.contents.toString());
+            file.contents = Buffer.from(template({ locale, data }));
+            file.path = file.path.replace(/\.hbs$/, ".html");
+            cb(null, file);
+         })
+      )
+      .pipe(
+         htmlMinifier({
+            collapseWhitespace: true,
+            removeComments: true,
+            removeEmptyAttributes: true,
+            removeRedundantAttributes: true,
+         })
+      )
+      .pipe(gulp.dest("./dist"));
+});
+
+gulp.task("handlebars:watch", () => {
+   gulp.watch("./src/index.hbs", gulp.series("handlebars"));
+});
+
+gulp.task("build", gulp.parallel("scss", "handlebars"));
+
+gulp.task("default", gulp.parallel("scss", "scss:watch", "handlebars", "handlebars:watch"));
