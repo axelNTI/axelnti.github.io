@@ -3,10 +3,7 @@
 @mixin background($color, $shadow: false) {
    background-color: $color;
    @if $shadow {
-      box-shadow: rgba(0, 0, 0, 0.25) 0rem 3.375rem 3.4375rem,
-         rgba(0, 0, 0, 0.12) 0rem -0.75rem 1.875rem,
-         rgba(0, 0, 0, 0.12) 0rem 0.25rem 0.375rem,
-         rgba(0, 0, 0, 0.17) 0rem 0.75rem 0.8125rem,
+      box-shadow: rgba(0, 0, 0, 0.25) 0rem 3.375rem 3.4375rem, rgba(0, 0, 0, 0.12) 0rem -0.75rem 1.875rem, rgba(0, 0, 0, 0.12) 0rem 0.25rem 0.375rem, rgba(0, 0, 0, 0.17) 0rem 0.75rem 0.8125rem,
          rgba(0, 0, 0, 0.09) 0rem -0.1875rem 0.3125rem;
    }
 }
@@ -15,19 +12,40 @@
    display: grid;
    grid-template-columns: 2fr 1fr;
    grid-template-rows: repeat(variables.$section-count, 1fr);
-   height: fit-content;
 }
 
 @mixin grid-item($column-start, $width, $row-start, $height) {
    grid-column: $column-start / span $width;
    grid-row: $row-start / span $height;
-   height: fit-content;
-   width: fit-content;
 }
 
-@mixin viewportMargin($margin) {
-   margin-top: $margin * 1dvh;
-   margin-right: $margin * 1dvw;
-   margin-bottom: $margin * 1dvh;
-   margin-left: $margin * 1dvw;
+@mixin margin($top: false, $right: false, $bottom: false, $left: false) {
+   @if $top {
+      margin-top: $top;
+   }
+   @if $right {
+      margin-right: $right;
+   }
+   @if $bottom {
+      margin-bottom: $bottom;
+   }
+   @if $left {
+      margin-left: $left;
+   }
+}
+
+@mixin center($vertical: false, $horizontal: false) {
+   @if $vertical {
+      margin-top: auto;
+      margin-bottom: auto;
+   }
+   @if $horizontal {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@mixin size($width, $height) {
+   width: $width;
+   height: $height;
 }

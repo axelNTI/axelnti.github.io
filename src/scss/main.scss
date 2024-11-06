@@ -9,16 +9,13 @@ body {
    }
    & > main {
       @include mixin.background($color: variables.$color-main, $shadow: true);
-      @include mixin.viewportMargin(10);
       @include mixin.grid;
+      @include mixin.center($horizontal: true);
+      @include mixin.size($width: 70%, $height: fit-content);
+      @include mixin.margin($top: 10svh, $bottom: 10svh);
       & > aside {
-         @include mixin.viewportMargin(5);
-         @include mixin.grid-item(
-            $column-start: 2,
-            $width: 1,
-            $row-start: 1,
-            $height: auto
-         );
+         @include mixin.grid-item($column-start: 2, $width: 1, $row-start: 1, $height: auto);
+         @include mixin.size($width: fit-content, $height: fit-content);
          & > p {
             & > a {
             }
@@ -29,15 +26,10 @@ body {
          }
       }
       & > section {
-         @include mixin.viewportMargin(5);
+         @include mixin.size($width: fit-content, $height: fit-content);
          @for $index from 1 through variables.$section-count {
             &:nth-of-type(#{$index}) {
-               @include mixin.grid-item(
-                  $column-start: 1,
-                  $width: 1,
-                  $row-start: #{$index},
-                  $height: 1
-               );
+               @include mixin.grid-item($column-start: 1, $width: 1, $row-start: #{$index}, $height: 1);
             }
          }
          & > h2 {
