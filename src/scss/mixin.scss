@@ -11,7 +11,7 @@
 @mixin grid {
    display: grid;
    grid-template-columns: 2fr 1fr;
-   grid-template-rows: repeat(variables.$section-count, 1fr);
+   grid-template-rows: repeat(variables.$section-count, auto);
 }
 
 @mixin grid-item($column-start, $width, $row-start, $height) {
@@ -19,7 +19,7 @@
    grid-row: $row-start / span $height;
 }
 
-@mixin margin($top: false, $right: false, $bottom: false, $left: false) {
+@mixin margin($top: false, $right: false, $bottom: false, $left: false, $vertical: false, $horizontal: false, $all: false) {
    @if $top {
       margin-top: $top;
    }
@@ -31,6 +31,20 @@
    }
    @if $left {
       margin-left: $left;
+   }
+   @if $vertical {
+      margin-top: $vertical;
+      margin-bottom: $vertical;
+   }
+   @if $horizontal {
+      margin-right: $horizontal;
+      margin-left: $horizontal;
+   }
+   @if $all {
+      margin-top: $all;
+      margin-right: $all;
+      margin-bottom: $all;
+      margin-left: $all;
    }
 }
 
