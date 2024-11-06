@@ -79,3 +79,24 @@ education:
      end_month: "june"
      city: "uppsala"
      country: "sweden"
+
+experience:
+   - type: "summer_job"
+     employer: "Uppsala Kommun"
+     position: "Cleaner"
+     length_weeks: 3 
+     year: 2021
+     season: "summer"
+   - type: "internship"
+     employer: "Gimo Pastorat"
+     position: "Cleaner"
+     length_weeks: 1
+     year: 2020
+     season: "spring"
+   - type: "internship"
+     employer: "Gimo Pastorat"
+     position: "Cleaner"
+     length_weeks: 1
+     year: 2019
+     season: "spring"
+     
