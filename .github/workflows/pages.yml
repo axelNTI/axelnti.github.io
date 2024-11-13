@@ -32,6 +32,11 @@ jobs:
          - name: Checkout
            uses: actions/checkout@v4
 
+         - name: Create .env file
+           run: |
+              echo "CLIENT_ID=${{ secrets.CLIENT_ID }}" >> .env
+              echo "CLIENT_SECRET=${{ secrets.CLIENT_SECRET }}" >> .env
+
          # Set up Node.js
          - name: Setup Node.js
            uses: actions/setup-node@v3
