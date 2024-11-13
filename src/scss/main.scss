@@ -1,85 +1,101 @@
 @use "variables";
-@use "mixin";
+@use "mixin" as *;
 
 body {
-   @include mixin.background($color: variables.$color-background);
+   @include background($color: variables.$color-background);
+
    & > header {
-      @include mixin.background($color: variables.$color-main, $shadow: true);
-      @include mixin.size($width: 70svw, $height: fit-content);
-      @include mixin.margin($top: 1rem, $bottom: 1rem);
-      @include mixin.center($horizontal: true);
+      @include flex;
+      @include center($horizontal: true);
+      @include margin($vertical: 1rem);
+      @include background($color: variables.$color-main, $shadow: true);
+      @include size($width: variables.$page-width, $height: fit-content);
+
       & > h1 {
-         @include mixin.center($horizontal: true, $vertical: true);
-         @include mixin.size($width: fit-content, $height: fit-content);
-         @include mixin.margin($top: 1rem, $bottom: 1rem);
+         @include center($horizontal: true);
+         @include size($width: fit-content, $height: fit-content);
+         @include margin($vertical: 2rem);
       }
    }
    & > main {
-      @include mixin.grid;
-      @include mixin.center($horizontal: true);
-      @include mixin.margin($top: 10svh, $bottom: 10svh);
-      @include mixin.size($width: 70svw, $height: fit-content);
-      @include mixin.background($color: variables.$color-main, $shadow: true);
+      @include grid;
+      @include center($horizontal: true);
+      @include margin($vertical: 10svh);
+      @include size($width: variables.$page-width, $height: fit-content);
+      @include background($color: variables.$color-main, $shadow: true);
+
       & > aside {
-         @include mixin.size($height: fit-content);
-         @include mixin.margin($top: 1rem, $horizontal: 1rem);
-         @include mixin.background($color: variables.$color-main);
-         @include mixin.grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
+         @include size($height: fit-content);
+         @include margin($top: 1rem, $horizontal: 1rem);
+         @include background($color: variables.$color-main);
+         @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
+
          & > p {
             & > a {
             }
          }
+
          & > ul {
             & > li {
             }
          }
       }
       & > section {
-         @include mixin.flex;
-         @include mixin.margin($all: 1rem);
-         @include mixin.size($height: fit-content);
-         @include mixin.background($color: variables.$color-main, $border: true);
+         @include flex;
+         @include margin($all: 1rem);
+         @include size($height: fit-content);
+         @include background($color: variables.$color-main, $border: true);
+
          @for $index from 1 through variables.$section-count {
             &:nth-of-type(#{$index}) {
-               @include mixin.grid-item($column-start: 1, $width: 1, $row-start: #{$index}, $height: 1);
+               @include grid-item($column-start: 1, $width: 1, $row-start: #{$index}, $height: 1);
             }
          }
+
          & > h2 {
-            @include mixin.margin($all: 1rem);
+            @include margin($all: 1rem);
          }
          & > section {
-            @include mixin.flex;
-            @include mixin.margin($all: 1rem);
-            @include mixin.size($height: fit-content);
-            @include mixin.background($color: variables.$color-main);
+            @include flex;
+            @include margin($all: 1rem);
+            @include size($height: fit-content);
+            @include background($color: variables.$color-main);
+
             & > h3 {
-               @include mixin.margin($all: 0.5rem);
+               @include margin($all: 0.5rem);
             }
+
             & > h4 {
             }
+
             & > P {
-               @include mixin.margin($all: 0.25rem);
+               @include margin($all: 0.25rem);
             }
+
             & > ul {
                & > li {
-                  @include mixin.margin($all: 0.25rem);
+                  @include margin($all: 0.25rem);
                }
             }
+
             & > section {
-               @include mixin.flex;
-               @include mixin.margin($all: 1rem);
-               @include mixin.size($height: fit-content);
-               @include mixin.background($color: variables.$color-main);
+               @include flex;
+               @include margin($all: 1rem);
+               @include size($height: fit-content);
+               @include background($color: variables.$color-main);
+
                & > h4 {
-                  @include mixin.margin($all: 0.5rem);
+                  @include margin($all: 0.5rem);
                }
+
                & > p {
-                  @include mixin.margin($all: 0.25rem);
+                  @include margin($all: 0.25rem);
                }
             }
          }
       }
    }
+
    & > footer {
    }
 }
