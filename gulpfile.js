@@ -25,7 +25,9 @@ const getAccessToken = async () => {
    const url = new URL("https://accounts.spotify.com/api/token");
    const headers = {
       "Content-Type": "application/x-www-form-urlencoded",
-      Authorization: `Basic ${Buffer.from(`${spotifyCredentials.clientId}:${spotifyCredentials.clientSecret}`).toString("base64")}`,
+      Authorization: `Basic ${Buffer.from(
+         `${spotifyCredentials.clientId}:${spotifyCredentials.clientSecret}`
+      ).toString("base64")}`,
    };
 
    const body = new URLSearchParams({
@@ -43,7 +45,10 @@ const getAccessToken = async () => {
 
    const data = await response.json();
    if (!response.ok) {
-      console.error("Error fetching access token:", data.error_description || data);
+      console.error(
+         "Error fetching access token:",
+         data.error_description || data
+      );
       throw new Error(data.error || "Failed to get tokens");
    }
 
@@ -63,13 +68,11 @@ const getSpotifyData = async (url, parameters = {}) => {
    const response = await fetch(fullUrl, {
       headers,
    });
-
    const data = await response.json();
    if (!response.ok) {
       console.error("Error fetching Spotify data:", data);
       throw new Error(data.error || "Failed to get Spotify data");
    }
-
    return data.items; // Return the data
 };
 
@@ -103,7 +106,11 @@ gulp.task("scss", () => {
       .pipe(gulp.dest("./dist/css"))
       .pipe(
          tap((file) => {
-            if (!fs.readFileSync("./src/index.hbs", "utf8").includes(file.path.split("\\").slice(-2).join("/"))) {
+            if (
+               !fs
+                  .readFileSync("./src/index.hbs", "utf8")
+                  .includes(file.path.split("\\").slice(-2).join("/"))
+            ) {
                fs.unlinkSync(file.path);
             }
          })
@@ -125,21 +132,50 @@ gulp.task("handlebars", async () => {
       .pipe(
          through2.obj(async (file, _, cb) => {
             Object.keys(handlebarsHelpers).forEach((helperName) => {
-               handlebars.registerHelper(helperName, handlebarsHelpers[helperName]);
+               handlebars.registerHelper(
+                  helperName,
+                  handlebarsHelpers[helperName]
+               );
             });
-            const locale = yaml.load(fs.readFileSync("./src/locale/en.yml", "utf8"));
-            const data = yaml.load(fs.readFileSync("./src/data/data.yml", "utf8"));
-            const recentlyPlayed = await getSpotifyData("https://api.spotify.com/v1/me/player/recently-played");
-            const topTracks = await getSpotifyData("https://api.spotify.com/v1/me/top/tracks", {
-               time_range: "short_term",
-               limit: 5,
-            });
-            const topArtists = await getSpotifyData("https://api.spotify.com/v1/me/top/artists", {
-               time_range: "short_term",
-               limit: 5,
-            });
+            const locale = yaml.load(
+               fs.readFileSync("./src/locale/en.yml", "utf8")
+            );
+            const data = yaml.load(
+               fs.readFileSync("./src/data/data.yml", "utf8")
+            );
+            const recentlyPlayed = (
+               await getSpotifyData(
+                  "https://api.spotify.com/v1/me/player/recently-played",
+                  {
+                     limit: 50,
+                  }
+               )
+            )
+               .filter(
+                  (item, index, self) =>
+                     self.findIndex((i) => i.track.id === item.track.id) ===
+                     index
+               )
+               .slice(0, 5)
+               .map((item) => item.track);
+            const topTracks = await getSpotifyData(
+               "https://api.spotify.com/v1/me/top/tracks",
+               {
+                  time_range: "short_term",
+                  limit: 5,
+               }
+            );
+            const topArtists = await getSpotifyData(
+               "https://api.spotify.com/v1/me/top/artists",
+               {
+                  time_range: "short_term",
+                  limit: 5,
+               }
+            );
             const template = handlebars.compile(file.contents.toString());
-            file.contents = Buffer.from(template({ locale, data }));
+            file.contents = Buffer.from(
+               template({ locale, data, recentlyPlayed, topTracks, topArtists })
+            );
             file.path = file.path.replace(/\.hbs$/, ".html");
             cb(null, file);
          })
@@ -158,7 +194,7 @@ gulp.task("handlebars", async () => {
       .pipe(gulp.dest("./dist"))
       .pipe(
          tap(() => {
-            console.clear();
+            // console.clear();
          })
       );
 });
@@ -173,4 +209,13 @@ gulp.task("yml:watch", () => {
 
 gulp.task("build", gulp.parallel("scss", "handlebars"));
 
-gulp.task("default", gulp.parallel("scss", "scss:watch", "handlebars", "handlebars:watch", "yml:watch"));
+gulp.task(
+   "default",
+   gulp.parallel(
+      "scss",
+      "scss:watch",
+      "handlebars",
+      "handlebars:watch",
+      "yml:watch"
+   )
+);
