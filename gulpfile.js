@@ -143,7 +143,7 @@ gulp.task("handlebars", async () => {
             const data = yaml.load(
                fs.readFileSync("./src/data/data.yml", "utf8")
             );
-            const recentlyPlayed = (
+            const recentlyPlayedTracks = (
                await getSpotifyData(
                   "https://api.spotify.com/v1/me/player/recently-played",
                   {
@@ -153,8 +153,9 @@ gulp.task("handlebars", async () => {
             )
                .filter(
                   (item, index, self) =>
-                     self.findIndex((i) => i.track.id === item.track.id) ===
-                     index
+                     self.findIndex(
+                        (track) => track.track.id === item.track.id
+                     ) === index
                )
                .slice(0, 5)
                .map((item) => item.track);
@@ -174,7 +175,13 @@ gulp.task("handlebars", async () => {
             );
             const template = handlebars.compile(file.contents.toString());
             file.contents = Buffer.from(
-               template({ locale, data, recentlyPlayed, topTracks, topArtists })
+               template({
+                  locale,
+                  data,
+                  recentlyPlayedTracks,
+                  topTracks,
+                  topArtists,
+               })
             );
             file.path = file.path.replace(/\.hbs$/, ".html");
             cb(null, file);
