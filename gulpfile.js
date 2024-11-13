@@ -8,6 +8,7 @@ const handlebars = require("handlebars");
 const yaml = require("js-yaml");
 const htmlMinifier = require("gulp-htmlmin");
 const purgecss = require("gulp-purgecss");
+const path = require("path");
 
 const handlebarsHelpers = require("./src/helpers/handlebars");
 
@@ -21,7 +22,7 @@ gulp.task("scss", () => {
             file.path = file.path.replace(/\.scss$/, ".css");
             cb(null, file);
          })
-   )
+      )
       .pipe(
          purgecss({
             content: ["./src/index.hbs"],
@@ -41,7 +42,12 @@ gulp.task("scss", () => {
       .pipe(gulp.dest("./dist/css"))
       .pipe(
          tap((file) => {
-            if (!fs.readFileSync("./src/index.hbs", "utf8").includes(file.path.split("\\").slice(-2).join("/"))) {
+            const relativePath = path.relative("./dist/css", file.path);
+            if (
+               !fs
+                  .readFileSync("./src/index.hbs", "utf8")
+                  .includes(relativePath)
+            ) {
                fs.unlinkSync(file.path);
             }
          })

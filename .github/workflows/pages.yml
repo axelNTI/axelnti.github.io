@@ -32,6 +32,9 @@ jobs:
          - name: Checkout
            uses: actions/checkout@v4
 
+         - name: Check index.hbs content
+           run: cat ./src/index.hbs
+
          - name: Create .env file
            run: |
               echo "CLIENT_ID=${{ secrets.CLIENT_ID }}" >> .env
