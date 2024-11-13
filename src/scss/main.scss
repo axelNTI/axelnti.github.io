@@ -28,15 +28,27 @@ body {
          @include size($height: fit-content);
          @include margin($top: 1rem, $horizontal: 1rem);
          @include background($color: variables.$color-main);
-         @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
+         @include grid-item(
+            $column-start: 2,
+            $width: 1,
+            $row-start: 1,
+            $height: variables.$section-count
+         );
+         & > section {
 
-         & > p {
-            & > a {
+            & > p {
+               & > a {
+               }
             }
-         }
 
-         & > ul {
-            & > li {
+            & > ul {
+               & > li {
+               }
+            }
+            & > section {
+               & > img {
+                  @include size($width: 3rem, $height: 3rem);
+               }
             }
          }
       }
@@ -48,7 +60,12 @@ body {
 
          @for $index from 1 through variables.$section-count {
             &:nth-of-type(#{$index}) {
-               @include grid-item($column-start: 1, $width: 1, $row-start: #{$index}, $height: 1);
+               @include grid-item(
+                  $column-start: 1,
+                  $width: 1,
+                  $row-start: #{$index},
+                  $height: 1
+               );
             }
          }
 
