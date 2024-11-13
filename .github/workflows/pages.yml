@@ -38,6 +38,7 @@ jobs:
            run: |
               echo "CLIENT_ID=${{ secrets.CLIENT_ID }}" >> .env
               echo "CLIENT_SECRET=${{ secrets.CLIENT_SECRET }}" >> .env
+              echo "REFRESH_TOKEN=${{ secrets.REFRESH_TOKEN }}" >> .env
 
          # Set up Node.js
          - name: Setup Node.js
