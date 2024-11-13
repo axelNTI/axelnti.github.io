@@ -86,32 +86,10 @@ gulp.task("handlebars:watch", () => {
    gulp.watch("./src/index.hbs", gulp.series("handlebars"));
 });
 
-gulp.task("js", () => {
-   return gulp
-      .src("./src/js/**/*.js")
-      .pipe(
-         uglify({
-            compress: {
-               drop_console: true,
-            },
-         })
-      )
-      .pipe(gulp.dest("./dist/js"))
-      .pipe(
-         tap(() => {
-            console.clear();
-         })
-      );
-});
-
-gulp.task("js:watch", () => {
-   gulp.watch("./src/js/**/*.js", gulp.series("js"));
-});
-
 gulp.task("yml:watch", () => {
    gulp.watch("./src/**/*.yml", gulp.series("handlebars"));
 });
 
-gulp.task("build", gulp.parallel("scss", "handlebars", "js"));
+gulp.task("build", gulp.parallel("scss", "handlebars"));
 
-gulp.task("default", gulp.parallel("scss", "scss:watch", "handlebars", "handlebars:watch", "js", "js:watch", "yml:watch"));
+gulp.task("default", gulp.parallel("scss", "scss:watch", "handlebars", "handlebars:watch", "yml:watch"));
