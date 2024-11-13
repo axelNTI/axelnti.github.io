@@ -41,7 +41,7 @@ gulp.task("scss", () => {
       .pipe(gulp.dest("./dist/css"))
       .pipe(
          tap((file) => {
-            if (fs.statSync(file.path).size === 0) {
+            if (!fs.readFileSync("./src/index.hbs", "utf8").includes(file.path.split("\\").slice(-2).join("/"))) {
                fs.unlinkSync(file.path);
             }
          })
