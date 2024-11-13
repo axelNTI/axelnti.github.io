@@ -7,7 +7,7 @@ const tap = require("gulp-tap");
 const handlebars = require("handlebars");
 const yaml = require("js-yaml");
 const htmlMinifier = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const purgecss = require("gulp-purgecss");
 
 const handlebarsHelpers = require("./src/helpers/handlebars");
 
@@ -21,14 +21,21 @@ gulp.task("scss", () => {
             file.path = file.path.replace(/\.scss$/, ".css");
             cb(null, file);
          })
+   )
+      .pipe(
+         purgecss({
+            content: ["./src/index.hbs"],
+         })
       )
       .pipe(
          cleanCSS({
             level: {
                2: {
                   all: true,
+                  restructureRules: true,
                },
             },
+            compatibility: "*",
          })
       )
       .pipe(gulp.dest("./dist/css"))
@@ -72,6 +79,9 @@ gulp.task("handlebars", () => {
             removeComments: true,
             removeEmptyAttributes: true,
             removeRedundantAttributes: true,
+            removeEmptyElements: true,
+            removeOptionalTags: true,
+            removeAttributeQuotes: true,
          })
       )
       .pipe(gulp.dest("./dist"))
