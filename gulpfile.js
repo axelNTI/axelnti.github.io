@@ -87,7 +87,6 @@ gulp.task("handlebars", () => {
             removeRedundantAttributes: true,
             removeEmptyElements: true,
             removeOptionalTags: true,
-            removeAttributeQuotes: true,
          })
       )
       .pipe(gulp.dest("./dist"))
