@@ -21,9 +21,7 @@
                <p>{{locale.email}}:
                   <a href="mailto:{{data.email}}">{{data.email}}</a></p>
                <p>{{locale.phone_number}}:
-                  <a
-                     href="tel:{{format data.phone_number}}"
-                  >{{data.phone_number}}</a></p>
+                  <a href="tel:{{format data.phone_number}}">{{data.phone_number}}</a></p>
                <p>{{locale.birth_date}}: {{data.birth_date}}</p>
                <p>{{locale.languages}}:</p>
                <ul>
@@ -41,23 +39,27 @@
                </ul>
             </section>
             <section>
+               <h2>{{locale.music}}</h2>
+               <p>{{locale.recently_played}}</p>
                {{#each recentlyPlayedTracks}}
                   <section>
-                     <img src="{{this.album.images.0.url}}" alt="">
+                     <img src="{{this.album.images.0.url}}" alt="" />
                   </section>
                {{/each}}
             </section>
             <section>
+               <p>{{locale.top_tracks}}</p>
                {{#each topTracks}}
                   <section>
-                     <img src="{{this.album.images.0.url}}" alt="">
+                     <img src="{{this.album.images.0.url}}" alt="" />
                   </section>
                {{/each}}
             </section>
             <section>
+               <p>{{locale.top_artists}}</p>
                {{#each topArtists}}
                   <section>
-                     <img src="{{this.images.0.url}}" alt="">
+                     <img src="{{this.images.0.url}}" alt="" />
                   </section>
                {{/each}}
             </section>
@@ -116,17 +118,13 @@
                   {{/if}}
                   {{#if this.url}}
                      <p>{{@root.locale.url}}:
-                        <a
-                           target="_blank"
-                           href="{{this.url}}"
-                        >{{this.url}}</a></p>
+                        <a target="_blank" href="{{this.url}}">{{this.url}}</a>
+                     </p>
                   {{/if}}
                   {{#if this.repository}}
                      <p>{{@root.locale.repository}}:
-                        <a
-                           target="_blank"
-                           href="{{this.repository}}"
-                        >{{this.repository}}</a></p>
+                        <a target="_blank" href="{{this.repository}}">{{this.repository}}</a>
+                     </p>
                   {{/if}}
                   <p>{{@root.locale.technologies}}:</p>
                   <ul>
