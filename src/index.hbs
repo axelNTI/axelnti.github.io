@@ -1,175 +1,172 @@
 <!DOCTYPE html>
 <html lang="{{locale.language}}">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <title>{{locale.portfolio}}</title>
+    <title>{{locale.portfolio}}</title>
 
-      <link rel="stylesheet" href="css/index.css" />
-   </head>
-   <body>
-      <header>
-         <h1>
-            {{locale.portfolio}}
-         </h1>
-      </header>
-      <main>
-         <aside>
-            <section>
-               <p>{{data.name}}</p>
-               <p>{{locale.email}}:
-                  <a href="mailto:{{data.email}}">{{data.email}}</a></p>
-               <p>{{locale.phone_number}}:
-                  <a href="tel:{{format data.phone_number}}">{{data.phone_number}}</a></p>
-               <p>{{locale.birth_date}}: {{data.birth_date}}</p>
-               <p>{{locale.languages}}:</p>
-               <ul>
-                  {{#each data.languages}}
-                     <li>{{translate this.language @root.locale}}
-                        -
-                        {{translate this.proficiency @root.locale}}</li>
-                  {{/each}}
-               </ul>
-               <p>{{locale.technologies}}:</p>
-               <ul>
-                  {{#each data.skills}}
-                     <li>{{translate this.skill @root.locale}}</li>
-                  {{/each}}
-               </ul>
-            </section>
-            <section>
-               <h2>{{locale.music}}</h2>
-               <p>{{locale.recently_played}}</p>
-               {{#each recentlyPlayedTracks}}
-                  <section>
-                     <img src="{{this.album.images.2.url}}" alt="" />
-                     <p>
-                        {{this.name}}
-                     </p>
-                     <p>
-                        {{getAllArtists this.artists}}
-                     </p>
-                  </section>
-               {{/each}}
-            </section>
-            <section>
-               <p>{{locale.top_tracks}}</p>
-               {{#each topTracks}}
-                  <section>
-                     <img src="{{this.album.images.2.url}}" alt="" />
-                     <p>
-                        {{this.name}}
-                     </p>
-                     <p>
-                        {{getAllArtists this.artists}}
-                     </p>
-                  </section>
-               {{/each}}
-            </section>
-            <section>
-               <p>{{locale.top_artists}}</p>
-               {{#each topArtists}}
-                  <section>
-                     <img src="{{this.images.2.url}}" alt="" />
-                     <p>
-                        {{this.name}}
-                     </p>
-                  </section>
-               {{/each}}
-            </section>
-         </aside>
-         <section>
-            <h2>{{locale.education}}</h2>
-            {{#each data.education}}
-               <section>
-                  <p>{{@root.locale.program}}:
-                     {{translate this.program @root.locale}}</p>
-                  <p>{{@root.locale.institution}}: {{this.institution}}</p>
-                  {{#if this.end}}
-                     <p>{{translate this.start_month @root.locale}}
-                        {{this.start_year}}
-                        -
-                        {{translate this.end_month @root.locale}}
-                        {{this.end_year}}</p>
-                  {{else}}
-                     <p>{{translate this.start_month @root.locale}}
-                        {{this.start_year}}
-                        -
-                        {{@root.locale.ongoing}}</p>
-                  {{/if}}
-                  <p>
-                     {{@root.locale.city}}:
-                     {{translate this.city @root.locale}},
-                     {{translate this.country @root.locale}}
-                  </p>
-               </section>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>{{locale.portfolio}}</h1>
+    </header>
+    <main>
+      <aside>
+        <section>
+          <p>{{data.name}}</p>
+          <p>
+            {{locale.email}}:
+            <a href="mailto:{{data.email}}"> {{data.email}} </a>
+          </p>
+          <p>
+            {{locale.phone_number}}:
+            <a href="tel:{{format data.phone_number}}">
+              {{data.phone_number}}
+            </a>
+          </p>
+          <p>{{locale.birth_date}}: {{data.birth_date}}</p>
+          <p>{{locale.languages}}:</p>
+          <ul>
+            {{#each data.languages}}
+            <li>
+              {{translate this.language @root.locale}} - {{translate
+              this.proficiency @root.locale}}
+            </li>
             {{/each}}
-         </section>
-         <section>
-            <h2>{{locale.experience}}</h2>
-            {{#each data.experience}}
-               <section>
-                  <p>{{@root.locale.position}}:
-                     {{translate this.position @root.locale}}</p>
-                  <p>{{@root.locale.type}}:
-                     {{translate this.type @root.locale}}</p>
-                  <p>{{@root.locale.employer}}: {{this.employer}}</p>
-               </section>
+          </ul>
+          <p>{{locale.technologies}}:</p>
+          <ul>
+            {{#each data.skills}}
+            <li>{{translate this.skill @root.locale}}</li>
             {{/each}}
-         </section>
-         <section>
-            <h2>{{locale.projects}}</h2>
-            {{#each data.projects}}
-               <section>
-                  <h3>{{translate this.name @root.locale}}</h3>
-                  <p>{{@root.locale.description}}:
-                     {{translate this.description @root.locale}}</p>
-                  <p>{{@root.locale.type}}:
-                     {{translate this.type @root.locale}}</p>
-                  {{#if this.course}}
-                     <p>{{@root.locale.course}}:
-                        {{translate this.course @root.locale}}</p>
-                  {{/if}}
-                  {{#if this.url}}
-                     <p>{{@root.locale.url}}:
-                        <a target="_blank" href="{{this.url}}">{{this.url}}</a>
-                     </p>
-                  {{/if}}
-                  {{#if this.repository}}
-                     <p>{{@root.locale.repository}}:
-                        <a target="_blank" href="{{this.repository}}">{{this.repository}}</a>
-                     </p>
-                  {{/if}}
-                  <p>{{@root.locale.technologies}}:</p>
-                  <ul>
-                     {{#each this.technologies}}
-                        <li>{{translate this @root.locale}}</li>
-                     {{/each}}
-                  </ul>
-               </section>
+          </ul>
+        </section>
+        <section>
+          <h3>{{locale.recently_played}}</h3>
+          {{#each recentlyPlayedTracks}}
+          <a href="{{this.external_urls.spotify}}" target="_blank">
+            <section>
+              <img src="{{this.album.images.2.url}}" alt="" />
+              <p>{{this.name}}</p>
+              <p>{{getAllArtists this.artists}}</p>
+            </section>
+          </a>
+          {{/each}}
+        </section>
+        <section>
+          <h3>{{locale.top_tracks}}</h3>
+          {{#each topTracks}}
+          <a href="{{this.external_urls.spotify}}" target="_blank">
+            <section>
+              <img src="{{this.album.images.2.url}}" alt="" />
+              <p>{{this.name}}</p>
+              <p>{{getAllArtists this.artists}}</p>
+            </section>
+          </a>
+          {{/each}}
+        </section>
+        <section>
+          <h3>{{locale.top_artists}}</h3>
+          {{#each topArtists}}
+          <a href="{{this.external_urls.spotify}}" target="_blank">
+            <section>
+              <img src="{{this.images.2.url}}" alt="" />
+              <p>{{this.name}}</p>
+            </section>
+          </a>
+          {{/each}}
+        </section>
+      </aside>
+      <section>
+        <h2>{{locale.education}}</h2>
+        {{#each data.education}}
+        <section>
+          <p>
+            {{@root.locale.program}}: {{translate this.program @root.locale}}
+          </p>
+          <p>{{@root.locale.institution}}: {{this.institution}}</p>
+          {{#if this.end}}
+          <p>
+            {{translate this.start_month @root.locale}} {{this.start_year}} -
+            {{translate this.end_month @root.locale}} {{this.end_year}}
+          </p>
+          {{else}}
+          <p>
+            {{translate this.start_month @root.locale}} {{this.start_year}} -
+            {{@root.locale.ongoing}}
+          </p>
+          {{/if}}
+          <p>
+            {{@root.locale.city}}: {{translate this.city @root.locale}},
+            {{translate this.country @root.locale}}
+          </p>
+        </section>
+        {{/each}}
+      </section>
+      <section>
+        <h2>{{locale.experience}}</h2>
+        {{#each data.experience}}
+        <section>
+          <p>
+            {{@root.locale.position}}: {{translate this.position @root.locale}}
+          </p>
+          <p>{{@root.locale.type}}: {{translate this.type @root.locale}}</p>
+          <p>{{@root.locale.employer}}: {{this.employer}}</p>
+        </section>
+        {{/each}}
+      </section>
+      <section>
+        <h2>{{locale.projects}}</h2>
+        {{#each data.projects}}
+        <section>
+          <h3>{{translate this.name @root.locale}}</h3>
+          <p>
+            {{@root.locale.description}}: {{translate this.description
+            @root.locale}}
+          </p>
+          <p>{{@root.locale.type}}: {{translate this.type @root.locale}}</p>
+          {{#if this.course}}
+          <p>{{@root.locale.course}}: {{translate this.course @root.locale}}</p>
+          {{/if}} {{#if this.url}}
+          <p>
+            {{@root.locale.url}}:
+            <a target="_blank" href="{{this.url}}"> {{this.url}} </a>
+          </p>
+          {{/if}} {{#if this.repository}}
+          <p>
+            {{@root.locale.repository}}:
+            <a target="_blank" href="{{this.repository}}">
+              {{this.repository}}
+            </a>
+          </p>
+          {{/if}}
+          <p>{{@root.locale.technologies}}:</p>
+          <ul>
+            {{#each this.technologies}}
+            <li>{{translate this @root.locale}}</li>
             {{/each}}
-         </section>
-         <section>
-            <h2>{{locale.certifications}}</h2>
-            {{#each data.certification_categories}}
-               <section>
-                  <h3>{{this.category}}</h3>
-                  {{#each this.certifications}}
-                     <section>
-                        <h4>{{this.name}}</h4>
-                        <p>{{@root.locale.score}}:
-                           {{this.score}}
-                           /
-                           {{this.max_score}}</p>
-                        <p>{{@root.locale.date}}: {{this.date}}</p>
-                     </section>
-                  {{/each}}
-               </section>
-            {{/each}}
-         </section>
-      </main>
-      <footer>
-      </footer>
-   </body>
+          </ul>
+        </section>
+        {{/each}}
+      </section>
+      <section>
+        <h2>{{locale.certifications}}</h2>
+        {{#each data.certification_categories}}
+        <section>
+          <h3>{{this.category}}</h3>
+          {{#each this.certifications}}
+          <section>
+            <h4>{{this.name}}</h4>
+            <p>{{@root.locale.score}}: {{this.score}} / {{this.max_score}}</p>
+            <p>{{@root.locale.date}}: {{this.date}}</p>
+          </section>
+          {{/each}}
+        </section>
+        {{/each}}
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

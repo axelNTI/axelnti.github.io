@@ -3,7 +3,7 @@
 
 body {
    @include background($color: variables.$color-background);
-   
+
    & > header {
       @include flex;
       @include margin($vertical: 1rem);
@@ -40,51 +40,60 @@ body {
                }
             }
 
-            & > section {
-               @include margin($vertical: 0.5rem);
+            & > a {
+               @include link($text-decoration: none);
+               @include color($color: variables.$color-text);
 
-               & > img {
-                  @include image($object-fit: cover);
-                  @include size($width: 4rem, $height: 4rem);
-               }
+               & > section {
+                  @include margin($vertical: 0.5rem);
 
-               & > p {
-                  @include margin($all: 0.25rem);
-                  @include text-align($vertical: center, $horizontal: left);
+                  & > img {
+                     @include image($object-fit: cover);
+                     @include size($width: 5rem, $height: 5rem);
+                  }
+
+                  & > p {
+                     @include margin($all: 0.25rem);
+                     @include text-align($vertical: center, $horizontal: left);
+                  }
                }
             }
 
             &:nth-of-type(2),
             &:nth-of-type(3) {
-               & > section {
-                  @include grid($columns: 4rem 1fr, $rows: 2);
+               & > a {
+                  & > section {
+                     @include grid($columns: 5rem 1fr, $rows: 2);
 
-                  & > img {
-                     @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 2);
-                  }
-
-                  & > p {
-                     &:nth-of-type(1) {
-                        @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: 1);
+                     & > img {
+                        @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 2);
                      }
 
-                     &:nth-of-type(2) {
-                        @include grid-item($column-start: 2, $width: 1, $row-start: 2, $height: 1);
+                     & > p {
+                        &:nth-of-type(1) {
+                           @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: 1);
+                        }
+
+                        &:nth-of-type(2) {
+                           @include grid-item($column-start: 2, $width: 1, $row-start: 2, $height: 1);
+                        }
                      }
                   }
                }
             }
 
             &:nth-of-type(4) {
-               & > section {
-                  @include grid($columns: 4rem 1fr, $rows: 1);
+               & > a {
+                  & > section {
+                     @include grid($columns: 5rem 1fr, $rows: 1);
 
-                  & > img {
-                     @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 1);
-                  }
+                     & > img {
+                        @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 1);
+                     }
 
-                  & > p {
-                     @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: 2);
+                     & > p {
+                        @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: 2);
+                     }
                   }
                }
             }
