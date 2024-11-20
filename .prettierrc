@@ -1,10 +1,13 @@
 {
-  "overrides": [
-    {
-      "files": "*.hbs",
-      "options": {
-        "parser": "html"
+   "overrides": [
+      {
+         "files": "*.hbs",
+         "options": {
+            "parser": "html"
+         }
       }
-    }
-  ]
+   ],
+   "tabWidth": 3,
+   "trailingComma": "all",
+   "printWidth": 120
 }
