@@ -18,16 +18,27 @@
       <main>
          <aside>
             <section>
-               <p>{{data.name}}</p>
-               <p>
-                  {{locale.email}}:
-                  <a href="mailto:{{data.email}}"> {{data.email}} </a>
-               </p>
-               <p>
-                  {{locale.phone_number}}:
-                  <a href="tel:{{format data.phone_number}}"> {{data.phone_number}} </a>
-               </p>
-               <p>{{locale.birth_date}}: {{data.birth_date}}</p>
+               <h2>{{data.name}}</h2>
+               <section>
+                  <h3>{{locale.contact}}</h3>
+                  <p>
+                     {{locale.email}}:
+                     <a href="mailto:{{data.email}}"> {{data.email}} </a>
+                  </p>
+                  <p>
+                     {{locale.phone_number}}:
+                     <a href="tel:{{format data.phone_number}}"> {{data.phone_number}} </a>
+                  </p>
+                  <p>
+                     {{locale.github}}:
+                     <a href="{{data.github_link}}" target="_blank"> {{data.github_username}} </a>
+                  </p>
+                  <p>
+                     {{locale.linkedin}}:
+                     <a href="{{data.linkedin}}" target="_blank"> {{data.name}} </a>
+                  </p>
+                  <p>{{translate data.city locale}}, {{translate data.country locale}}</p>
+               </section>
                <p>{{locale.languages}}:</p>
                <ul>
                   {{#each data.languages}}
