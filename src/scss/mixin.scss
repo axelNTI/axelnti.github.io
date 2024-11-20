@@ -9,10 +9,22 @@
    }
 }
 
-@mixin grid($columns, $rows) {
+@mixin grid($columns, $rows, $gap: false, $row-gap: false, $column-gap: false) {
    display: grid;
    grid-template-columns: $columns;
    grid-template-rows: $rows;
+
+   @if $gap {
+      gap: $gap;
+   }
+
+   @if $row-gap {
+      row-gap: $row-gap;
+   }
+
+   @if $column-gap {
+      column-gap: $column-gap;
+   }
 }
 
 @mixin grid-item($column-start, $width, $row-start, $height) {
