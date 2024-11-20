@@ -4,6 +4,10 @@
 body {
    @include background($color: variables.$color-background);
 
+   * {
+      @include font($family: "Open Sans");
+   }
+
    p {
       @include margin($vertical: variables.$margin-small);
    }
