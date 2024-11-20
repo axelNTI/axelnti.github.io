@@ -6,12 +6,26 @@ projects:
      course: "te4"
    - name: "ntb_car_rental"
      description: "ntb_car_rental_description"
-     technologies: ["HTML", "CSS", "JavaScript", "Handlebars", "Node.js", "yaml", "Python", "Playwright Python", "GitHub Actions", "nginx", "MySQL"]
+     technologies:
+        [
+           "HTML",
+           "CSS",
+           "JavaScript",
+           "Handlebars",
+           "Node.js",
+           "yaml",
+           "Python",
+           "Playwright Python",
+           "GitHub Actions",
+           "nginx",
+           "MySQL",
+        ]
      type: "group"
      course: "te4"
    - name: "webbserverprogramming_final_project"
      description: "webbserverprogramming_final_project_description"
-     technologies: ["Handlebars", "CSS", "SCSS", "JavaScript", "Node.js", "Express", "MySQL", "Bootstrap", "JQuery", "discord.js"]
+     technologies:
+        ["Handlebars", "CSS", "SCSS", "JavaScript", "Node.js", "Express", "MySQL", "Bootstrap", "JQuery", "discord.js"]
      type: "solo"
      course: "webbserverprogramming_1"
    - name: "portfolio"
@@ -84,7 +98,7 @@ experience:
    - type: "summer_job"
      employer: "Uppsala Kommun"
      position: "Cleaner"
-     length_weeks: 3 
+     length_weeks: 3
      year: 2021
      season: "summer"
    - type: "internship"
