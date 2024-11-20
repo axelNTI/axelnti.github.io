@@ -34,14 +34,14 @@ body {
 
    section {
       @include flex;
-      @include margin($all: variables.$margin-large);
       @include size($height: fit-content);
+      @include margin($all: variables.$margin-large);
    }
 
    & > header {
       @include flex;
-      @include margin($vertical: variables.$margin-large);
       @include center($horizontal: true);
+      @include margin($vertical: variables.$margin-large);
       @include background($color: variables.$color-main, $shadow: true);
       @include size($width: variables.$page-width, $height: fit-content);
 
@@ -53,8 +53,8 @@ body {
    & > main {
       @include margin($vertical: 10svh);
       @include center($horizontal: true);
-      @include size($width: variables.$page-width, $height: fit-content);
       @include background($color: variables.$color-main, $shadow: true);
+      @include size($width: variables.$page-width, $height: fit-content);
       @include grid($columns: 2fr 1fr, $rows: repeat(variables.$section-count, auto));
 
       & > aside {
@@ -74,8 +74,8 @@ body {
                }
 
                & > p {
-                  @include text-align($vertical: center, $horizontal: left);
                   @include margin($all: variables.$margin-small);
+                  @include text-align($vertical: center, $horizontal: left);
                }
             }
 
