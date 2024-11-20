@@ -58,8 +58,7 @@ body {
       @include grid($columns: 2fr 1fr, $rows: repeat(variables.$section-count, auto));
 
       & > aside {
-         @include size($height: fit-content);
-         @include margin($top: variables.$margin-large, $horizontal: variables.$margin-large);
+         @include size($height: 100%);
          @include background($color: variables.$color-secondary-background-highlight);
          @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
 
