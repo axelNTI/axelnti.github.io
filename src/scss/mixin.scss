@@ -11,10 +11,10 @@
    }
 }
 
-@mixin grid {
+@mixin grid($columns, $rows) {
    display: grid;
-   grid-template-columns: 2fr 1fr;
-   grid-template-rows: repeat(variables.$section-count, auto);
+   grid-template-columns: $columns;
+   grid-template-rows: $rows;
 }
 
 @mixin grid-item($column-start, $width, $row-start, $height) {
