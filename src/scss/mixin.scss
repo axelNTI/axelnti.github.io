@@ -62,6 +62,17 @@
    }
 }
 
+@mixin text-align($vertical: null, $horizontal: null) {
+   @if $horizontal != null {
+      text-align: $horizontal;
+   }
+
+   @if $vertical != null {
+      display: flex;
+      align-items: $vertical;
+   }
+}
+
 @mixin size($width: false, $height: false) {
    @if $height {
       height: $height;
