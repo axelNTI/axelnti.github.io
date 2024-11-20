@@ -23,6 +23,7 @@ jobs:
 
       runs-on: ubuntu-latest
 
+      name: ${{ github.event_name == 'schedule' && format('Scheduled Run-{}', github.run_id) || github.event.head_commit.message }}
       steps:
          - name: Checkout
            uses: actions/checkout@v4
