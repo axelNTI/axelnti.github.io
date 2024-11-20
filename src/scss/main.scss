@@ -5,36 +5,42 @@ body {
    @include background($color: variables.$color-background);
 
    p {
-      @include margin($vertical: 0.25rem);
+      @include margin($vertical: variables.$margin-small);
    }
 
    li {
-      @include margin($vertical: 0.25rem);
+      @include margin($vertical: variables.$margin-small);
    }
 
    h1 {
-      @include margin($vertical: 1rem);
+      @include margin($vertical: variables.$margin-large);
    }
 
    h2 {
-      @include margin($vertical: 0.5rem);
+      @include margin($vertical: variables.$margin-medium);
    }
 
    h3 {
-      @include margin($vertical: 0.5rem);
+      @include margin($vertical: variables.$margin-medium);
    }
 
    h4 {
-      @include margin($vertical: 0.5rem);
+      @include margin($vertical: variables.$margin-medium);
    }
 
    a {
       @include color($color: variables.$color-highlight);
    }
 
+   section {
+      @include flex;
+      @include margin($all: variables.$margin-large);
+      @include size($height: fit-content);
+   }
+
    & > header {
       @include flex;
-      @include margin($vertical: 1rem);
+      @include margin($vertical: variables.$margin-large);
       @include center($horizontal: true);
       @include background($color: variables.$color-main, $shadow: true);
       @include size($width: variables.$page-width, $height: fit-content);
@@ -53,34 +59,31 @@ body {
 
       & > aside {
          @include size($height: fit-content);
-         @include margin($top: 1rem, $horizontal: 1rem);
+         @include margin($top: variables.$margin-large, $horizontal: variables.$margin-large);
          @include background($color: variables.$color-secondary-background-highlight);
          @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
 
          & > section {
-            @include flex;
-            @include margin($all: 1rem);
-
             & > a {
                @include link($text-decoration: none);
                @include color($color: variables.$color-text);
-               @include margin($vertical: 0.5rem);
+               @include margin($vertical: variables.$margin-medium);
 
                & > img {
                   @include image($object-fit: cover);
-                  @include size($width: 5rem, $height: 5rem);
+                  @include size($both: variables.$spotify-stats-image-size);
                }
 
                & > p {
                   @include text-align($vertical: center, $horizontal: left);
-                  @include margin($all: 0.25rem);
+                  @include margin($all: variables.$margin-small);
                }
             }
 
             &:nth-of-type(2),
             &:nth-of-type(3) {
                & > a {
-                  @include grid($columns: 5rem 1fr, $rows: 2);
+                  @include grid($columns: variables.$spotify-stats-image-size 1fr, $rows: 2);
 
                   & > img {
                      @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 2);
@@ -100,7 +103,7 @@ body {
 
             &:nth-of-type(4) {
                & > a {
-                  @include grid($columns: 5rem 1fr, $rows: 1);
+                  @include grid($columns: variables.$spotify-stats-image-size 1fr, $rows: 1);
 
                   & > img {
                      @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 1);
@@ -115,28 +118,9 @@ body {
       }
 
       & > section {
-         @include flex;
-         @include margin($all: 1rem);
-         @include size($height: fit-content);
-         @include background($color: variables.$color-main, $border: true);
-
          @for $index from 1 through variables.$section-count {
             &:nth-of-type(#{$index}) {
                @include grid-item($column-start: 1, $width: 1, $row-start: #{$index}, $height: 1);
-            }
-         }
-
-         & > section {
-            @include flex;
-            @include margin($all: 1rem);
-            @include size($height: fit-content);
-            @include background($color: variables.$color-main);
-
-            & > section {
-               @include flex;
-               @include margin($all: 1rem);
-               @include size($height: fit-content);
-               @include background($color: variables.$color-main);
             }
          }
       }

@@ -7,9 +7,16 @@ $color-secondary-background-highlight: #ff7f50;
 $color-highlight: #4b0082;
 $color-text: #000000;
 
+// Margins
+$margin-small: 0.25rem;
+$margin-medium: 0.5rem;
+$margin-large: 1rem;
 
 // Number of sections in the main element, used for the grid layout. Update this value to change the number of sections in the main element.
 $section-count: 4;
 
-//
+// Current width of the main content area.
 $page-width: 70svw;
+
+// Size of the Spotify stats images.
+$spotify-stats-image-size: 5rem;

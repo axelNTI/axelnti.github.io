@@ -1,13 +1,12 @@
 @use "variables";
 
-@mixin background($color, $shadow: false, $border: false) {
+@mixin background($color, $shadow: false) {
    background-color: $color;
+
    @if $shadow {
-      box-shadow: rgba(0, 0, 0, 0.25) 0rem 3.375rem 3.4375rem, rgba(0, 0, 0, 0.12) 0rem -0.75rem 1.875rem, rgba(0, 0, 0, 0.12) 0rem 0.25rem 0.375rem, rgba(0, 0, 0, 0.17) 0rem 0.75rem 0.8125rem,
+      box-shadow: rgba(0, 0, 0, 0.25) 0rem 3.375rem 3.4375rem, rgba(0, 0, 0, 0.12) 0rem -0.75rem 1.875rem,
+         rgba(0, 0, 0, 0.12) 0rem 0.25rem 0.375rem, rgba(0, 0, 0, 0.17) 0rem 0.75rem 0.8125rem,
          rgba(0, 0, 0, 0.09) 0rem -0.1875rem 0.3125rem;
-   }
-   @if $border {
-      border: 0.125rem solid $color;
    }
 }
 
@@ -22,27 +21,41 @@
    grid-row: $row-start / span $height;
 }
 
-@mixin margin($top: false, $right: false, $bottom: false, $left: false, $vertical: false, $horizontal: false, $all: false) {
+@mixin margin(
+   $top: false,
+   $right: false,
+   $bottom: false,
+   $left: false,
+   $vertical: false,
+   $horizontal: false,
+   $all: false
+) {
    @if $top {
       margin-top: $top;
    }
+
    @if $right {
       margin-right: $right;
    }
+
    @if $bottom {
       margin-bottom: $bottom;
    }
+
    @if $left {
       margin-left: $left;
    }
+
    @if $vertical {
       margin-top: $vertical;
       margin-bottom: $vertical;
    }
+
    @if $horizontal {
       margin-right: $horizontal;
       margin-left: $horizontal;
    }
+
    @if $all {
       margin-top: $all;
       margin-right: $all;
@@ -56,6 +69,7 @@
       margin-top: auto;
       margin-bottom: auto;
    }
+
    @if $horizontal {
       margin-left: auto;
       margin-right: auto;
@@ -73,12 +87,18 @@
    }
 }
 
-@mixin size($width: false, $height: false) {
+@mixin size($width: false, $height: false, $both: false) {
    @if $height {
       height: $height;
    }
+
    @if $width {
       width: $width;
+   }
+
+   @if $both {
+      width: $both;
+      height: $both;
    }
 }
 
@@ -86,7 +106,14 @@
    object-fit: $object-fit;
 }
 
-@mixin flex($direction: column, $justify-content: flex-start, $align-items: stretch, $align-content: stretch, $flex-wrap: nowrap, $gap: 0) {
+@mixin flex(
+   $direction: column,
+   $justify-content: flex-start,
+   $align-items: stretch,
+   $align-content: stretch,
+   $flex-wrap: nowrap,
+   $gap: 0
+) {
    display: flex;
    flex-direction: $direction;
    justify-content: $justify-content;
