@@ -11,10 +11,10 @@
    }
 }
 
-@mixin grid {
+@mixin grid($columns, $rows) {
    display: grid;
-   grid-template-columns: 2fr 1fr;
-   grid-template-rows: repeat(variables.$section-count, auto);
+   grid-template-columns: $columns;
+   grid-template-rows: $rows;
 }
 
 @mixin grid-item($column-start, $width, $row-start, $height) {
@@ -62,6 +62,17 @@
    }
 }
 
+@mixin text-align($vertical: null, $horizontal: null) {
+   @if $horizontal != null {
+      text-align: $horizontal;
+   }
+
+   @if $vertical != null {
+      display: flex;
+      align-items: $vertical;
+   }
+}
+
 @mixin size($width: false, $height: false) {
    @if $height {
       height: $height;
@@ -69,6 +80,10 @@
    @if $width {
       width: $width;
    }
+}
+
+@mixin image($object-fit: cover) {
+   object-fit: $object-fit;
 }
 
 @mixin flex($direction: column, $justify-content: flex-start, $align-items: stretch, $align-content: stretch, $flex-wrap: nowrap, $gap: 0) {
@@ -79,4 +94,12 @@
    align-content: $align-content;
    flex-wrap: $flex-wrap;
    gap: $gap;
+}
+
+@mixin color($color) {
+   color: $color;
+}
+
+@mixin link($text-decoration: none) {
+   text-decoration: $text-decoration;
 }

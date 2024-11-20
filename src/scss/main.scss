@@ -6,40 +6,100 @@ body {
 
    & > header {
       @include flex;
-      @include center($horizontal: true);
       @include margin($vertical: 1rem);
+      @include center($horizontal: true);
       @include background($color: variables.$color-main, $shadow: true);
       @include size($width: variables.$page-width, $height: fit-content);
 
       & > h1 {
+         @include margin($vertical: 2rem);
          @include center($horizontal: true);
          @include size($width: fit-content, $height: fit-content);
-         @include margin($vertical: 2rem);
       }
    }
    & > main {
-      @include grid;
-      @include center($horizontal: true);
       @include margin($vertical: 10svh);
+      @include center($horizontal: true);
       @include size($width: variables.$page-width, $height: fit-content);
       @include background($color: variables.$color-main, $shadow: true);
+      @include grid($columns: 2fr 1fr, $rows: repeat(variables.$section-count, auto));
 
       & > aside {
          @include size($height: fit-content);
          @include margin($top: 1rem, $horizontal: 1rem);
-         @include background($color: variables.$color-main);
+         @include background($color: variables.$color-secondary-background-highlight);
          @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
 
-         & > p {
-            & > a {
-            }
-         }
+         & > section {
+            @include flex;
+            @include margin($all: 1rem);
 
-         & > ul {
-            & > li {
+            & > p {
+               & > a {
+                  @include color($color: variables.$color-highlight);
+               }
+            }
+
+            & > a {
+               @include link($text-decoration: none);
+               @include color($color: variables.$color-text);
+
+               & > section {
+                  @include margin($vertical: 0.5rem);
+
+                  & > img {
+                     @include image($object-fit: cover);
+                     @include size($width: 5rem, $height: 5rem);
+                  }
+
+                  & > p {
+                     @include margin($all: 0.25rem);
+                     @include text-align($vertical: center, $horizontal: left);
+                  }
+               }
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+               & > a {
+                  & > section {
+                     @include grid($columns: 5rem 1fr, $rows: 2);
+
+                     & > img {
+                        @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 2);
+                     }
+
+                     & > p {
+                        &:nth-of-type(1) {
+                           @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: 1);
+                        }
+
+                        &:nth-of-type(2) {
+                           @include grid-item($column-start: 2, $width: 1, $row-start: 2, $height: 1);
+                        }
+                     }
+                  }
+               }
+            }
+
+            &:nth-of-type(4) {
+               & > a {
+                  & > section {
+                     @include grid($columns: 5rem 1fr, $rows: 1);
+
+                     & > img {
+                        @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 1);
+                     }
+
+                     & > p {
+                        @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: 2);
+                     }
+                  }
+               }
             }
          }
       }
+
       & > section {
          @include flex;
          @include margin($all: 1rem);
@@ -55,6 +115,7 @@ body {
          & > h2 {
             @include margin($all: 1rem);
          }
+
          & > section {
             @include flex;
             @include margin($all: 1rem);
@@ -63,9 +124,6 @@ body {
 
             & > h3 {
                @include margin($all: 0.5rem);
-            }
-
-            & > h4 {
             }
 
             & > P {
@@ -94,8 +152,5 @@ body {
             }
          }
       }
-   }
-
-   & > footer {
    }
 }
