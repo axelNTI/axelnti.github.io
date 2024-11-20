@@ -1,35 +1,28 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
-   # Runs on pushes targeting the default branch
    push:
       branches: ["main"]
    schedule:
       - cron: "0 * * * *"
 
-   # Allows you to run this workflow manually from the Actions tab
-   workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
    contents: read
    pages: write
    id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
    group: "pages"
    cancel-in-progress: false
 
 jobs:
-   # Single deploy job since we're just deploying
    deploy:
       environment:
          name: github-pages
          url: ${{ steps.deployment.outputs.page_url }}
+
       runs-on: ubuntu-latest
+
       steps:
          - name: Checkout
            uses: actions/checkout@v4
@@ -40,13 +33,11 @@ jobs:
               echo "CLIENT_SECRET=${{ secrets.CLIENT_SECRET }}" >> .env
               echo "REFRESH_TOKEN=${{ secrets.REFRESH_TOKEN }}" >> .env
 
-         # Set up Node.js
          - name: Setup Node.js
            uses: actions/setup-node@v3
            with:
               node-version: "lts/*"
 
-         # Install dependencies and run gulp build
          - name: Install dependencies and build
            run: |
               npm install
