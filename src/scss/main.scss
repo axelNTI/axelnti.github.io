@@ -4,6 +4,34 @@
 body {
    @include background($color: variables.$color-background);
 
+   p {
+      @include margin($vertical: 0.25rem);
+   }
+
+   li {
+      @include margin($vertical: 0.25rem);
+   }
+
+   h1 {
+      @include margin($vertical: 1rem);
+   }
+
+   h2 {
+      @include margin($vertical: 0.5rem);
+   }
+
+   h3 {
+      @include margin($vertical: 0.5rem);
+   }
+
+   h4 {
+      @include margin($vertical: 0.5rem);
+   }
+
+   a {
+      @include color($color: variables.$color-highlight);
+   }
+
    & > header {
       @include flex;
       @include margin($vertical: 1rem);
@@ -12,7 +40,6 @@ body {
       @include size($width: variables.$page-width, $height: fit-content);
 
       & > h1 {
-         @include margin($vertical: 2rem);
          @include center($horizontal: true);
          @include size($width: fit-content, $height: fit-content);
       }
@@ -34,12 +61,6 @@ body {
             @include flex;
             @include margin($all: 1rem);
 
-            & > p {
-               & > a {
-                  @include color($color: variables.$color-highlight);
-               }
-            }
-
             & > a {
                @include link($text-decoration: none);
                @include color($color: variables.$color-text);
@@ -53,7 +74,6 @@ body {
                   }
 
                   & > p {
-                     @include margin($all: 0.25rem);
                      @include text-align($vertical: center, $horizontal: left);
                   }
                }
@@ -84,7 +104,7 @@ body {
 
             &:nth-of-type(4) {
                & > a {
-                  & > section {
+                  // & > section {
                      @include grid($columns: 5rem 1fr, $rows: 1);
 
                      & > img {
@@ -94,7 +114,7 @@ body {
                      & > p {
                         @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: 2);
                      }
-                  }
+                  // }
                }
             }
          }
@@ -112,43 +132,17 @@ body {
             }
          }
 
-         & > h2 {
-            @include margin($all: 1rem);
-         }
-
          & > section {
             @include flex;
             @include margin($all: 1rem);
             @include size($height: fit-content);
             @include background($color: variables.$color-main);
 
-            & > h3 {
-               @include margin($all: 0.5rem);
-            }
-
-            & > P {
-               @include margin($all: 0.25rem);
-            }
-
-            & > ul {
-               & > li {
-                  @include margin($all: 0.25rem);
-               }
-            }
-
             & > section {
                @include flex;
                @include margin($all: 1rem);
                @include size($height: fit-content);
                @include background($color: variables.$color-main);
-
-               & > h4 {
-                  @include margin($all: 0.5rem);
-               }
-
-               & > p {
-                  @include margin($all: 0.25rem);
-               }
             }
          }
       }
