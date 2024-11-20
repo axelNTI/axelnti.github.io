@@ -99,4 +99,9 @@ experience:
      length_weeks: 1
      year: 2019
      season: "spring"
-     
+
+interests:
+   - interest: "biking"
+   - interest: "programming"
+   - interest: "music"
+   - interest: "gaming"
