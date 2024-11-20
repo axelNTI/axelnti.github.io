@@ -66,8 +66,7 @@ languages:
      proficiency: "intermediate"
 
 skills:
-   - skill: "HTML"
-   - skill: "CSS"
+   - skill: "HTML & CSS"
    - skill: "JavaScript"
    - skill: "Python"
    - skill: "Express"
@@ -78,7 +77,6 @@ skills:
    - skill: "SCSS"
    - skill: "JQuery"
    - skill: "Bootstrap"
-   - skill: "yaml"
    - skill: "Node.js"
 
 education:
