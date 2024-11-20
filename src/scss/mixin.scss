@@ -99,3 +99,7 @@
 @mixin color($color) {
    color: $color;
 }
+
+@mixin link($text-decoration: none) {
+   text-decoration: $text-decoration;
+}
