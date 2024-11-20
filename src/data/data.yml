@@ -70,15 +70,16 @@ skills:
    - skill: "CSS"
    - skill: "JavaScript"
    - skill: "Python"
-   - skill: "MySQL"
    - skill: "Express"
+   - skill: "MySQL"
+   - skill: "Playwright Python"
+   - skill: "Github Workflows"
    - skill: "Handlebars"
    - skill: "SCSS"
    - skill: "JQuery"
    - skill: "Bootstrap"
    - skill: "yaml"
-   - skill: "Playwright Python"
-   - skill: "Github Actions"
+   - skill: "Node.js"
 
 education:
    - institution: "NTI Gymnasiet Uppsala"
@@ -122,5 +123,5 @@ experience:
 interests:
    - interest: "biking"
    - interest: "programming"
-   - interest: "music"
    - interest: "gaming"
+   - interest: "music"

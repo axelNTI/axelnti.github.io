@@ -59,14 +59,23 @@ body {
       @include center($horizontal: true);
       @include background($color: variables.$color-main, $shadow: true);
       @include size($width: variables.$page-width, $height: fit-content);
-      @include grid($columns: 2fr 1fr, $rows: repeat(variables.$section-count, auto));
+      @include grid($columns: 3fr 1fr, $rows: repeat(variables.$section-count, auto));
 
       & > aside {
          @include size($height: 100%);
          @include background($color: variables.$color-secondary-background-highlight);
          @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
 
+         & > h2 {
+            @include margin($all: variables.$margin-large);
+         }
+
          & > section {
+            & > img {
+               @include image($object-fit: cover);
+               @include size($both: 1.5rem);
+            }
+
             & > a {
                @include link($text-decoration: none);
                @include color($color: variables.$color-text);
@@ -83,10 +92,37 @@ body {
                }
             }
 
-            &:nth-of-type(2),
-            &:nth-of-type(3) {
+            &:nth-of-type(1) {
+               @include grid($columns: 1.5rem 1fr, $rows: repeat(variables.$contact-info-count + 1, 1fr), $column-gap: variables.$margin-medium);
+
+               & > h3 {
+                  @include grid-item($column-start: 1, $width: 2, $row-start: 1, $height: 1);
+               }
+
+               @for $index from 1 through variables.$contact-info-count {
+                  & > img {
+                     @include margin($vertical: variables.$margin-small);
+
+                     &:nth-of-type(#{$index}) {
+                        @include grid-item($column-start: 1, $width: 1, $row-start: #{$index + 1}, $height: 1);
+                     }
+                  }
+
+                  & > p {
+                     @include text-align($vertical: center, $horizontal: left);
+                     @include size($height: 1.5rem);
+
+                     &:nth-of-type(#{$index}) {
+                        @include grid-item($column-start: 2, $width: 1, $row-start: #{$index + 1}, $height: 1);
+                     }
+                  }
+               }
+            }
+
+            &:nth-of-type(5),
+            &:nth-of-type(6) {
                & > a {
-                  @include grid($columns: variables.$spotify-stats-image-size 1fr, $rows: 2);
+                  @include grid($columns: variables.$spotify-stats-image-size 1fr, $rows: 1fr 1fr);
 
                   & > img {
                      @include grid-item($column-start: 1, $width: 1, $row-start: 1, $height: 2);
@@ -104,7 +140,7 @@ body {
                }
             }
 
-            &:nth-of-type(4) {
+            &:nth-of-type(7) {
                & > a {
                   @include grid($columns: variables.$spotify-stats-image-size 1fr, $rows: 1);
 
