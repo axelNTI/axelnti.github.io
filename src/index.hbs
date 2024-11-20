@@ -43,7 +43,13 @@
                <p>{{locale.recently_played}}</p>
                {{#each recentlyPlayedTracks}}
                   <section>
-                     <img src="{{this.album.images.0.url}}" alt="" />
+                     <img src="{{this.album.images.2.url}}" alt="" />
+                     <p>
+                        {{this.name}}
+                     </p>
+                     <p>
+                        {{getAllArtists this.artists}}
+                     </p>
                   </section>
                {{/each}}
             </section>
@@ -51,7 +57,13 @@
                <p>{{locale.top_tracks}}</p>
                {{#each topTracks}}
                   <section>
-                     <img src="{{this.album.images.0.url}}" alt="" />
+                     <img src="{{this.album.images.2.url}}" alt="" />
+                     <p>
+                        {{this.name}}
+                     </p>
+                     <p>
+                        {{getAllArtists this.artists}}
+                     </p>
                   </section>
                {{/each}}
             </section>
@@ -59,7 +71,10 @@
                <p>{{locale.top_artists}}</p>
                {{#each topArtists}}
                   <section>
-                     <img src="{{this.images.0.url}}" alt="" />
+                     <img src="{{this.images.2.url}}" alt="" />
+                     <p>
+                        {{this.name}}
+                     </p>
                   </section>
                {{/each}}
             </section>
