@@ -82,6 +82,10 @@
    }
 }
 
+@mixin image($object-fit: cover) {
+   object-fit: $object-fit;
+}
+
 @mixin flex($direction: column, $justify-content: flex-start, $align-items: stretch, $align-content: stretch, $flex-wrap: nowrap, $gap: 0) {
    display: flex;
    flex-direction: $direction;
