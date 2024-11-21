@@ -130,3 +130,13 @@
 @mixin font($family) {
    font-family: $family;
 }
+
+@mixin overflow($x: false, $white-space: false) {
+   @if $x {
+      overflow-x: $x;
+   }
+
+   @if $white-space {
+      white-space: $white-space;
+   }
+}
