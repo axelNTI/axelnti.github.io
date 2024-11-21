@@ -90,7 +90,17 @@
    }
 }
 
-@mixin size($width: false, $height: false, $both: false) {
+@mixin size(
+   $width: false,
+   $height: false,
+   $both: false,
+   $max-width: false,
+   $max-height: false,
+   $max-both: false,
+   $min-width: false,
+   $min-height: false,
+   $min-both: false
+) {
    @if $height {
       height: $height;
    }
@@ -102,6 +112,32 @@
    @if $both {
       width: $both;
       height: $both;
+   }
+
+   @if $max-height {
+      max-height: $max-height;
+   }
+
+   @if $max-width {
+      max-width: $max-width;
+   }
+
+   @if $max-both {
+      max-width: $max-both;
+      max-height: $max-both;
+   }
+
+   @if $min-height {
+      min-height: $min-height;
+   }
+
+   @if $min-width {
+      min-width: $min-width;
+   }
+
+   @if $min-both {
+      min-width: $min-both;
+      min-height: $min-both;
    }
 }
 
