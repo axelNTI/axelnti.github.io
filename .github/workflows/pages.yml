@@ -21,31 +21,26 @@ jobs:
          name: github-pages
          url: ${{ steps.deployment.outputs.page_url }}
 
-      runs-on: ubuntu-20.04
+      runs-on: ubuntu-latest
 
       name: ${{ github.event_name == 'schedule' && 'Scheduled Run' || github.event.head_commit.message }}
       steps:
          - name: Checkout
            uses: actions/checkout@v4
 
-         - name: Cache Node.js modules
-           uses: actions/cache@v3
-           with:
-              path: ~/.npm
-              key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-              restore-keys: |
-                 ${{ runner.os }}-node-
-
-         - name: Setup Node.js
-           uses: actions/setup-node@v4
-           with:
-              node-version: 20
+         - name: Check index.hbs content
+           run: cat ./src/index.hbs
 
          - name: Create .env file
            run: |
               echo "CLIENT_ID=${{ secrets.CLIENT_ID }}" >> .env
               echo "CLIENT_SECRET=${{ secrets.CLIENT_SECRET }}" >> .env
               echo "REFRESH_TOKEN=${{ secrets.REFRESH_TOKEN }}" >> .env
+
+         - name: Setup Node.js
+           uses: actions/setup-node@v4
+           with:
+              node-version: 20
 
          - name: Install dependencies and build
            run: |
