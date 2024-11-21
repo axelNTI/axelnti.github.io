@@ -62,7 +62,7 @@ body {
       @include grid($columns: 3fr 1fr, $rows: repeat(variables.$section-count, auto));
 
       & > aside {
-         @include size($height: 100%);
+         @include size($height: 100%, $width: 100%, $max-width: 200%);
          @include background($color: variables.$color-secondary-background-highlight);
          @include grid-item($column-start: 2, $width: 1, $row-start: 1, $height: variables.$section-count);
 
@@ -89,6 +89,7 @@ body {
                & > p {
                   @include margin($all: variables.$margin-small);
                   @include text-align($vertical: center, $horizontal: left);
+                  @include overflow($x: hidden, $white-space: nowrap);
                }
             }
 
