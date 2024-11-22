@@ -68,7 +68,7 @@
                <h3>{{locale.recently_played}}</h3>
                {{#each recentlyPlayedTracks}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
-                  <img src="{{this.album.images.2.url}}" alt="" />
+                  <img src="{{this.album.images.1.url}}" alt="" />
                   <p>{{this.name}}</p>
                   <p>{{getAllArtists this.artists}}</p>
                </a>
@@ -78,7 +78,7 @@
                <h3>{{locale.top_tracks}}</h3>
                {{#each topTracks}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
-                  <img src="{{this.album.images.2.url}}" alt="" />
+                  <img src="{{this.album.images.1.url}}" alt="" />
                   <p>{{this.name}}</p>
                   <p>{{getAllArtists this.artists}}</p>
                </a>
@@ -88,7 +88,7 @@
                <h3>{{locale.top_artists}}</h3>
                {{#each topArtists}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
-                  <img src="{{this.images.2.url}}" alt="" />
+                  <img src="{{this.images.1.url}}" alt="" />
                   <p>{{this.name}}</p>
                </a>
                {{/each}}
