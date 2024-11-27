@@ -1,12 +1,12 @@
 projects:
    - name: "florista"
      description: "florista_description"
-     technologies: ["HTML", "CSS", "JavaScript", "yaml", "Python", "Playwright Python", "GitHub Actions"]
+     technologies: ["HTML", "CSS", "JavaScript", "Python", "Playwright Python", "GitHub Actions"]
      type: "group"
      course: "te4"
    - name: "ntb_car_rental"
      description: "ntb_car_rental_description"
-     technologies: ["HTML", "CSS", "JavaScript", "Handlebars", "Node.js", "yaml", "Python", "Playwright Python", "GitHub Actions", "nginx", "MySQL"]
+     technologies: ["HTML", "CSS", "JavaScript", "Handlebars", "Node.js", "Python", "Playwright Python", "GitHub Actions", "nginx", "MySQL"]
      type: "group"
      course: "te4"
    - name: "webbserverprogramming_final_project"
@@ -16,7 +16,7 @@ projects:
      course: "webbserverprogramming_1"
    - name: "portfolio"
      description: "portfolio_description"
-     technologies: ["Handlebars", "SCSS", "JavaScript", "Node.js", "yaml", "JQuery", "GitHub Actions", "Gulp"]
+     technologies: ["Handlebars", "SCSS", "JavaScript", "Node.js", "GitHub Workflows", "Gulp"]
      type: "solo"
 certification_categories:
    - category: "Information Technology Specialist"
