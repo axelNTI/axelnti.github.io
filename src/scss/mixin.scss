@@ -9,6 +9,40 @@
    }
 }
 
+@mixin center($vertical: false, $horizontal: false) {
+   @if $vertical {
+      margin-top: auto;
+      margin-bottom: auto;
+   }
+
+   @if $horizontal {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@mixin color($color) {
+   color: $color;
+}
+
+@mixin filter($filters...) {
+   filter: $filters;
+}
+
+@mixin flex($direction: column, $justify-content: flex-start, $align-items: stretch, $align-content: stretch, $flex-wrap: nowrap, $gap: 0) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify-content;
+   align-items: $align-items;
+   align-content: $align-content;
+   flex-wrap: $flex-wrap;
+   gap: $gap;
+}
+
+@mixin font($family) {
+   font-family: $family;
+}
+
 @mixin grid($columns, $rows, $gap: false, $row-gap: false, $column-gap: false) {
    display: grid;
    grid-template-columns: $columns;
@@ -30,6 +64,14 @@
 @mixin grid-item($column-start, $width, $row-start, $height) {
    grid-column: $column-start / span $width;
    grid-row: $row-start / span $height;
+}
+
+@mixin image($object-fit: cover) {
+   object-fit: $object-fit;
+}
+
+@mixin link($text-decoration: none) {
+   text-decoration: $text-decoration;
 }
 
 @mixin margin($top: false, $right: false, $bottom: false, $left: false, $vertical: false, $horizontal: false, $all: false) {
@@ -67,26 +109,13 @@
    }
 }
 
-@mixin center($vertical: false, $horizontal: false) {
-   @if $vertical {
-      margin-top: auto;
-      margin-bottom: auto;
+@mixin overflow($x: false, $white-space: false) {
+   @if $x {
+      overflow-x: $x;
    }
 
-   @if $horizontal {
-      margin-left: auto;
-      margin-right: auto;
-   }
-}
-
-@mixin text-align($vertical: null, $horizontal: null) {
-   @if $horizontal != null {
-      text-align: $horizontal;
-   }
-
-   @if $vertical != null {
-      display: flex;
-      align-items: $vertical;
+   @if $white-space {
+      white-space: $white-space;
    }
 }
 
@@ -141,42 +170,13 @@
    }
 }
 
-@mixin image($object-fit: cover) {
-   object-fit: $object-fit;
-}
-
-@mixin flex($direction: column, $justify-content: flex-start, $align-items: stretch, $align-content: stretch, $flex-wrap: nowrap, $gap: 0) {
-   display: flex;
-   flex-direction: $direction;
-   justify-content: $justify-content;
-   align-items: $align-items;
-   align-content: $align-content;
-   flex-wrap: $flex-wrap;
-   gap: $gap;
-}
-
-@mixin color($color) {
-   color: $color;
-}
-
-@mixin link($text-decoration: none) {
-   text-decoration: $text-decoration;
-}
-
-@mixin font($family) {
-   font-family: $family;
-}
-
-@mixin overflow($x: false, $white-space: false) {
-   @if $x {
-      overflow-x: $x;
+@mixin text-align($vertical: null, $horizontal: null) {
+   @if $horizontal != null {
+      text-align: $horizontal;
    }
 
-   @if $white-space {
-      white-space: $white-space;
+   @if $vertical != null {
+      display: flex;
+      align-items: $vertical;
    }
-}
-
-@mixin filter($filters...) {
-   filter: $filters;
 }
