@@ -65,6 +65,10 @@
             </section>
             <section class="tracks">
                <h3>{{locale.recently_played}}</h3>
+               <details>
+                  <summary></summary>
+                  <p>{{locale.recently_played_description}}</p>
+               </details>
                {{#each recentlyPlayedTracks}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
                   <img src="{{this.album.images.1.url}}" alt="" />
@@ -75,6 +79,10 @@
             </section>
             <section class="tracks">
                <h3>{{locale.top_tracks}}</h3>
+               <details>
+                  <summary></summary>
+                  <p>{{locale.top_tracks_description}}</p>
+               </details>
                {{#each topTracks}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
                   <img src="{{this.album.images.1.url}}" alt="" />
@@ -84,6 +92,10 @@
                {{/each}}
             </section>
             <section class="artists">
+               <details>
+                  <summary></summary>
+                  <p>{{locale.top_artists_description}}</p>
+               </details>
                <h3>{{locale.top_artists}}</h3>
                {{#each topArtists}}
                <a href="{{this.external_urls.spotify}}" target="_blank">

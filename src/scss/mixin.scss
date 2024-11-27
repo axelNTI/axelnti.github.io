@@ -25,6 +25,12 @@
    color: $color;
 }
 
+@mixin cursor($cursor: false) {
+   @if $cursor {
+      cursor: $cursor;
+   }
+}
+
 @mixin filter($filters...) {
    filter: $filters;
 }
@@ -72,6 +78,12 @@
 
 @mixin link($text-decoration: none) {
    text-decoration: $text-decoration;
+}
+
+@mixin list-style($image: false) {
+   @if $image {
+      list-style-image: $image;
+   }
 }
 
 @mixin margin($top: false, $right: false, $bottom: false, $left: false, $vertical: false, $horizontal: false, $all: false) {

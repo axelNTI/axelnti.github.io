@@ -85,6 +85,14 @@ body {
                @include size($both: 1.5rem);
             }
 
+            & > details {
+               @include cursor($cursor: pointer);
+
+               & > summary {
+                  @include list-style($image: url("../assets/icons/flowbite-info.svg"));
+               }
+            }
+
             & > a {
                @include link($text-decoration: none);
                @include color($color: variables.$color-text);
