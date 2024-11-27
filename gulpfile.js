@@ -80,12 +80,12 @@ gulp.task("scss", () => {
             file.contents = Buffer.from(result.css);
             file.path = file.path.replace(/\.scss$/, ".css");
             cb(null, file);
-         })
+         }),
       )
       .pipe(
          purgecss({
             content: ["./src/index.hbs"],
-         })
+         }),
       )
       .pipe(
          cleanCSS({
@@ -98,25 +98,21 @@ gulp.task("scss", () => {
                },
             },
             compatibility: "*",
-         })
+         }),
       )
       .pipe(gulp.dest("./dist/css"))
       .pipe(
          tap((file) => {
             const relativePath = path.relative("./dist/css", file.path);
-            if (
-               !fs
-                  .readFileSync("./src/index.hbs", "utf8")
-                  .includes(relativePath)
-            ) {
+            if (!fs.readFileSync("./src/index.hbs", "utf8").includes(relativePath)) {
                fs.unlinkSync(file.path);
             }
-         })
+         }),
       )
       .pipe(
          tap(() => {
             console.clear();
-         })
+         }),
       );
 });
 
@@ -158,11 +154,11 @@ gulp.task("handlebars", async () => {
                   recentlyPlayedTracks,
                   topTracks,
                   topArtists,
-               })
+               }),
             );
             file.path = file.path.replace(/\.hbs$/, ".html");
             cb(null, file);
-         })
+         }),
       )
       .pipe(
          htmlMinifier({
@@ -170,13 +166,13 @@ gulp.task("handlebars", async () => {
             removeComments: true,
             removeEmptyAttributes: true,
             removeRedundantAttributes: true,
-         })
+         }),
       )
       .pipe(gulp.dest("./dist"))
       .pipe(
          tap(() => {
             console.clear();
-         })
+         }),
       );
 });
 
