@@ -18,7 +18,7 @@
       <main>
          <aside>
             <h2>{{data.name}}</h2>
-            <section>
+            <section class="contact-information">
                <h3>{{locale.contact}}</h3>
                <img src="assets/icons/svgrepo-email.svg" alt="" />
                <p>
@@ -63,8 +63,7 @@
                   {{/each}}
                </ul>
             </section>
-
-            <section>
+            <section class="tracks">
                <h3>{{locale.recently_played}}</h3>
                {{#each recentlyPlayedTracks}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
@@ -74,7 +73,7 @@
                </a>
                {{/each}}
             </section>
-            <section>
+            <section class="tracks">
                <h3>{{locale.top_tracks}}</h3>
                {{#each topTracks}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
@@ -84,7 +83,7 @@
                </a>
                {{/each}}
             </section>
-            <section>
+            <section class="artists">
                <h3>{{locale.top_artists}}</h3>
                {{#each topArtists}}
                <a href="{{this.external_urls.spotify}}" target="_blank">

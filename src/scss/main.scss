@@ -62,6 +62,7 @@ body {
          @include size($width: fit-content, $height: fit-content);
       }
    }
+
    & > main {
       @include margin($vertical: 10svh);
       @include center($horizontal: true);
@@ -96,31 +97,33 @@ body {
 
                & > p {
                   @include margin($all: variables.$margin-small);
-                  @include text-align($vertical: center, $horizontal: left);
                   @include overflow($x: hidden, $white-space: nowrap);
+                  @include text-align($vertical: center, $horizontal: left);
                }
             }
 
-            &:nth-of-type(1) {
+            &.contact-information {
                @include grid($columns: 1.5rem 1fr, $rows: repeat(variables.$contact-info-count + 1, 1fr), $column-gap: variables.$margin-medium);
 
                & > h3 {
                   @include grid-item($column-start: 1, $width: 2, $row-start: 1, $height: 1);
                }
 
-               @for $index from 1 through variables.$contact-info-count {
-                  & > img {
-                     @include margin($vertical: variables.$margin-small);
+               & > img {
+                  @include margin($vertical: variables.$margin-small);
 
+                  @for $index from 1 through variables.$contact-info-count {
                      &:nth-of-type(#{$index}) {
                         @include grid-item($column-start: 1, $width: 1, $row-start: #{$index + 1}, $height: 1);
                      }
                   }
+               }
 
-                  & > p {
-                     @include text-align($vertical: center, $horizontal: left);
-                     @include size($height: 1.5rem);
+               & > p {
+                  @include size($height: 1.5rem);
+                  @include text-align($vertical: center, $horizontal: left);
 
+                  @for $index from 1 through variables.$contact-info-count {
                      &:nth-of-type(#{$index}) {
                         @include grid-item($column-start: 2, $width: 1, $row-start: #{$index + 1}, $height: 1);
                      }
@@ -128,8 +131,7 @@ body {
                }
             }
 
-            &:nth-of-type(5),
-            &:nth-of-type(6) {
+            &.tracks {
                & > a {
                   @include grid($columns: variables.$spotify-stats-image-size 1fr, $rows: 1fr 1fr);
 
@@ -149,7 +151,7 @@ body {
                }
             }
 
-            &:nth-of-type(7) {
+            &.artists {
                & > a {
                   @include grid($columns: variables.$spotify-stats-image-size 1fr, $rows: 1);
 
