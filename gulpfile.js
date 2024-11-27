@@ -176,6 +176,14 @@ gulp.task("handlebars", async () => {
       );
 });
 
+gulp.task("assets", () => {
+   return gulp.src("./src/assets/**/*", { encoding: false }).pipe(gulp.dest("./dist/assets"));
+});
+
+gulp.task("assets:watch", () => {
+   gulp.watch("./src/assets/**/*", gulp.series("assets"));
+});
+
 gulp.task("handlebars:watch", () => {
    gulp.watch("./src/index.hbs", gulp.series("handlebars"));
 });
@@ -184,6 +192,6 @@ gulp.task("yml:watch", () => {
    gulp.watch("./src/**/*.yml", gulp.series("handlebars"));
 });
 
-gulp.task("build", gulp.parallel("scss", "handlebars"));
+gulp.task("build", gulp.parallel("scss", "handlebars", "assets"));
 
-gulp.task("default", gulp.parallel("scss", "scss:watch", "handlebars", "handlebars:watch", "yml:watch"));
+gulp.task("default", gulp.parallel("scss", "scss:watch", "handlebars", "handlebars:watch", "yml:watch", "assets", "assets:watch"));
