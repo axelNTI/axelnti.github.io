@@ -92,11 +92,11 @@
                {{/each}}
             </section>
             <section class="artists">
+               <h3>{{locale.top_artists}}</h3>
                <details>
                   <summary></summary>
                   <p>{{locale.top_artists_description}}</p>
                </details>
-               <h3>{{locale.top_artists}}</h3>
                {{#each topArtists}}
                <a href="{{this.external_urls.spotify}}" target="_blank">
                   <img src="{{this.images.1.url}}" alt="" />
