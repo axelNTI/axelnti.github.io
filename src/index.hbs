@@ -20,23 +20,23 @@
             <h2>{{data.name}}</h2>
             <section>
                <h3>{{locale.contact}}</h3>
-               <img src="assets/icons/icons8-email-black.png" alt="">
+               <img src="assets/icons/svgrepo-email.svg" alt="" />
                <p>
                   <a href="mailto:{{data.email}}"> {{data.email}} </a>
                </p>
-               <img src="assets/icons/icons8-phone-black.png" alt="">
+               <img src="assets/icons/flowbite-phone.svg" alt="" />
                <p>
                   <a href="tel:{{format data.phone_number}}"> {{data.phone_number}} </a>
                </p>
-               <img src="assets/icons/icons8-github-black.png" alt="">
+               <img src="assets/icons/flowbite-github.svg" alt="" />
                <p>
                   <a href="{{data.github_link}}" target="_blank"> {{data.github_username}} </a>
                </p>
-               <img src="assets/icons/icons8-linkedin-black.png" alt="">
+               <img src="assets/icons/flowbite-linkedin.svg" alt="" />
                <p>
                   <a href="{{data.linkedin_link}}" target="_blank"> {{data.name}} </a>
                </p>
-               <img src="assets/icons/icons8-location-black.png" alt="">
+               <img src="assets/icons/flowbite-pin.svg" alt="" />
                <p>{{translate data.city locale}}, {{translate data.country locale}}</p>
             </section>
             <section>

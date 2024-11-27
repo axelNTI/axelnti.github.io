@@ -176,3 +176,7 @@
       white-space: $white-space;
    }
 }
+
+@mixin filter($filters...) {
+   filter: $filters;
+}

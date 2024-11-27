@@ -42,6 +42,14 @@ body {
       @include margin($all: variables.$margin-large);
    }
 
+   .white {
+      @include filter(invert(100%) sepia(83%) saturate(0%) hue-rotate(5deg) brightness(107%) contrast(101%));
+   }
+
+   .highlight {
+      @include filter(invert(66%) sepia(12%) saturate(5930%) hue-rotate(325deg) brightness(101%) contrast(101%));
+   }
+
    & > header {
       @include flex;
       @include center($horizontal: true);
