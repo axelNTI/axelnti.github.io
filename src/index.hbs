@@ -158,22 +158,20 @@
             </section>
             {{/each}}
          </section>
-         <section>
+         <section class="certifications">
             <h2>{{locale.certifications}}</h2>
-            {{#each data.certification_categories}}
+            {{#each data.certificates}}
             <section>
-               <h3>{{this.category}}</h3>
-               {{#each this.certifications}}
-               <section>
-                  <h4>{{this.name}}</h4>
-                  <p>{{@root.locale.score}}: {{this.score}} / {{this.max_score}}</p>
-                  <p>{{@root.locale.date}}: {{this.date}}</p>
-               </section>
-               {{/each}}
+               <h3>{{translate this.name @root.locale}}</h3>
+               <p>{{this.issuer}}</p>
+               <p>{{this.date}}</p>
+               <p>{{this.score}} / {{this.max_score}}</p>
+               <a href="assets/documents/{{this.pdf}}" target="_blank">
+                  <img src="assets/icons/flowbite-pdf.svg" alt="" /> {{@root.locale.view_certificate}}
+               </a>
             </section>
             {{/each}}
          </section>
       </main>
-      <footer></footer>
    </body>
 </html>

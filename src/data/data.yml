@@ -18,21 +18,26 @@ projects:
      description: "portfolio_description"
      technologies: ["Handlebars", "SCSS", "JavaScript", "Node.js", "GitHub Workflows", "Gulp"]
      type: "solo"
-certification_categories:
-   - category: "Information Technology Specialist"
-     certifications:
-        - name: "JavaScript"
-          score: 880
-          max_score: 1000
-          date: "2023-09-22"
-        - name: "Python"
-          score: 920
-          max_score: 1000
-          date: "2024-03-13"
-        - name: "Networking"
-          score: 720
-          max_score: 1000
-          date: "2024-05-07"
+
+certificates:
+   - name: "js_information_technology_specialist"
+     score: 880
+     max_score: 1000
+     date: "2023-09-22"
+     pdf: "Axel-Thornberg-Cert-JavaScript.pdf"
+     issuer: "CERTIPORT"
+   - name: "py_information_technology_specialist"
+     score: 920
+     max_score: 1000
+     date: "2024-03-13"
+     pdf: "Axel-Thornberg-Cert-Python.pdf"
+     issuer: "CERTIPORT"
+   - name: "networking_information_technology_specialist"
+     score: 720
+     max_score: 1000
+     date: "2024-05-07"
+     pdf: "Axel-Thornberg-Cert-Networking.pdf"
+     issuer: "CERTIPORT"
 
 name: "Axel Thornberg"
 email: "taxel@thornberg.se"
