@@ -21,7 +21,7 @@ body {
    }
 
    h2 {
-      @include margin($vertical: variables.$margin-medium);
+      @include margin($all: variables.$margin-large);
    }
 
    h3 {
