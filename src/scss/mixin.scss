@@ -245,3 +245,9 @@
       align-items: $vertical;
    }
 }
+
+@mixin text-decoration($decoration: false) {
+   @if $decoration {
+      text-decoration: $decoration;
+   }
+}
