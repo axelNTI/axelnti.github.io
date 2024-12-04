@@ -127,43 +127,30 @@
                <p>{{translate this.type @root.locale}}</p>
                <p>{{this.employer}}</p>
                {{#if (equals this.length_weeks 1)}}
-               <p>
-                  {{translate this.season @root.locale}} {{this.year}} - {{this.length_weeks}} {{@root.locale.week}}
-               </p>
+               <p>{{translate this.season @root.locale}} {{this.year}} - {{this.length_weeks}} {{@root.locale.week}}</p>
                {{else}}
-               <p>
-                  {{translate this.season @root.locale}} {{this.year}} - {{this.length_weeks}} {{@root.locale.weeks}}
-               </p>
+               <p>{{translate this.season @root.locale}} {{this.year}} - {{this.length_weeks}} {{@root.locale.weeks}}</p>
                {{/if}}
             </section>
             {{/each}}
          </section>
-         <section>
+         <section class="projects">
             <h2>{{locale.projects}}</h2>
             {{#each data.projects}}
             <section>
                <h3>{{translate this.name @root.locale}}</h3>
-               <p>{{@root.locale.description}}: {{translate this.description @root.locale}}</p>
-               <p>{{@root.locale.type}}: {{translate this.type @root.locale}}</p>
-               {{#if this.course}}
-               <p>{{@root.locale.course}}: {{translate this.course @root.locale}}</p>
-               {{/if}} {{#if this.url}}
-               <p>
-                  {{@root.locale.url}}:
-                  <a target="_blank" href="{{this.url}}"> {{this.url}} </a>
-               </p>
-               {{/if}} {{#if this.repository}}
-               <p>
-                  {{@root.locale.repository}}:
-                  <a target="_blank" href="{{this.repository}}"> {{this.repository}} </a>
-               </p>
-               {{/if}}
+               <p>{{translate this.description @root.locale}}</p>
                <p>{{@root.locale.technologies}}:</p>
                <ul>
                   {{#each this.technologies}}
                   <li>{{translate this @root.locale}}</li>
                   {{/each}}
                </ul>
+               <section class="button-container">
+                  {{#each this.links}}
+                  <a href="{{this.url}}" target="_blank"> <img src="assets/icons/{{this.icon}}" alt="" /> {{translate this.name @root.locale}} </a>
+                  {{/each}}
+               </section>
             </section>
             {{/each}}
          </section>
