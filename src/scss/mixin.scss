@@ -9,6 +9,24 @@
    }
 }
 
+@mixin border($width: false, $style: false, $color: false, $radius: false) {
+   @if $width {
+      border-width: $width;
+   }
+
+   @if $style {
+      border-style: $style;
+   }
+
+   @if $color {
+      border-color: $color;
+   }
+
+   @if $radius {
+      border-radius: $radius;
+   }
+}
+
 @mixin center($vertical: false, $horizontal: false) {
    @if $vertical {
       margin-top: auto;
