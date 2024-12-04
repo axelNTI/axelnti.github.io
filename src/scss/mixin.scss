@@ -131,6 +131,41 @@
    }
 }
 
+@mixin padding($top: false, $right: false, $bottom: false, $left: false, $vertical: false, $horizontal: false, $all: false) {
+   @if $top {
+      padding-top: $top;
+   }
+
+   @if $right {
+      padding-right: $right;
+   }
+
+   @if $bottom {
+      padding-bottom: $bottom;
+   }
+
+   @if $left {
+      padding-left: $left;
+   }
+
+   @if $vertical {
+      padding-top: $vertical;
+      padding-bottom: $vertical;
+   }
+
+   @if $horizontal {
+      padding-right: $horizontal;
+      padding-left: $horizontal;
+   }
+
+   @if $all {
+      padding-top: $all;
+      padding-right: $all;
+      padding-bottom: $all;
+      padding-left: $all;
+   }
+}
+
 @mixin size(
    $width: false,
    $height: false,
