@@ -182,12 +182,12 @@
    }
 }
 
-@mixin text-align($vertical: null, $horizontal: null) {
-   @if $horizontal != null {
+@mixin text-align($vertical: false, $horizontal: false) {
+   @if $horizontal {
       text-align: $horizontal;
    }
 
-   @if $vertical != null {
+   @if $vertical {
       display: flex;
       align-items: $vertical;
    }
