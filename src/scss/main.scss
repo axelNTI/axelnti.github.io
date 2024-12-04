@@ -187,14 +187,14 @@ body {
                & > a {
                   @include border($radius: 0.5rem);
                   @include text-decoration($decoration: none);
-                  @include size($height: 2rem, $width: 17ch);
+                  @include size($height: 2rem, $width: fit-content);
+                  @include padding($all: variables.$margin-small);
                   @include text-align($vertical: center, $horizontal: left);
                   @include background($color: variables.$color-secondary-background-highlight);
 
                   & > img {
                      @include size($both: 1.5rem);
                      @include image($object-fit: cover);
-                     @include margin($all: variables.$margin-small);
                   }
                }
             }
