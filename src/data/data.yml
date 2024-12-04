@@ -96,19 +96,19 @@ education:
 experience:
    - type: "summer_job"
      employer: "Uppsala Kommun"
-     position: "Cleaner"
+     position: "cleaner"
      length_weeks: 3
      year: 2021
      season: "summer"
    - type: "internship"
      employer: "Gimo Pastorat"
-     position: "Cleaner"
+     position: "caretaker"
      length_weeks: 1
      year: 2020
      season: "spring"
    - type: "internship"
      employer: "Gimo Pastorat"
-     position: "Cleaner"
+     position: "caretaker"
      length_weeks: 1
      year: 2019
      season: "spring"

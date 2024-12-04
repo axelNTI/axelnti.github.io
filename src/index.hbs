@@ -119,13 +119,22 @@
             </section>
             {{/each}}
          </section>
-         <section>
+         <section class="experience">
             <h2>{{locale.experience}}</h2>
             {{#each data.experience}}
             <section>
-               <p>{{@root.locale.position}}: {{translate this.position @root.locale}}</p>
-               <p>{{@root.locale.type}}: {{translate this.type @root.locale}}</p>
-               <p>{{@root.locale.employer}}: {{this.employer}}</p>
+               <h3>{{translate this.position @root.locale}}</h3>
+               <p>{{translate this.type @root.locale}}</p>
+               <p>{{this.employer}}</p>
+               {{#if (equals this.length_weeks 1)}}
+               <p>
+                  {{translate this.season @root.locale}} {{this.year}} - {{this.length_weeks}} {{@root.locale.week}}
+               </p>
+               {{else}}
+               <p>
+                  {{translate this.season @root.locale}} {{this.year}} - {{this.length_weeks}} {{@root.locale.weeks}}
+               </p>
+               {{/if}}
             </section>
             {{/each}}
          </section>
