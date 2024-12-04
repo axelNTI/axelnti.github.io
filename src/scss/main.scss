@@ -50,6 +50,26 @@ body {
       @include filter(invert(66%) sepia(12%) saturate(5930%) hue-rotate(325deg) brightness(101%) contrast(101%));
    }
 
+   .button-container {
+      @include flex($direction: row, $gap: variables.$margin-medium);
+      @include margin($horizontal: 0, $vertical: variables.$margin-medium);
+
+      & > a {
+         @include border($radius: 0.5rem);
+         @include text-decoration($decoration: none);
+         @include padding($all: variables.$margin-small);
+         @include size($height: 2rem, $width: fit-content);
+         @include text-align($vertical: center, $horizontal: left);
+         @include background($color: variables.$color-secondary-background-highlight);
+
+         & > img {
+            @include size($both: 1.5rem);
+            @include image($object-fit: cover);
+            @include margin($right: variables.$margin-small);
+         }
+      }
+   }
+
    & > header {
       @include flex;
       @include center($horizontal: true);
@@ -179,24 +199,6 @@ body {
          @for $index from 1 through variables.$section-count {
             &:nth-of-type(#{$index}) {
                @include grid-item($column-start: 1, $width: 1, $row-start: #{$index}, $height: 1);
-            }
-         }
-
-         &.certifications {
-            & > section {
-               & > a {
-                  @include border($radius: 0.5rem);
-                  @include text-decoration($decoration: none);
-                  @include size($height: 2rem, $width: fit-content);
-                  @include padding($all: variables.$margin-small);
-                  @include text-align($vertical: center, $horizontal: left);
-                  @include background($color: variables.$color-secondary-background-highlight);
-
-                  & > img {
-                     @include size($both: 1.5rem);
-                     @include image($object-fit: cover);
-                  }
-               }
             }
          }
       }

@@ -175,9 +175,11 @@
                <p>{{this.issuer}}</p>
                <p>{{this.date}}</p>
                <p>{{this.score}} / {{this.max_score}}</p>
-               <a href="assets/documents/{{this.pdf}}" target="_blank">
-                  <img src="assets/icons/flowbite-pdf.svg" alt="" /> {{@root.locale.view_certificate}}
-               </a>
+               <section class="button-container">
+                  <a href="assets/documents/{{this.pdf}}" target="_blank">
+                     <img src="assets/icons/flowbite-pdf.svg" alt="" /> {{@root.locale.view_certificate}}
+                  </a>
+               </section>
             </section>
             {{/each}}
          </section>
