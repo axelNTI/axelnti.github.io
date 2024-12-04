@@ -9,8 +9,13 @@ const getAllArtists = (artists) => {
    return artists.map((artist) => artist.name).join(", ");
 };
 
+const equals = (a, b) => {
+   return a === b;
+};
+
 module.exports = {
    translate,
    format,
    getAllArtists,
+   equals,
 };
