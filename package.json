@@ -21,7 +21,7 @@
       "express": "^4.21.1",
       "gulp": "^5.0.0",
       "gulp-clean-css": "^4.3.0",
-      "gulp-htmlmin": "^5.0.1",
+      "gulp-html-minifier-terser": "^7.1.0",
       "gulp-purgecss": "^6.0.0",
       "gulp-tap": "^2.0.0",
       "handlebars": "^4.7.8",
