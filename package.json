@@ -17,8 +17,8 @@
    },
    "homepage": "https://github.com/axelNTI/axelNTI#readme",
    "dependencies": {
-      "dotenv": "^16.4.5",
-      "express": "^4.21.1",
+      "dotenv": "^16.4.7",
+      "express": "^4.21.2",
       "gulp": "^5.0.0",
       "gulp-clean-css": "^4.3.0",
       "gulp-html-minifier-terser": "^7.1.0",
@@ -27,8 +27,8 @@
       "handlebars": "^4.7.8",
       "js-yaml": "^4.1.0",
       "node-fetch": "^3.3.2",
-      "nodemon": "^3.1.7",
-      "sass": "^1.81.0",
+      "nodemon": "^3.1.9",
+      "sass": "^1.83.0",
       "through2": "^4.0.2"
    }
 }
