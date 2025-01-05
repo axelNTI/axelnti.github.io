@@ -1,4 +1,14 @@
 projects:
+   - name: "classroom_seating_planner"
+     description: "classroom_seating_planner_description"
+     technologies: ["WPF", "C#", "XAML", ".NET"]
+     links:
+        - name: "GitHub"
+          url: "https://github.com/NTIG-Uppsala/Classroom-Seating-Planner"
+          icon: "flowbite-github.svg"
+        - name: "download"
+          url: "https://github.com/NTIG-Uppsala/Classroom-Seating-Planner/releases/tag/1.0.0"
+          icon: "flowbite-download.svg"
    - name: "florista"
      description: "florista_description"
      technologies: ["HTML", "CSS", "JavaScript", "Python", "Playwright Python", "GitHub Actions"]
