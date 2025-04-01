@@ -75,7 +75,7 @@ certificates:
      issuer: "CERTIPORT"
 
 name: "Axel Thornberg"
-email: "taxel@thornberg.se"
+email: "axel@thornberg.se"
 phone_number: "+46 79-342 10 39"
 birth_date: "2005-12-08"
 city: "Uppsala"
