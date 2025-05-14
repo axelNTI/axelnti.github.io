@@ -129,6 +129,12 @@ education:
      country: "sweden"
 
 experience:
+   - type: "internship"
+     employer: "STUNS Life science"
+     position: "fullstack_developer"
+     length_weeks: 11
+     year: 2025
+     season: "spring"
    - type: "summer_job"
      employer: "Uppsala Kommun"
      position: "cleaner"
