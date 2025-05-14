@@ -1,4 +1,28 @@
 projects:
+   - name: "aterbrukslabbet"
+     description: "aterbrukslabbet_description"
+     technologies:
+        [
+           "Next.js",
+           "Tailwind CSS",
+           "TypeScript",
+           "Prisma ORM",
+           "Clerk",
+           "shadcn/ui",
+           "Node.js",
+           "PostgreSQL",
+           "GitHub Actions",
+           "Playwright",
+           "Husky",
+        ]
+     links:
+        - name: "GitHub"
+          url: "https://github.com/axelNTI/Stuns-Aterbrukslabbet"
+          icon: "flowbite-github.svg"
+        - name: "Website"
+          url: "https://aterbrukslabbet.nu/"
+          icon: "svgrepo-globe.svg"
+
    - name: "classroom_seating_planner"
      description: "classroom_seating_planner_description"
      technologies: ["WPF", "C#", "XAML", ".NET"]
