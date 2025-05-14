@@ -44,8 +44,8 @@ jobs:
 
          - name: Install dependencies and build
            run: |
-              npm ci
-              npm run build
+              pnpm i --frozen-lockfile
+              pnpm build
 
          - name: Setup Pages
            uses: actions/configure-pages@v5
