@@ -1,0 +1,20 @@
+[
+  {
+    "institution": "NTI Gymnasiet Uppsala",
+    "location": "Uppsala, Sweden",
+    "title": "Certified Upper Secondary School Engineer",
+    "time": {
+      "start": "August 2024",
+      "end": "Ongoing"
+    }
+  },
+  {
+    "institution": "NTI Gymnasiet Uppsala",
+    "location": "Uppsala, Sweden",
+    "program": "Information Technology Program",
+    "time": {
+      "start": "August 2021",
+      "end": "June 2024"
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Återbrukslabbet",
+    "type": "group",
+    "description": "TODO",
+    "technology_keys": [
+      "nextjs",
+      "tailwindcss",
+      "typescript",
+      "prisma",
+      "clerk",
+      "shadcn",
+      "nodejs",
+      "postgresql",
+      "githubactions",
+      "playwright",
+      "husky"
+    ],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/axelNTI/Stuns-Aterbrukslabbet/"
+      },
+      {
+        "type": "website",
+        "link": "https://aterbrukslabbet.nu/"
+      }
+    ]
+  },
+  {
+    "name": "Horizon Modding Studio",
+    "type": "solo",
+    "description": "TODO",
+    "technology_keys": ["tauri", "rust", "typescript", "react", "vite", "unocss", "githubactions", "husky", "biomejs"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/axelNTI/horizon-modding-studio/"
+      },
+      {
+        "type": "download",
+        "link": "https://github.com/axelNTI/horizon-modding-studio/releases/"
+      }
+    ]
+  },
+  {
+    "name": "Classroom Seating Planner",
+    "type": "group",
+    "description": "TODO",
+    "technology_keys": ["wpf", "csharp", "dotnet"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/NTIG-Uppsala/Classroom-Seating-Planner/"
+      },
+      {
+        "type": "download",
+        "link": "https://github.com/NTIG-Uppsala/Classroom-Seating-Planner/releases/"
+      }
+    ]
+  },
+  {
+    "name": "NTB Car Rental",
+    "type": "group",
+    "description": "TODO",
+    "technology_keys": ["html", "css", "javascript", "python", "handlebars", "mysql", "playwright", "githubactions"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/NTIG-Uppsala/TE4-VALE-Biluthyrning/"
+      },
+      {
+        "type": "website",
+        "link": "https://ntbbiluthyrning.ntig.dev/"
+      }
+    ]
+  },
+  {
+    "name": "florista",
+    "type": "group",
+    "description": "TODO",
+    "technology_keys": ["html", "css", "javascript", "python", "playwright", "githubactions"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/NTIG-Uppsala/J.CAD-Florist/"
+      },
+      {
+        "type": "website",
+        "link": "https://florista.ntig.dev/"
+      }
+    ]
+  },
+  {
+    "name": "Portfolio",
+    "type": "solo",
+    "description": "TODO",
+    "technology_keys": ["typescript", "preact", "vite", "unocss", "githubactions", "husky", "biomejs"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/axelNTI/axelnti.github.io/"
+      }
+    ]
+  },
+  {
+    "name": "Diploma Project",
+    "type": "solo",
+    "description": "TODO",
+    "technology_keys": ["python", "plotly"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/axelNTI/Gymnasiearbete/"
+      },
+      {
+        "type": "pdf",
+        "link": "./documents/Axel-Thornberg-Diploma-Project.pdf"
+      }
+    ]
+  }
+]

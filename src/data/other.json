@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Information Technology Specialist Certificate in JavaScript",
+    "issuer": "CERTIPORT",
+    "date": "2023-09-22",
+    "score": "880 / 1000",
+    "link": "./documents/Axel-Thornberg-Cert-JavaScript.pdf"
+  },
+  {
+    "name": "Information Technology Specialist Certificate in Python",
+    "issuer": "CERTIPORT",
+    "date": "2024-03-13",
+    "score": "920 / 1000",
+    "link": "./documents/Axel-Thornberg-Cert-Python.pdf"
+  },
+  {
+    "name": "Information Technology Specialist Certificate in Networking",
+    "issuer": "CERTIPORT",
+    "date": "2024-05-07",
+    "score": "720 / 1000",
+    "link": "./documents/Axel-Thornberg-Cert-Networking.pdf"
+  },
+  {
+    "name": "Swedish Class B Drivers' License"
+  },
+  {
+    "name": "Swedish Scholastic Aptitude Test",
+    "date": "2024-04-13",
+    "score": "1.50 / 2.00"
+  }
+]

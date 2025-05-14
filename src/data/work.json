@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Internship",
+    "employer": "STUNS Life science",
+    "location": "Uppsala, Sweden",
+    "position": "Full-Stack Developer",
+    "time": {
+      "start": "February 2025",
+      "end": "May 2025"
+    }
+  },
+  {
+    "type": "Summer Job",
+    "employer": "Uppsala Kommun",
+    "location": "Uppsala, Sweden",
+    "position": "Cleaner",
+    "time": {
+      "start": "July 2021",
+      "end": "August 2021"
+    }
+  },
+  {
+    "type": "Internship",
+    "employer": "Gimo Pastorat",
+    "location": "Gimo, Sweden",
+    "position": "Caretaker",
+    "time": {
+      "start": "May 2020",
+      "end": "May 2020"
+    }
+  },
+  {
+    "type": "Internship",
+    "employer": "Gimo Pastorat",
+    "location": "Gimo, Sweden",
+    "position": "Caretaker",
+    "time": {
+      "start": "May 2019",
+      "end": "May 2019"
+    }
+  }
+]
