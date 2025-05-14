@@ -1,17 +1,17 @@
-import { hydrate, lazy, prerender as ssr } from "preact-iso";
+import { hydrate, prerender as ssr } from "preact-iso";
 import { Route, Switch } from "wouter-preact";
 
-const App = () => {
-  const IndexPage = lazy(() => import("./routes/index"));
-  const NotFoundPage = lazy(() => import("./routes/404"));
+import NotFound from "@/routes/404";
+import Index from "@/routes/index";
 
+const App = () => {
   return (
     <Switch>
       <Route
         path="/"
-        component={IndexPage}
+        component={Index}
       />
-      <Route component={NotFoundPage} />
+      <Route component={NotFound} />
     </Switch>
   );
 };
