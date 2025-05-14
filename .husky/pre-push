@@ -1,0 +1,7 @@
+if ! output=$(pnpm format:check 2>&1); then
+  echo "Code formatting check failed. Run \"pnpm format:write\" to address the issue." >&2
+  echo "$output" >&2
+  exit 1
+fi
+
+exit 0

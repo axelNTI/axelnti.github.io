@@ -1,0 +1,22 @@
+{
+  "files": {
+    "ignore": ["pnpm-lock.yaml", "pnpm-workspace.yaml", "node_modules/**/*", "dist/**/*", "old/**/*"]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "attributePosition": "multiline"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    }
+  }
+}
