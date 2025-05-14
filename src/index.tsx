@@ -1,8 +1,20 @@
-import { hydrate, prerender as ssr } from "preact-iso";
+import { hydrate, lazy, prerender as ssr } from "preact-iso";
+import { Route, Switch } from "wouter-preact";
 
-export function App() {
-  return <></>;
-}
+const App = () => {
+  const IndexPage = lazy(() => import("./routes/index"));
+  const NotFoundPage = lazy(() => import("./routes/404"));
+
+  return (
+    <Switch>
+      <Route
+        path="/"
+        component={IndexPage}
+      />
+      <Route component={NotFoundPage} />
+    </Switch>
+  );
+};
 
 if (typeof window !== "undefined") {
   const app = document.getElementById("app");
