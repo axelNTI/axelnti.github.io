@@ -1,0 +1,134 @@
+{
+  "dotnet": {
+    "name": ".NET",
+    "icon": "@/icons/DeviconDotnetcore.tsx"
+  },
+  "githubactions": {
+    "name": "GitHub Actions",
+    "icon": "@/icons/DeviconGithubactions.tsx"
+  },
+  "html": {
+    "name": "HTML",
+    "icon": "@/icons/DeviconHtml5.tsx"
+  },
+  "javascript": {
+    "name": "JavaScript",
+    "icon": "@/icons/DeviconJavascript.tsx"
+  },
+  "mysql": {
+    "name": "MySQL",
+    "icon": "@/icons/DeviconMysql.tsx"
+  },
+  "playwright": {
+    "name": "Playwright",
+    "icon": "@/icons/DeviconPlaywright.tsx"
+  },
+  "plotly": {
+    "name": "Plotly",
+    "icon": "@/icons/DeviconPlotly.tsx"
+  },
+  "postgresql": {
+    "name": "PostgreSQL",
+    "icon": "@/icons/DeviconPostgresql.tsx"
+  },
+  "tailwindcss": {
+    "name": "Tailwind CSS",
+    "icon": "@/icons/DeviconTailwindcss.tsx"
+  },
+  "vite": {
+    "name": "Vite",
+    "icon": "@/icons/DeviconVitejs.tsx"
+  },
+  "wpf": {
+    "name": "Windows Presentation Foundation",
+    "icon": "@/icons/DeviconWindows11.tsx"
+  },
+  "nextjs": {
+    "name": "Next.js",
+    "icon": "@/icons/LogosNextjsIcon.tsx"
+  },
+  "preact": {
+    "name": "Preact",
+    "icon": "@/icons/LogosPreact.tsx"
+  },
+  "react": {
+    "name": "React",
+    "icon": "@/icons/LogosReact.tsx"
+  },
+  "biomejs": {
+    "name": "Biome",
+    "icon": "@/icons/MaterialIconThemeBiome.tsx"
+  },
+  "nodejs": {
+    "name": "Node.js",
+    "icon": "@/icons/MaterialIconThemeNodejs.tsx"
+  },
+  "clerk": {
+    "name": "Clerk",
+    "icon": "@/icons/SimpleIconsClerk.tsx"
+  },
+  "shadcn": {
+    "name": "shadcn/ui",
+    "icon": "@/icons/SimpleIconsShadcnui.tsx"
+  },
+  "csharp": {
+    "name": "C#",
+    "icon": "@/icons/VscodeIconsFileTypeCsharp2.tsx"
+  },
+  "css": {
+    "name": "CSS",
+    "icon": "@/icons/VscodeIconsFileTypeCss.tsx"
+  },
+  "handlebars": {
+    "name": "Handlebars",
+    "icon": "@/icons/VscodeIconsFileTypeHandlebars.tsx"
+  },
+  "husky": {
+    "name": "Husky",
+    "icon": "@/icons/VscodeIconsFileTypeHusky.tsx"
+  },
+  "prisma": {
+    "name": "Prisma",
+    "icon": "@/icons/VscodeIconsFileTypePrisma.tsx"
+  },
+  "python": {
+    "name": "Python",
+    "icon": "@/icons/VscodeIconsFileTypePython.tsx"
+  },
+  "rust": {
+    "name": "Rust",
+    "icon": "@/icons/VscodeIconsFileTypeRust.tsx"
+  },
+  "tauri": {
+    "name": "Tauri",
+    "icon": "@/icons/VscodeIconsFileTypeTauri.tsx"
+  },
+  "typescript": {
+    "name": "TypeScript",
+    "icon": "@/icons/VscodeIconsFileTypeTypescriptOfficial.tsx"
+  },
+  "unocss": {
+    "name": "UnoCSS",
+    "icon": "@/icons/VscodeIconsFileTypeUnocss.tsx"
+  },
+  "map": {
+    "name": "Map Pin",
+    "icon": "@/icons/MaterialSymbolsLocationOn.tsx"
+  },
+  "website": {
+    "name": "Website",
+    "icon": "@/icons/BiGlobe.tsx"
+  },
+  "pdf": {
+    "name": "PDF",
+    "icon": "@/icons/BiFiletypePdf.tsx"
+  },
+  "download": {
+    "name": "Download",
+    "icon": "@/icons/MaterialSymbolsDownload.tsx"
+  },
+  "github": {
+    "name": "GitHub",
+    "icon": "@/icons/MdiGithub.tsx"
+  }
+}
