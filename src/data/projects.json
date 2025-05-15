@@ -31,7 +31,18 @@
     "name": "Horizon Modding Studio",
     "type": "solo",
     "description": "TODO",
-    "technology_keys": ["tauri", "rust", "typescript", "react", "vite", "unocss", "githubactions", "husky", "biomejs"],
+    "technology_keys": [
+      "tauri",
+      "rust",
+      "typescript",
+      "react",
+      "vite",
+      "unocss",
+      "githubactions",
+      "nodejs",
+      "husky",
+      "biomejs"
+    ],
     "links": [
       {
         "type": "github",
@@ -40,6 +51,18 @@
       {
         "type": "download",
         "link": "https://github.com/axelNTI/horizon-modding-studio/releases/"
+      }
+    ]
+  },
+  {
+    "name": "Portfolio",
+    "type": "solo",
+    "description": "TODO",
+    "technology_keys": ["typescript", "preact", "vite", "unocss", "githubactions", "nodejs", "husky", "biomejs"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/axelNTI/axelnti.github.io/"
       }
     ]
   },
@@ -60,50 +83,6 @@
     ]
   },
   {
-    "name": "NTB Car Rental",
-    "type": "group",
-    "description": "TODO",
-    "technology_keys": ["html", "css", "javascript", "python", "handlebars", "mysql", "playwright", "githubactions"],
-    "links": [
-      {
-        "type": "github",
-        "link": "https://github.com/NTIG-Uppsala/TE4-VALE-Biluthyrning/"
-      },
-      {
-        "type": "website",
-        "link": "https://ntbbiluthyrning.ntig.dev/"
-      }
-    ]
-  },
-  {
-    "name": "florista",
-    "type": "group",
-    "description": "TODO",
-    "technology_keys": ["html", "css", "javascript", "python", "playwright", "githubactions"],
-    "links": [
-      {
-        "type": "github",
-        "link": "https://github.com/NTIG-Uppsala/J.CAD-Florist/"
-      },
-      {
-        "type": "website",
-        "link": "https://florista.ntig.dev/"
-      }
-    ]
-  },
-  {
-    "name": "Portfolio",
-    "type": "solo",
-    "description": "TODO",
-    "technology_keys": ["typescript", "preact", "vite", "unocss", "githubactions", "husky", "biomejs"],
-    "links": [
-      {
-        "type": "github",
-        "link": "https://github.com/axelNTI/axelnti.github.io/"
-      }
-    ]
-  },
-  {
     "name": "Diploma Project",
     "type": "solo",
     "description": "TODO",
@@ -116,6 +95,32 @@
       {
         "type": "pdf",
         "link": "./documents/Axel-Thornberg-Diploma-Project.pdf"
+      }
+    ]
+  },
+  {
+    "name": "NTB Car Rental",
+    "type": "group",
+    "description": "TODO",
+    "technology_keys": [
+      "html",
+      "css",
+      "javascript",
+      "python",
+      "handlebars",
+      "mysql",
+      "playwright",
+      "githubactions",
+      "nodejs"
+    ],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/NTIG-Uppsala/TE4-VALE-Biluthyrning/"
+      },
+      {
+        "type": "website",
+        "link": "https://ntbbiluthyrning.ntig.dev/"
       }
     ]
   }
