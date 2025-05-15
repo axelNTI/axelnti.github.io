@@ -2,7 +2,7 @@
   {
     "name": "Återbrukslabbet",
     "type": "group",
-    "description": "TODO",
+    "description": "Återbrukslabbet is a webpage where companies can donate their unused items to schools, and schools can request items they need. The goal is to reduce waste and promote sustainability while reducing costs for schools.",
     "technology_keys": [
       "nextjs",
       "tailwindcss",
@@ -30,7 +30,7 @@
   {
     "name": "Horizon Modding Studio",
     "type": "solo",
-    "description": "TODO",
+    "description": "Horizon Modding Studio is an open source tool currently in development to make modding Stellaris more accessible.",
     "technology_keys": [
       "tauri",
       "rust",
