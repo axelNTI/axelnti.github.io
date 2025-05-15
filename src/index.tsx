@@ -4,6 +4,10 @@ import { Route, Switch } from "wouter-preact";
 import NotFound from "@/routes/404";
 import Index from "@/routes/index";
 
+import "@unocss/reset/eric-meyer.css";
+import "@unocss/reset/sanitize/sanitize.css";
+import "virtual:uno.css";
+
 const App = () => {
   return (
     <Switch>
