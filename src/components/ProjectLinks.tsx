@@ -14,12 +14,12 @@ export default ({ link }: ProjectTechsProps) => {
       href={link.link}
       target="_blank"
       rel="noopener noreferrer"
-      class="flex items-center gap-1 text-primary hover:text-primary/80"
+      class="flex items-center gap-1"
       aria-label={`${label} link`}
     >
       <Icon
         icon={link.type}
-        className="w-4 h-4"
+        className="w-4 h-4 text-black"
       />
       <span class="inline-block">{label}</span>
     </a>
