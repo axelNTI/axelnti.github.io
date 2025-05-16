@@ -103,11 +103,13 @@
     "type": "group",
     "description": "NTB Car Rental is a webpage for a fictional car rental company. The project was developed as part of a school assignment, focusing on creating a full-stack web application with a focus on user experience and accessibility.",
     "technology_keys": [
+      "express",
       "html",
       "css",
       "javascript",
       "python",
       "handlebars",
+      "scss",
       "mysql",
       "playwright",
       "githubactions",
