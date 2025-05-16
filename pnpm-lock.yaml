@@ -54,6 +54,9 @@ importers:
       vite:
         specifier: ^6.3.5
         version: 6.3.5(@types/node@22.15.18)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.1)(yaml@2.7.1)
+      vite-plugin-sitemap:
+        specifier: ^0.8.2
+        version: 0.8.2
 
 packages:
 
@@ -1238,6 +1241,9 @@ packages:
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
+
+  vite-plugin-sitemap@0.8.2:
+    resolution: {integrity: sha512-bqIw6NVOXg6je81lzX8Lm0vjf8/QSAp8di8fYQzZ3ZdVicOm8+6idBGALJiy1R1FiXNIK8rgORO6HBqXyHW+iQ==}
 
   vite-prerender-plugin@0.5.10:
     resolution: {integrity: sha512-m4i0G5oc3LPLA02uW2XsFZmYNxZdyryz5Ksi78O9puj/ao5c8dBUW06caGwoM1TmYknTBBUyKhtqajUpoP+z8Q==}
@@ -2498,6 +2504,8 @@ snapshots:
       browserslist: 4.24.5
       escalade: 3.2.0
       picocolors: 1.1.1
+
+  vite-plugin-sitemap@0.8.2: {}
 
   vite-prerender-plugin@0.5.10(vite@6.3.5(@types/node@22.15.18)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.1)(yaml@2.7.1)):
     dependencies:

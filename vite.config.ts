@@ -2,6 +2,7 @@ import { resolve } from "node:path";
 import preact from "@preact/preset-vite";
 import UnoCSS from "unocss/vite";
 import { defineConfig } from "vite";
+import Sitemap from "vite-plugin-sitemap";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,6 +13,9 @@ export default defineConfig({
         enabled: true,
         renderTarget: "#app",
       },
+    }),
+    Sitemap({
+      hostname: "https://axel.thornberg.se/",
     }),
   ],
   build: {
