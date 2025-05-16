@@ -130,5 +130,13 @@
   "github": {
     "name": "GitHub",
     "icon": "@/icons/MdiGithub.tsx"
+  },
+  "express": {
+    "name": "Express",
+    "icon": "@/icons/SimpleIconsExpress.tsx"
+  },
+  "scss": {
+    "name": "SCSS",
+    "icon": "@/icons/VscodeIconsFileTypeScss2.tsx"
   }
 }
