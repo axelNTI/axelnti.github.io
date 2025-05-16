@@ -57,7 +57,7 @@
   {
     "name": "Portfolio",
     "type": "solo",
-    "description": "TODO",
+    "description": "This portfolio is a personal project to showcase my skills and projects. It is hosted on GitHub Pages and built with a focus on both performance and ease of development.",
     "technology_keys": ["typescript", "preact", "vite", "unocss", "githubactions", "nodejs", "husky", "biomejs"],
     "links": [
       {
@@ -69,7 +69,7 @@
   {
     "name": "Classroom Seating Planner",
     "type": "group",
-    "description": "TODO",
+    "description": "Classroom Seating Planner is a tool for teachers to plan seating arrangements in classrooms. The main focus of the project was creating an efficient algorithm to find the best seating arrangement based on various constraints.",
     "technology_keys": ["wpf", "csharp", "dotnet"],
     "links": [
       {
@@ -85,7 +85,7 @@
   {
     "name": "Diploma Project",
     "type": "solo",
-    "description": "TODO",
+    "description": "My High School diploma project was a comparative analysis of different sorting algorithms. I implemented several sorting algorithms in Python and extensively tested their performance using various datasets.",
     "technology_keys": ["python", "plotly"],
     "links": [
       {
@@ -101,7 +101,7 @@
   {
     "name": "NTB Car Rental",
     "type": "group",
-    "description": "TODO",
+    "description": "NTB Car Rental is a webpage for a fictional car rental company. The project was developed as part of a school assignment, focusing on creating a full-stack web application with a focus on user experience and accessibility.",
     "technology_keys": [
       "html",
       "css",
