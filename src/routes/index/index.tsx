@@ -1,6 +1,7 @@
 import CertificationsSection from "@/components/CertificationsSection";
 import EducationSection from "@/components/EducationSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import ProjectSection from "@/components/ProjectSection";
 
@@ -19,7 +20,7 @@ export default () => {
         <CertificationsSection />
       </main>
 
-      {/* Footer */}
+      <Footer />
     </div>
   );
 };
