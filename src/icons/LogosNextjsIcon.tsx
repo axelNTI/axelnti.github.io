@@ -4,8 +4,8 @@ export function LogosNextjsIcon(props: JSX.SVGAttributes<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width="32"
+      height="32"
       viewBox="0 0 256 256"
       {...props}
     >
@@ -21,12 +21,12 @@ export function LogosNextjsIcon(props: JSX.SVGAttributes<SVGSVGElement>) {
         >
           <stop
             offset="0%"
-            stopColor="#FFF"
+            stop-color="#FFF"
           />
           <stop
             offset="100%"
-            stopColor="#FFF"
-            stopOpacity="0"
+            stop-color="#FFF"
+            stop-opacity="0"
           />
         </linearGradient>
         <linearGradient
@@ -38,12 +38,12 @@ export function LogosNextjsIcon(props: JSX.SVGAttributes<SVGSVGElement>) {
         >
           <stop
             offset="0%"
-            stopColor="#FFF"
+            stop-color="#FFF"
           />
           <stop
             offset="100%"
-            stopColor="#FFF"
-            stopOpacity="0"
+            stop-color="#FFF"
+            stop-opacity="0"
           />
         </linearGradient>
         <circle

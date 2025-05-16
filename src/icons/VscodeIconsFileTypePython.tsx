@@ -4,8 +4,8 @@ export function VscodeIconsFileTypePython(props: JSX.SVGAttributes<SVGSVGElement
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width="32"
+      height="32"
       viewBox="0 0 32 32"
       {...props}
     >
@@ -23,11 +23,11 @@ export function VscodeIconsFileTypePython(props: JSX.SVGAttributes<SVGSVGElement
         >
           <stop
             offset="0"
-            stopColor="#387eb8"
+            stop-color="#387eb8"
           />
           <stop
             offset="1"
-            stopColor="#366994"
+            stop-color="#366994"
           />
         </linearGradient>
         <linearGradient
@@ -41,11 +41,11 @@ export function VscodeIconsFileTypePython(props: JSX.SVGAttributes<SVGSVGElement
         >
           <stop
             offset="0"
-            stopColor="#ffe052"
+            stop-color="#ffe052"
           />
           <stop
             offset="1"
-            stopColor="#ffc331"
+            stop-color="#ffc331"
           />
         </linearGradient>
       </defs>

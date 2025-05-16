@@ -4,12 +4,12 @@ export function DeviconVitejs(props: JSX.SVGAttributes<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width="32"
+      height="32"
       viewBox="0 0 128 128"
       {...props}
     >
-      <title>Vite.js</title>
+      <title>Vite</title>
       {/* Icon from Devicon by konpa - https://github.com/devicons/devicon/blob/master/LICENSE */}
       <defs>
         <linearGradient
@@ -23,11 +23,11 @@ export function DeviconVitejs(props: JSX.SVGAttributes<SVGSVGElement>) {
         >
           <stop
             offset="0"
-            stopColor="#41d1ff"
+            stop-color="#41d1ff"
           />
           <stop
             offset="1"
-            stopColor="#bd34fe"
+            stop-color="#bd34fe"
           />
         </linearGradient>
         <linearGradient
@@ -41,15 +41,15 @@ export function DeviconVitejs(props: JSX.SVGAttributes<SVGSVGElement>) {
         >
           <stop
             offset="0"
-            stopColor="#ffea83"
+            stop-color="#ffea83"
           />
           <stop
             offset=".083"
-            stopColor="#ffdd35"
+            stop-color="#ffdd35"
           />
           <stop
             offset="1"
-            stopColor="#ffa800"
+            stop-color="#ffa800"
           />
         </linearGradient>
       </defs>

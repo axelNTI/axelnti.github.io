@@ -4,8 +4,8 @@ export function VscodeIconsFileTypeRust(props: JSX.SVGAttributes<SVGSVGElement>)
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width="32"
+      height="32"
       viewBox="0 0 32 32"
       {...props}
     >
@@ -22,31 +22,31 @@ export function VscodeIconsFileTypeRust(props: JSX.SVGAttributes<SVGSVGElement>)
         >
           <stop
             offset="0"
-            stopColor="#7d7d7d"
+            stop-color="#7d7d7d"
           />
           <stop
             offset=".267"
-            stopColor="#7e7c7a"
+            stop-color="#7e7c7a"
           />
           <stop
             offset=".45"
-            stopColor="#817871"
+            stop-color="#817871"
           />
           <stop
             offset=".608"
-            stopColor="#867162"
+            stop-color="#867162"
           />
           <stop
             offset=".753"
-            stopColor="#8d684c"
+            stop-color="#8d684c"
           />
           <stop
             offset=".886"
-            stopColor="#965c30"
+            stop-color="#965c30"
           />
           <stop
             offset="1"
-            stopColor="#a04f12"
+            stop-color="#a04f12"
           />
         </radialGradient>
       </defs>
