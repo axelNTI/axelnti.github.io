@@ -13,8 +13,8 @@ export default () => {
       class="py-16"
     >
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+        <div class="flex flex-row flex-wrap gap-6 justify-center">
           {typedProects.map((project: projectsType) => (
             <ProjectCard
               key={`project-${project.name}`}

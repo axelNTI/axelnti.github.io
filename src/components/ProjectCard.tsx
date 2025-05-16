@@ -8,11 +8,11 @@ interface ProjectCardProps {
 
 export default ({ project }: ProjectCardProps) => {
   return (
-    <div class="bg-white dark:bg-dark-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all transform hover:-translate-y-1 border border-transparent p-8 flex flex-col gap-6">
-      <div class="flex justify-between items-center">
-        <h3 class="text-xl font-bold">{project.name}</h3>
+    <div class="bg-white dark:bg-dark-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all transform hover:-translate-y-1 border border-transparent p-8 flex flex-col gap-6 max-w-md">
+      <div class="flex justify-between flex-col md:flex-row items-start md:items-center gap-2">
+        <h3 class="text-xl font-bold whitespace-nowrap">{project.name}</h3>
         <span
-          class={`text-xs px-2 py-1 rounded-full ${
+          class={`text-xs px-2 py-1 rounded-full whitespace-nowrap ${
             project.type === "solo"
               ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
               : "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300"
