@@ -7,7 +7,7 @@ export default () => {
   return (
     <section
       id="contact"
-      class="py-16 bg-light-100 dark:bg-dark-900 text-dark-800 dark:text-light-100 font-sans"
+      class="py-16 bg-light-100 text-dark-800 font-sans"
     >
       <h3 class="text-xl font-semibold mb-3">Personal Info</h3>
       <div class="flex flex-col gap-2">

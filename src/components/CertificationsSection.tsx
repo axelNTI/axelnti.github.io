@@ -15,7 +15,7 @@ export default () => {
           {typedOther.map((cert: otherType) => (
             <div
               key={cert.name}
-              class="bg-white dark:bg-dark-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all transform hover:-translate-y-1 border border-transparent hover:border-primary/20 p-6"
+              class="bg-white  rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all transform hover:-translate-y-1 border border-transparent hover:border-primary/20 p-6"
             >
               <div class="flex items-center mb-3">
                 <div class="i-mdi-certificate text-primary text-2xl mr-3" />
@@ -24,15 +24,15 @@ export default () => {
 
               {cert.issuer && (
                 <div class="mb-2 flex items-center">
-                  <div class="i-mdi-building text-gray-500 dark:text-gray-400 mr-2" />
-                  <span class="font-medium text-gray-700 dark:text-gray-300">{cert.issuer}</span>
+                  <div class="i-mdi-building text-gray-500  mr-2" />
+                  <span class="font-medium text-gray-700 ">{cert.issuer}</span>
                 </div>
               )}
 
               {cert.date && (
                 <div class="mb-2 flex items-center">
-                  <div class="i-mdi-calendar text-gray-500 dark:text-gray-400 mr-2" />
-                  <span class="text-gray-700 dark:text-gray-300">{cert.date}</span>
+                  <div class="i-mdi-calendar text-gray-500  mr-2" />
+                  <span class="text-gray-700">{cert.date}</span>
                 </div>
               )}
 
@@ -42,7 +42,7 @@ export default () => {
                     <span class="font-medium text-sm">Score</span>
                     <span class="text-sm font-bold text-primary">{cert.score}</span>
                   </div>
-                  <div class="h-2 rounded-full bg-gray-200 dark:bg-dark-600">
+                  <div class="h-2 rounded-full bg-gray-200 ">
                     {/* Calculate score percentage */}
                     {(() => {
                       let percentage = 100;

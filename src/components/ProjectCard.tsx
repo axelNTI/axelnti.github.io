@@ -13,15 +13,13 @@ export default ({ project }: ProjectCardProps) => {
         <h3 class="text-xl font-bold">{project.name}</h3>
         <span
           class={`text-xs px-2 py-1 rounded-full ${
-            project.type === "solo"
-              ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
-              : "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300"
+            project.type === "solo" ? "bg-blue-100 text-blue-700" : "bg-purple-100 text-purple-700"
           }`}
         >
           {project.type === "solo" ? "Solo Project" : "Group Project"}
         </span>
       </div>
-      <p class="text-gray-700 dark:text-gray-300 text-lg">{project.description}</p>
+      <p class="text-gray-700 text-lg">{project.description}</p>
       <div class="flex flex-wrap gap-2 mt-auto">
         {project.technology_keys.map((tech) => (
           <ProjectTechs

@@ -17,14 +17,14 @@ export default ({ job }: ExperienceCardProps) => {
       <div class="mb-2">
         <span class="font-medium">{job.employer}</span>
         <span class="mx-2">•</span>
-        <span class="text-gray-600 dark:text-gray-400">{job.type}</span>
+        <span class="text-gray-600">{job.type}</span>
       </div>
       <div class="flex items-center gap-1">
         <Icon
           icon="map"
           className="w-4 h-4"
         />
-        <span class="text-gray-700 dark:text-gray-300">{job.location}</span>
+        <span class="text-gray-700">{job.location}</span>
       </div>
     </div>
   );

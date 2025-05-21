@@ -24,7 +24,7 @@ export default ({ education }: EducationCardProps) => {
           icon="map"
           className="w-4 h-4"
         />
-        <span class="text-gray-700 dark:text-gray-300">{education.location}</span>
+        <span class="text-gray-700">{education.location}</span>
       </div>
     </div>
   );
