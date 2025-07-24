@@ -2,7 +2,7 @@ import { hydrate, prerender as ssr } from "preact-iso";
 import { Route, Switch } from "wouter-preact";
 
 import NotFound from "@/routes/404";
-import Index from "@/routes/index";
+import Index from "@/routes/main";
 
 import "@unocss/reset/eric-meyer.css";
 import "@unocss/reset/sanitize/sanitize.css";
