@@ -4,11 +4,10 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "daily"
       time: "09:00"
       timezone: "Europe/Stockholm"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 25
     commit-message:
       prefix: "chore(deps)"
 
