@@ -97,33 +97,5 @@
         "link": "./documents/Axel-Thornberg-Diploma-Project.pdf"
       }
     ]
-  },
-  {
-    "name": "NTB Car Rental",
-    "type": "group",
-    "description": "NTB Car Rental is a webpage for a fictional car rental company. The project was developed as part of a school assignment, focusing on creating a full-stack web application with a focus on user experience and accessibility.",
-    "technology_keys": [
-      "express",
-      "html",
-      "css",
-      "javascript",
-      "python",
-      "handlebars",
-      "scss",
-      "mysql",
-      "playwright",
-      "githubactions",
-      "nodejs"
-    ],
-    "links": [
-      {
-        "type": "github",
-        "link": "https://github.com/NTIG-Uppsala/TE4-VALE-Biluthyrning/"
-      },
-      {
-        "type": "website",
-        "link": "https://ntbbiluthyrning.ntig.dev/"
-      }
-    ]
   }
 ]
