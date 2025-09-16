@@ -76,7 +76,7 @@ export default () => {
                 <div class="i-material-symbols-mail-outline" /> {typedGeneric.email}
               </a>
               <a
-                href={`tel:${typedGeneric.phone.replace(/\s/g, "")}`}
+                href={`tel:${typedGeneric.phone.replace(/\s|-/g, "")}`}
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
                 <div class="i-material-symbols-phone-enabled-outline" /> {typedGeneric.phone}
