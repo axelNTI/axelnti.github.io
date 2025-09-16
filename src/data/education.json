@@ -1,5 +1,14 @@
 [
   {
+    "institution": "Uppsala University",
+    "location": "Uppsala, Sweden",
+    "program": "Bachelor's Degree in Computer Science",
+    "time": {
+      "start": "September 2025",
+      "end": "Ongoing"
+    }
+  },
+  {
     "institution": "NTI Gymnasiet Uppsala",
     "location": "Uppsala, Sweden",
     "title": "Certified Upper Secondary School Engineer",
