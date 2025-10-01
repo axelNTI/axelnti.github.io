@@ -10,10 +10,10 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@unocss/reset": "^66.3.3",
-    "preact": "^10.26.9",
-    "preact-iso": "^2.9.2",
-    "preact-render-to-string": "^6.5.13",
+    "@unocss/reset": "^66.5.2",
+    "preact": "^10.27.2",
+    "preact-iso": "^2.11.0",
+    "preact-render-to-string": "^6.6.2",
     "wouter-preact": "^3.7.1"
   },
   "lint-staged": {
@@ -22,14 +22,14 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@preact/preset-vite": "^2.10.2",
-    "@types/node": "^22.16.3",
+    "@types/node": "^22.18.8",
     "husky": "^9.1.7",
-    "lightningcss": "^1.30.1",
-    "lint-staged": "^16.1.2",
-    "terser": "^5.43.1",
-    "typescript": "^5.8.3",
-    "unocss": "^66.3.3",
-    "vite": "^6.3.5",
+    "lightningcss": "^1.30.2",
+    "lint-staged": "^16.2.3",
+    "terser": "^5.44.0",
+    "typescript": "^5.9.3",
+    "unocss": "^66.5.2",
+    "vite": "^6.3.6",
     "vite-plugin-sitemap": "^0.8.2"
   },
   "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
