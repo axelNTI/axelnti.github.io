@@ -1,8 +1,6 @@
-import projects from "@/data/projects.json";
-
-import type { projectsType } from "@/types/globals";
-
 import ProjectCard from "@/components/ProjectCard";
+import projects from "@/data/projects.json";
+import type { projectsType } from "@/types/globals";
 
 export default () => {
   const typedProects = projects as projectsType[];

@@ -1,6 +1,6 @@
-import icons from "@/data/icons.json";
 import type { ComponentType, JSX } from "preact";
 import { useEffect, useState } from "preact/hooks";
+import icons from "@/data/icons.json";
 
 interface IconProps {
   icon: string;
