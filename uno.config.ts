@@ -18,6 +18,7 @@ export default defineConfig({
       background: "#f0f0f6",
       text: "#202020",
       card: "#fff",
+      primary: "#3b82f6",
       secondary: "#10b981",
       accent: "#8b5cf6",
       footer: "#e9e9ec",
