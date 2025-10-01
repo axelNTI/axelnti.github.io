@@ -1,6 +1,13 @@
 {
   "files": {
-    "ignore": ["pnpm-lock.yaml", "pnpm-workspace.yaml", "node_modules/**/*", "dist/**/*", "old/**/*"]
+    "includes": [
+      "**",
+      "!**/pnpm-lock.yaml",
+      "!**/pnpm-workspace.yaml",
+      "!**/node_modules/**/*",
+      "!**/dist/**/*",
+      "!**/old/**/*"
+    ]
   },
   "formatter": {
     "indentStyle": "space",

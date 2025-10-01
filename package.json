@@ -17,10 +17,12 @@
     "wouter-preact": "^3.7.1"
   },
   "lint-staged": {
-    "**/*.{ts,tsx,json}": ["biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"]
+    "**/*.{ts,tsx,json}": [
+      "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
+    ]
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.2.4",
     "@preact/preset-vite": "^2.10.2",
     "@types/node": "^22.18.8",
     "husky": "^9.1.7",
