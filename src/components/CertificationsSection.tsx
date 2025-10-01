@@ -1,5 +1,6 @@
 import other from "@/data/other.json";
 import type { otherType } from "@/types/globals";
+import Icon from "./Icon";
 
 export default () => {
   const typedOther = other as otherType[];
@@ -18,20 +19,17 @@ export default () => {
               class="bg-white  rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all transform hover:-translate-y-1 border border-transparent hover:border-primary/20 p-6"
             >
               <div class="flex items-center mb-3">
-                <div class="i-mdi-certificate text-primary text-2xl mr-3" />
                 <h3 class="text-xl font-bold">{cert.name}</h3>
               </div>
 
               {cert.issuer && (
                 <div class="mb-2 flex items-center">
-                  <div class="i-mdi-building text-gray-500  mr-2" />
                   <span class="font-medium text-gray-700 ">{cert.issuer}</span>
                 </div>
               )}
 
               {cert.date && (
                 <div class="mb-2 flex items-center">
-                  <div class="i-mdi-calendar text-gray-500  mr-2" />
                   <span class="text-gray-700">{cert.date}</span>
                 </div>
               )}
@@ -40,10 +38,9 @@ export default () => {
                 <div class="mb-4 mt-2">
                   <div class="flex justify-between items-center mb-1">
                     <span class="font-medium text-sm">Score</span>
-                    <span class="text-sm font-bold text-primary">{cert.score}</span>
+                    <span class="text-sm font-bold text-text">{cert.score}</span>
                   </div>
                   <div class="h-2 rounded-full bg-gray-200 ">
-                    {/* Calculate score percentage */}
                     {(() => {
                       let percentage = 100;
                       if (cert.score?.includes("/")) {
@@ -57,10 +54,12 @@ export default () => {
                         }
                       }
                       return (
-                        <div
-                          class="h-full rounded-full bg-gradient-to-r from-primary to-primary/70"
-                          style={{ width: `${percentage}%` }}
-                        />
+                        <div class="relative h-2 rounded-full bg-primary/20 w-full overflow-hidden">
+                          <div
+                            class="absolute left-0 top-0 h-2 rounded-full bg-primary transition-all duration-300"
+                            style={{ width: `${percentage}%` }}
+                          />
+                        </div>
                       );
                     })()}
                   </div>
@@ -72,10 +71,14 @@ export default () => {
                   href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1 text-primary hover:text-primary/80 mt-2 px-3 py-1 rounded-md border border-primary/30 hover:bg-primary/10 transition-colors"
+                  class="flex items-center gap-1"
+                  aria-label="pdf link"
                 >
-                  <div class="i-mdi-file-pdf-box w-5 h-5" />
-                  <span>View Certificate</span>
+                  <Icon
+                    icon="pdf"
+                    className="w-4 h-4 text-black"
+                  />
+                  <span class="inline-block">View Certificate</span>
                 </a>
               )}
             </div>
