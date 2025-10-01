@@ -29,10 +29,10 @@ importers:
         version: 2.2.4
       '@preact/preset-vite':
         specifier: ^2.10.2
-        version: 2.10.2(@babel/core@7.28.4)(preact@10.27.2)(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
+        version: 2.10.2(@babel/core@7.28.4)(preact@10.27.2)(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
       '@types/node':
-        specifier: ^22.18.8
-        version: 22.18.8
+        specifier: ^24.6.1
+        version: 24.6.1
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -50,10 +50,10 @@ importers:
         version: 5.9.3
       unocss:
         specifier: ^66.5.2
-        version: 66.5.2(postcss@8.5.6)(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
+        version: 66.5.2(postcss@8.5.6)(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
       vite:
         specifier: ^6.3.6
-        version: 6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
+        version: 6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
       vite-plugin-sitemap:
         specifier: ^0.8.2
         version: 0.8.2
@@ -548,8 +548,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/node@22.18.8':
-    resolution: {integrity: sha512-pAZSHMiagDR7cARo/cch1f3rXy0AEXwsVsVH09FcyeJVAzCnGgmYis7P3JidtTUjyadhTeSo8TgRPswstghDaw==}
+  '@types/node@24.6.1':
+    resolution: {integrity: sha512-ljvjjs3DNXummeIaooB4cLBKg2U6SPI6Hjra/9rRIy7CpM0HpLtG9HptkMKAb4HYWy5S7HUvJEuWgr/y0U8SHw==}
 
   '@unocss/astro@66.5.2':
     resolution: {integrity: sha512-JUiJL4wkDTCFgReQ+c1Nqb47EfryJvGiSp9MxXclCUbp5hegqq7yMg3BMpJ4QzHmf5EeDFO38eRBKV57hd0Iew==}
@@ -1203,8 +1203,8 @@ packages:
   unconfig@7.3.3:
     resolution: {integrity: sha512-QCkQoOnJF8L107gxfHL0uavn7WD9b3dpBcFX6HtfQYmjw2YzWxGuFQ0N0J6tE9oguCBJn9KOvfqYDCMPHIZrBA==}
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.13.0:
+    resolution: {integrity: sha512-Ov2Rr9Sx+fRgagJ5AX0qvItZG/JKKoBRAVITs1zk7IqZGTJUwgUr7qoYBpWwakpWilTZFM98rG/AFRocu10iIQ==}
 
   unocss@66.5.2:
     resolution: {integrity: sha512-GCFq6ilalDE33dbjZKgeBHgKGLL/t87XM5sS0aqhD0RgzHhbT2f6Jtsmmg2Q3GASlk5uvJLxh9ifUvPQ13BdyQ==}
@@ -1604,18 +1604,18 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@preact/preset-vite@2.10.2(@babel/core@7.28.4)(preact@10.27.2)(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
+  '@preact/preset-vite@2.10.2(@babel/core@7.28.4)(preact@10.27.2)(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/plugin-transform-react-jsx': 7.27.1(@babel/core@7.28.4)
       '@babel/plugin-transform-react-jsx-development': 7.27.1(@babel/core@7.28.4)
-      '@prefresh/vite': 2.4.10(preact@10.27.2)(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
+      '@prefresh/vite': 2.4.10(preact@10.27.2)(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.28.4)
       debug: 4.4.3
       picocolors: 1.1.1
-      vite: 6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
-      vite-prerender-plugin: 0.5.12(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
+      vite: 6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
+      vite-prerender-plugin: 0.5.12(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
     transitivePeerDependencies:
       - preact
       - supports-color
@@ -1628,7 +1628,7 @@ snapshots:
 
   '@prefresh/utils@1.2.1': {}
 
-  '@prefresh/vite@2.4.10(preact@10.27.2)(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
+  '@prefresh/vite@2.4.10(preact@10.27.2)(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.4
       '@prefresh/babel-plugin': 0.5.2
@@ -1636,7 +1636,7 @@ snapshots:
       '@prefresh/utils': 1.2.1
       '@rollup/pluginutils': 4.2.1
       preact: 10.27.2
-      vite: 6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -1717,17 +1717,17 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/node@22.18.8':
+  '@types/node@24.6.1':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.13.0
 
-  '@unocss/astro@66.5.2(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
+  '@unocss/astro@66.5.2(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
     dependencies:
       '@unocss/core': 66.5.2
       '@unocss/reset': 66.5.2
-      '@unocss/vite': 66.5.2(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
+      '@unocss/vite': 66.5.2(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
     optionalDependencies:
-      vite: 6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
 
   '@unocss/cli@66.5.2':
     dependencies:
@@ -1857,7 +1857,7 @@ snapshots:
     dependencies:
       '@unocss/core': 66.5.2
 
-  '@unocss/vite@66.5.2(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
+  '@unocss/vite@66.5.2(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))':
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@unocss/config': 66.5.2
@@ -1868,7 +1868,7 @@ snapshots:
       pathe: 2.0.3
       tinyglobby: 0.2.15
       unplugin-utils: 0.3.0
-      vite: 6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
 
   acorn@8.15.0: {}
 
@@ -2402,11 +2402,11 @@ snapshots:
       jiti: 2.6.1
       quansync: 0.2.11
 
-  undici-types@6.21.0: {}
+  undici-types@7.13.0: {}
 
-  unocss@66.5.2(postcss@8.5.6)(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)):
+  unocss@66.5.2(postcss@8.5.6)(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)):
     dependencies:
-      '@unocss/astro': 66.5.2(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
+      '@unocss/astro': 66.5.2(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
       '@unocss/cli': 66.5.2
       '@unocss/core': 66.5.2
       '@unocss/postcss': 66.5.2(postcss@8.5.6)
@@ -2424,9 +2424,9 @@ snapshots:
       '@unocss/transformer-compile-class': 66.5.2
       '@unocss/transformer-directives': 66.5.2
       '@unocss/transformer-variant-group': 66.5.2
-      '@unocss/vite': 66.5.2(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
+      '@unocss/vite': 66.5.2(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1))
     optionalDependencies:
-      vite: 6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -2444,7 +2444,7 @@ snapshots:
 
   vite-plugin-sitemap@0.8.2: {}
 
-  vite-prerender-plugin@0.5.12(vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)):
+  vite-prerender-plugin@0.5.12(vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)):
     dependencies:
       kolorist: 1.8.0
       magic-string: 0.30.19
@@ -2452,9 +2452,9 @@ snapshots:
       simple-code-frame: 1.3.0
       source-map: 0.7.6
       stack-trace: 1.0.0-pre2
-      vite: 6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
 
-  vite@6.3.6(@types/node@22.18.8)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1):
+  vite@6.3.6(@types/node@24.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
@@ -2463,7 +2463,7 @@ snapshots:
       rollup: 4.52.3
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.18.8
+      '@types/node': 24.6.1
       fsevents: 2.3.3
       jiti: 2.6.1
       lightningcss: 1.30.2
