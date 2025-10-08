@@ -5,7 +5,10 @@ export default () => {
   const typedGeneric = generic as genericType;
 
   return (
-    <section class="min-h-100dvh flex flex-col gap-36 items-center justify-center bg-gradient-to-b from-accent/20 to-transparent">
+    <section
+      class="min-h-100dvh flex flex-col gap-36 items-center justify-center"
+      id="hero"
+    >
       <div class="flex flex-col items-center gap-4 text-align-center">
         <div class="text-4xl">Hello, I'm</div>
         <h1 class="text-5xl md:text-7xl font-bold">{typedGeneric.name}</h1>

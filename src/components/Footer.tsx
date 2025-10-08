@@ -1,5 +1,5 @@
+import Icon from "@/components/Icon";
 import generic from "@/data/generic.json";
-
 import type { genericType } from "@/types/globals.d.ts";
 
 export default () => {
@@ -16,7 +16,7 @@ export default () => {
               technologies.
             </p>
             <div class="flex items-center gap-2">
-              <div class="i-material-symbols-location-on-outline text-primary" /> {typedGeneric.location}
+              <Icon icon="map" /> {typedGeneric.location}
             </div>
           </div>
 
@@ -25,7 +25,7 @@ export default () => {
             <ul class="flex flex-col gap-2">
               <li>
                 <a
-                  href="#about"
+                  href="#hero"
                   class="text-gray-600 hover:text-primary transition-colors"
                 >
                   About
@@ -60,7 +60,7 @@ export default () => {
                   href="#certifications"
                   class="text-gray-600 hover:text-primary transition-colors"
                 >
-                  Certifications
+                  Other Merits
                 </a>
               </li>
             </ul>
@@ -73,13 +73,13 @@ export default () => {
                 href={`mailto:${typedGeneric.email}`}
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
-                <div class="i-material-symbols-mail-outline" /> {typedGeneric.email}
+                <Icon icon="mail" /> {typedGeneric.email}
               </a>
               <a
                 href={`tel:${typedGeneric.phone.replace(/\s|-/g, "")}`}
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
-                <div class="i-material-symbols-phone-enabled-outline" /> {typedGeneric.phone}
+                <Icon icon="phone" /> {typedGeneric.phone}
               </a>
               <a
                 href={typedGeneric.github_link}
@@ -87,7 +87,7 @@ export default () => {
                 rel="noopener noreferrer"
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
-                <div class="i-mdi-github" /> GitHub
+                <Icon icon="github" /> GitHub
               </a>
               <a
                 href={typedGeneric.linkedin}
@@ -95,7 +95,7 @@ export default () => {
                 rel="noopener noreferrer"
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
-                <div class="i-mdi-linkedin" /> LinkedIn
+                <Icon icon="linkedin" /> LinkedIn
               </a>
             </div>
           </div>
@@ -105,30 +105,6 @@ export default () => {
           <p class="text-gray-600">
             © {new Date().getFullYear()} {typedGeneric.name}. All rights reserved.
           </p>
-          <div class="flex justify-center gap-6 mt-4">
-            <a
-              href={`mailto:${typedGeneric.email}`}
-              class="text-gray-500 hover:text-primary transition-colors"
-            >
-              <div class="i-material-symbols-mail-outline w-6 h-6" />
-            </a>
-            <a
-              href={typedGeneric.github_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-gray-500 hover:text-primary transition-colors"
-            >
-              <div class="i-mdi-github w-6 h-6" />
-            </a>
-            <a
-              href={typedGeneric.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-gray-500 hover:text-primary transition-colors"
-            >
-              <div class="i-mdi-linkedin w-6 h-6" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>

@@ -135,6 +135,18 @@
     "name": "Express",
     "icon": "@/icons/SimpleIconsExpress.tsx"
   },
+  "linkedin": {
+    "name": "LinkedIn",
+    "icon": "@/icons/DeviconLinkedin.tsx"
+  },
+  "mail": {
+    "name": "Mail",
+    "icon": "@/icons/MaterialSymbolsMail.tsx"
+  },
+  "phone": {
+    "name": "Phone",
+    "icon": "@/icons/MaterialSymbolsCallSharp.tsx"
+  },
   "scss": {
     "name": "SCSS",
     "icon": "@/icons/VscodeIconsFileTypeScss2.tsx"
