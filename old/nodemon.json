@@ -1,6 +1,0 @@
-{
-  "verbose": true,
-  "watch": ["nodemon.json", "gulpfile.js"],
-  "ext": "js json",
-  "exec": "cls && gulp"
-}
