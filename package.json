@@ -31,7 +31,7 @@
     "terser": "^5.44.0",
     "typescript": "^5.9.3",
     "unocss": "^66.5.4",
-    "vite": "^7.1.12",
+    "vite": "^7.2.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-sitemap": "^0.8.2"
   },
