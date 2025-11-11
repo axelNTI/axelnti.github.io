@@ -33,7 +33,6 @@
     "description": "Horizon Modding Studio is an open source tool currently in development to make modding Stellaris more accessible.",
     "technology_keys": [
       "tauri",
-      "rust",
       "typescript",
       "react",
       "vite",
