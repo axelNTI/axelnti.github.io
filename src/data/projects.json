@@ -96,5 +96,17 @@
         "link": "./documents/Axel-Thornberg-Diploma-Project.pdf"
       }
     ]
+  },
+  {
+    "name": "Orbital Simulator",
+    "type": "group",
+    "description": "Group project from my Introduction to Information Technology course. The project is an orbital simulator where users can create and simulate the movement of various celestial bodies. The main focus of the project was to implement accurate physics calculations.",
+    "technology_keys": ["python", "pygame", "pandas", "matplotlib"],
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/axelNTI/orbital-simulator/"
+      }
+    ]
   }
 ]
