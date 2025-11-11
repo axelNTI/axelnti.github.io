@@ -154,5 +154,9 @@
   "pandas": {
     "name": "pandas",
     "icon": "@/icons/DeviconPandas.tsx"
+  },
+  "matplotlib": {
+    "name": "Matplotlib",
+    "icon": "@/icons/DeviconMatplotlib.tsx"
   }
 }
