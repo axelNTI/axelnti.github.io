@@ -150,5 +150,9 @@
   "scss": {
     "name": "SCSS",
     "icon": "@/icons/VscodeIconsFileTypeScss2.tsx"
+  },
+  "pandas": {
+    "name": "pandas",
+    "icon": "@/icons/DeviconPandas.tsx"
   }
 }
