@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && tsx scripts/copy.ts",
     "preview": "vite preview",
     "format:write": "biome check --write",
     "format:check": "biome check",
@@ -29,6 +29,7 @@
     "lightningcss": "^1.30.2",
     "lint-staged": "^16.2.6",
     "terser": "^5.44.0",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "unocss": "^66.5.4",
     "vite": "^7.1.12",
