@@ -21,8 +21,8 @@ importers:
         specifier: ^6.6.3
         version: 6.6.3(preact@10.27.2)
       wouter-preact:
-        specifier: ^3.7.1
-        version: 3.7.1(preact@10.27.2)
+        specifier: ^3.8.0
+        version: 3.8.0(preact@10.27.2)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.3.2
@@ -1338,8 +1338,8 @@ packages:
   vue-flow-layout@0.2.0:
     resolution: {integrity: sha512-zKgsWWkXq0xrus7H4Mc+uFs1ESrmdTXlO0YNbR6wMdPaFvosL3fMB8N7uTV308UhGy9UvTrGhIY7mVz9eN+L0Q==}
 
-  wouter-preact@3.7.1:
-    resolution: {integrity: sha512-fg8/AVx+O1U2orkGPjnSOSn7h3XQKuVAQ4bU9x8SvyqiDPHUhIQyLeu+cj9FCQSDRCbPOwPn/MmcfLahEU7EtQ==}
+  wouter-preact@3.8.0:
+    resolution: {integrity: sha512-Ni2sk4Fhn5ZG/5s6EZvJ95IuS1GSI199qTjFrCEtVSXHVWDG9CEcqOralxv0iuZ+McJ/Kpzv9C95/kq9iBKwaQ==}
     peerDependencies:
       preact: ^10.0.0
 
@@ -2591,7 +2591,7 @@ snapshots:
 
   vue-flow-layout@0.2.0: {}
 
-  wouter-preact@3.7.1(preact@10.27.2):
+  wouter-preact@3.8.0(preact@10.27.2):
     dependencies:
       mitt: 3.0.1
       preact: 10.27.2

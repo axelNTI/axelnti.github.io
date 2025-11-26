@@ -14,7 +14,7 @@
     "preact": "^10.27.2",
     "preact-iso": "^2.11.0",
     "preact-render-to-string": "^6.6.3",
-    "wouter-preact": "^3.7.1"
+    "wouter-preact": "^3.8.0"
   },
   "lint-staged": {
     "**/*.{ts,tsx,json}": [
