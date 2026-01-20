@@ -2,9 +2,9 @@ import type { linksType, projectsType } from "@/types/globals";
 import ProjectLinks from "./ProjectLinks";
 import ProjectTechs from "./ProjectTechs";
 
-interface ProjectCardProps {
+type ProjectCardProps = {
   project: projectsType;
-}
+};
 
 export default ({ project }: ProjectCardProps) => {
   return (

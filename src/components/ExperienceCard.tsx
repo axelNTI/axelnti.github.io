@@ -1,9 +1,9 @@
 import Icon from "@/components/Icon";
 import type { workType } from "@/types/globals";
 
-interface ExperienceCardProps {
+type ExperienceCardProps = {
   job: workType;
-}
+};
 
 export default ({ job }: ExperienceCardProps) => {
   return (

@@ -1,9 +1,9 @@
 import Icon from "@/components/Icon";
 import programmingLanguages from "@/data/icons.json";
 
-interface ProjectTechsProps {
+type ProjectTechsProps = {
   tech: string;
-}
+};
 
 export default ({ tech }: ProjectTechsProps) => {
   const techData = (programmingLanguages as Record<string, { name: string; icon: string }>)[tech];

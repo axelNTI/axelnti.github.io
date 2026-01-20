@@ -1,9 +1,9 @@
 import Icon from "@/components/Icon";
 import type { educationType } from "@/types/globals";
 
-interface EducationCardProps {
+type EducationCardProps = {
   education: educationType;
-}
+};
 
 export default ({ education }: EducationCardProps) => {
   return (

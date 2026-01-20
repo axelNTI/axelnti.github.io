@@ -2,9 +2,9 @@ import Icon from "@/components/Icon";
 import icons from "@/data/icons.json";
 import type { linksType } from "@/types/globals";
 
-interface ProjectTechsProps {
+type ProjectTechsProps = {
   link: linksType;
-}
+};
 
 export default ({ link }: ProjectTechsProps) => {
   const label = icons[link.type]?.name || link.type;

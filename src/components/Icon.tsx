@@ -2,10 +2,10 @@ import type { ComponentType, JSX } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import icons from "@/data/icons.json";
 
-interface IconProps {
+type IconProps = {
   icon: string;
   className?: string;
-}
+};
 
 export default function Icon({ icon, className = "w-4 h-4" }: IconProps) {
   const [IconComponent, setIconComponent] = useState<ComponentType<JSX.SVGAttributes<SVGSVGElement>> | null>(null);
