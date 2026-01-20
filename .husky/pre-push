@@ -1,3 +1,8 @@
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+nvm use --silent
+
 if ! output=$(pnpm format:check 2>&1); then
   echo "Code formatting check failed. Run \"pnpm format:write\" to address the issue." >&2
   echo "$output" >&2

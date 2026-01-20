@@ -8,6 +8,7 @@ Welcome to my portfolio! I'm Axel Thornberg, a software engineer passionate abou
 1. The following external dependencies are required before continuing with the setup:
     - [Node.js](https://nodejs.org/en/download)
     - [pnpm](https://pnpm.io/installation)
+    - [NVM](https://www.nvmnode.com/)
 
 1. Run `pnpm i`
 
