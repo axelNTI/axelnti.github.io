@@ -12,24 +12,24 @@ importers:
         specifier: ^66.6.0
         version: 66.6.0
       preact:
-        specifier: ^10.28.2
-        version: 10.28.2
+        specifier: ^10.28.3
+        version: 10.28.3
       preact-iso:
         specifier: ^2.11.1
-        version: 2.11.1(preact-render-to-string@6.6.3(preact@10.28.2))(preact@10.28.2)
+        version: 2.11.1(preact-render-to-string@6.6.3(preact@10.28.3))(preact@10.28.3)
       preact-render-to-string:
         specifier: ^6.6.3
-        version: 6.6.3(preact@10.28.2)
+        version: 6.6.3(preact@10.28.3)
       wouter-preact:
         specifier: ^3.9.0
-        version: 3.9.0(preact@10.28.2)
+        version: 3.9.0(preact@10.28.3)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.3.11
         version: 2.3.11
       '@preact/preset-vite':
         specifier: ^2.10.2
-        version: 2.10.2(@babel/core@7.28.4)(preact@10.28.2)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))
+        version: 2.10.2(@babel/core@7.28.4)(preact@10.28.3)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))
       '@types/node':
         specifier: ^24.10.0
         version: 24.10.0
@@ -1038,8 +1038,8 @@ packages:
     resolution: {integrity: sha512-QZjmEOC+IT1uk6Rx0sX22V6uHWVwbdbxf1faPqJ1QhLdGgsRGCZoyaQBm/piRdJy/D2um6hM1UP7ZEeQ4EkP+Q==}
     engines: {node: '>=18'}
 
-  get-tsconfig@4.13.0:
-    resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
+  get-tsconfig@4.13.1:
+    resolution: {integrity: sha512-EoY1N2xCn44xU6750Sx7OjOIT59FkmstNc3X6y5xpz7D5cBtZRe/3pSlTkDJgqsOk3WwZPkWfonhhUJfttQo3w==}
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -1283,8 +1283,8 @@ packages:
     peerDependencies:
       preact: '>=10 || >= 11.0.0-0'
 
-  preact@10.28.2:
-    resolution: {integrity: sha512-lbteaWGzGHdlIuiJ0l2Jq454m6kcpI1zNje6d8MlGAFlYvP2GO4ibnat7P74Esfz4sPTdM6UxtTwh/d3pwM9JA==}
+  preact@10.28.3:
+    resolution: {integrity: sha512-tCmoRkPQLpBeWzpmbhryairGnhW9tKV6c6gr/w+RhoRoKEJwsjzipwp//1oCpGPOchvSLaAPlpcJi9MwMmoPyA==}
 
   quansync@1.0.0:
     resolution: {integrity: sha512-5xZacEEufv3HSTPQuchrvV6soaiACMFnq1H8wkVioctoH3TRha9Sz66lOxRwPK/qZj7HPiSveih9yAyh98gvqA==}
@@ -1920,12 +1920,12 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@preact/preset-vite@2.10.2(@babel/core@7.28.4)(preact@10.28.2)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))':
+  '@preact/preset-vite@2.10.2(@babel/core@7.28.4)(preact@10.28.3)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/plugin-transform-react-jsx': 7.27.1(@babel/core@7.28.4)
       '@babel/plugin-transform-react-jsx-development': 7.27.1(@babel/core@7.28.4)
-      '@prefresh/vite': 2.4.10(preact@10.28.2)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))
+      '@prefresh/vite': 2.4.10(preact@10.28.3)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.28.4)
       debug: 4.4.3
@@ -1938,20 +1938,20 @@ snapshots:
 
   '@prefresh/babel-plugin@0.5.2': {}
 
-  '@prefresh/core@1.5.8(preact@10.28.2)':
+  '@prefresh/core@1.5.8(preact@10.28.3)':
     dependencies:
-      preact: 10.28.2
+      preact: 10.28.3
 
   '@prefresh/utils@1.2.1': {}
 
-  '@prefresh/vite@2.4.10(preact@10.28.2)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))':
+  '@prefresh/vite@2.4.10(preact@10.28.3)(vite@7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.4
       '@prefresh/babel-plugin': 0.5.2
-      '@prefresh/core': 1.5.8(preact@10.28.2)
+      '@prefresh/core': 1.5.8(preact@10.28.3)
       '@prefresh/utils': 1.2.1
       '@rollup/pluginutils': 4.2.1
-      preact: 10.28.2
+      preact: 10.28.3
       vite: 7.3.1(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1)
     transitivePeerDependencies:
       - supports-color
@@ -2410,7 +2410,7 @@ snapshots:
 
   get-east-asian-width@1.4.0: {}
 
-  get-tsconfig@4.13.0:
+  get-tsconfig@4.13.1:
     dependencies:
       resolve-pkg-maps: 1.0.0
     optional: true
@@ -2614,16 +2614,16 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact-iso@2.11.1(preact-render-to-string@6.6.3(preact@10.28.2))(preact@10.28.2):
+  preact-iso@2.11.1(preact-render-to-string@6.6.3(preact@10.28.3))(preact@10.28.3):
     dependencies:
-      preact: 10.28.2
-      preact-render-to-string: 6.6.3(preact@10.28.2)
+      preact: 10.28.3
+      preact-render-to-string: 6.6.3(preact@10.28.3)
 
-  preact-render-to-string@6.6.3(preact@10.28.2):
+  preact-render-to-string@6.6.3(preact@10.28.3):
     dependencies:
-      preact: 10.28.2
+      preact: 10.28.3
 
-  preact@10.28.2: {}
+  preact@10.28.3: {}
 
   quansync@1.0.0: {}
 
@@ -2748,7 +2748,7 @@ snapshots:
   tsx@4.20.6:
     dependencies:
       esbuild: 0.25.12
-      get-tsconfig: 4.13.0
+      get-tsconfig: 4.13.1
     optionalDependencies:
       fsevents: 2.3.3
     optional: true
@@ -2852,10 +2852,10 @@ snapshots:
 
   vue-flow-layout@0.2.0: {}
 
-  wouter-preact@3.9.0(preact@10.28.2):
+  wouter-preact@3.9.0(preact@10.28.3):
     dependencies:
       mitt: 3.0.1
-      preact: 10.28.2
+      preact: 10.28.3
       regexparam: 3.0.0
 
   wrap-ansi@9.0.2:
