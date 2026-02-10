@@ -9,7 +9,12 @@ permissions:
   id-token: write
 
 jobs:
+  code-verification:
+    uses: ./.github/workflows/code-verification.yaml
+    secrets: inherit
+
   deploy:
+    needs: code-verification
     runs-on: ubuntu-latest
 
     steps:
