@@ -1,6 +1,6 @@
 import type { ComponentType, JSX } from "preact";
 import { useEffect, useState } from "preact/hooks";
-import icons from "@/data/icons.json";
+import icons from "@/data/icons";
 
 type IconProps = {
   icon: string;
@@ -13,7 +13,7 @@ export default function Icon({ icon, className = "w-4 h-4" }: IconProps) {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    const data = (icons as Record<string, { name: string; icon: string }>)[icon];
+    const data = icons[icon];
 
     if (!data) {
       setError(true);

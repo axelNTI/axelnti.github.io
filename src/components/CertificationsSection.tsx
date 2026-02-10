@@ -1,10 +1,7 @@
-import other from "@/data/other.json";
-import type { otherType } from "@/types/globals";
+import other from "@/data/other";
 import Icon from "./Icon";
 
 export default () => {
-  const typedOther = other as otherType[];
-
   return (
     <section
       id="certifications"
@@ -13,7 +10,7 @@ export default () => {
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-2 text-center">Other Merits</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {typedOther.map((cert: otherType) => (
+          {other.map((cert) => (
             <div
               key={cert.name}
               class="bg-white  rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all transform hover:-translate-y-1 border border-transparent hover:border-primary/20 p-6"

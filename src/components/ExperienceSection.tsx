@@ -1,4 +1,4 @@
-import work from "@/data/work.json";
+import work from "@/data/work";
 import type { workType } from "@/types/globals";
 import ExperienceCard from "./ExperienceCard";
 

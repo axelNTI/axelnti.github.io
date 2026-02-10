@@ -1,0 +1,33 @@
+import type { educationType } from "@/types/globals";
+
+const education: educationType[] = [
+  {
+    institution: "Uppsala University",
+    location: "Uppsala, Sweden",
+    program: "Bachelor's Degree in Computer Science",
+    time: {
+      start: "September 2025",
+      end: "Ongoing",
+    },
+  },
+  {
+    institution: "NTI Gymnasiet Uppsala",
+    location: "Uppsala, Sweden",
+    program: "Certified Upper Secondary School Engineer",
+    time: {
+      start: "August 2024",
+      end: "June 2025",
+    },
+  },
+  {
+    institution: "NTI Gymnasiet Uppsala",
+    location: "Uppsala, Sweden",
+    program: "Information Technology Program",
+    time: {
+      start: "August 2021",
+      end: "June 2024",
+    },
+  },
+];
+
+export default education;

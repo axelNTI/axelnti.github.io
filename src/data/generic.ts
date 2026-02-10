@@ -1,0 +1,13 @@
+import type { genericType } from "@/types/globals";
+
+const generic: genericType = {
+  name: "Axel Thornberg",
+  email: "axel@thornberg.se",
+  phone: "+46 79-342 10 39",
+  location: "Uppsala, Sweden",
+  github: "axelNTI",
+  github_link: "https://github.com/axelNTI/",
+  linkedin: "https://www.linkedin.com/in/axel-thornberg-618a41332/",
+};
+
+export default generic;

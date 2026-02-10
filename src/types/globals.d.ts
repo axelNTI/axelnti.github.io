@@ -1,24 +1,12 @@
-export type educationType =
-  | {
-      institution: string;
-      location: string;
-      title: string;
-      program: never;
-      time: {
-        start: string;
-        end: string;
-      };
-    }
-  | {
-      institution: string;
-      location: string;
-      title: never;
-      program: string;
-      time: {
-        start: string;
-        end: string;
-      };
-    };
+export type educationType = {
+  institution: string;
+  location: string;
+  program: string;
+  time: {
+    start: string;
+    end: string;
+  };
+};
 
 export type workType = {
   type: string;
@@ -67,3 +55,5 @@ export type genericType = {
   github_link: string;
   linkedin: string;
 };
+
+export type iconsType = Record<string, { name: string; icon: string }>;

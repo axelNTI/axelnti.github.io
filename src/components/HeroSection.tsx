@@ -1,9 +1,6 @@
-import generic from "@/data/generic.json";
-import type { genericType } from "@/types/globals";
+import generic from "@/data/generic";
 
 export default () => {
-  const typedGeneric = generic as genericType;
-
   return (
     <section
       class="min-h-100dvh flex flex-col gap-36 items-center justify-center"
@@ -11,10 +8,10 @@ export default () => {
     >
       <div class="flex flex-col items-center gap-4 text-align-center">
         <div class="text-4xl">Hello, I'm</div>
-        <h1 class="text-5xl md:text-7xl font-bold">{typedGeneric.name}</h1>
+        <h1 class="text-5xl md:text-7xl font-bold">{generic.name}</h1>
         <div class="text-3xl">Welcome to my portfolio</div>
         <p class="text-xl md:text-2xl max-w-xl">
-          I'm a developer based in {typedGeneric.location} focused on building modern web and desktop applications.
+          I'm a developer based in {generic.location} focused on building modern web and desktop applications.
         </p>
       </div>
       <div class="max-w-lg text-align-center px-4">
