@@ -6,7 +6,8 @@
     "build": "vite build && node scripts/copy.ts",
     "preview": "vite preview",
     "format:write": "biome check --write",
-    "format:check": "biome check"
+    "format:check": "biome check",
+    "format:ci": "biome ci"
   },
   "dependencies": {
     "@unocss/reset": "^66.6.0",
