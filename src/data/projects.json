@@ -53,7 +53,7 @@
     "name": "Portfolio",
     "type": "solo",
     "description": "This portfolio is a personal project to showcase my skills and projects. It is hosted on GitHub Pages and built with a focus on both performance and ease of development.",
-    "technology_keys": ["typescript", "preact", "vite", "unocss", "githubactions", "nodejs", "husky", "biomejs"],
+    "technology_keys": ["typescript", "preact", "vite", "unocss", "githubactions", "nodejs", "biomejs"],
     "links": [
       {
         "type": "github",
