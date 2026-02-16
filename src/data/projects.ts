@@ -5,7 +5,7 @@ const projects: projectsType[] = [
     name: "Återbrukslabbet",
     type: "group",
     description:
-      "Återbrukslabbet is a webpage where companies can donate their unused items to schools, and schools can request items they need. The goal is to reduce waste and promote sustainability while reducing costs for schools.",
+      "Återbrukslabbet is a discontinued project, but was a webpage where companies could donate their unused items to schools, and schools could request items they need. The goal was to reduce waste and promote sustainability while reducing costs for schools. While the website has been taken down, the repository is still public.",
     technology_keys: [
       "nextjs",
       "tailwindcss",
