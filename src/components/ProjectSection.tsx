@@ -1,10 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
-import projects from "@/data/projects.json";
-import type { projectsType } from "@/types/globals";
+import projects from "@/data/projects";
 
 export default () => {
-  const typedProects = projects as projectsType[];
-
   return (
     <section
       id="projects"
@@ -13,7 +10,7 @@ export default () => {
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
         <div class="flex flex-row flex-wrap gap-6 justify-center">
-          {typedProects.map((project: projectsType) => (
+          {projects.map((project) => (
             <ProjectCard
               key={`project-${project.name}`}
               project={project}

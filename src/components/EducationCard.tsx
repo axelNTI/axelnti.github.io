@@ -9,7 +9,7 @@ export default ({ education }: EducationCardProps) => {
   return (
     <div class="bg-white rounded-lg p-5 shadow-md hover:shadow-lg flex flex-col gap-2 transition-all transform hover:-translate-y-1 mx-auto w-full max-w-3xl">
       <div class="flex justify-between flex-col md:flex-row items-start md:items-center gap-2">
-        <h3 class="text-xl font-bold">{education.title || education.program}</h3>
+        <h3 class="text-xl font-bold">{education.program}</h3>
         <span class="text-sm py-1 rounded-full">
           {education.time.start === education.time.end
             ? education.time.start

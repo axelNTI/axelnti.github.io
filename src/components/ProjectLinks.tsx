@@ -1,5 +1,5 @@
 import Icon from "@/components/Icon";
-import icons from "@/data/icons.json";
+import icons from "@/data/icons";
 import type { linksType } from "@/types/globals";
 
 type ProjectTechsProps = {

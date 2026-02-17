@@ -1,10 +1,7 @@
 import Icon from "@/components/Icon";
-import generic from "@/data/generic.json";
-import type { genericType } from "@/types/globals.d.ts";
+import generic from "@/data/generic";
 
 export default () => {
-  const typedGeneric = generic as genericType;
-
   return (
     <footer class="py-16 bg-footer">
       <div class="container mx-auto px-4">
@@ -16,7 +13,7 @@ export default () => {
               technologies.
             </p>
             <div class="flex items-center gap-2">
-              <Icon icon="map" /> {typedGeneric.location}
+              <Icon icon="map" /> {generic.location}
             </div>
           </div>
 
@@ -70,19 +67,19 @@ export default () => {
             <h3 class="text-xl font-bold mb-4">Contact Me</h3>
             <div class="flex flex-col gap-3">
               <a
-                href={`mailto:${typedGeneric.email}`}
+                href={`mailto:${generic.email}`}
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
-                <Icon icon="mail" /> {typedGeneric.email}
+                <Icon icon="mail" /> {generic.email}
               </a>
               <a
-                href={`tel:${typedGeneric.phone.replace(/\s|-/g, "")}`}
+                href={`tel:${generic.phone.replace(/\s|-/g, "")}`}
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
               >
-                <Icon icon="phone" /> {typedGeneric.phone}
+                <Icon icon="phone" /> {generic.phone}
               </a>
               <a
-                href={typedGeneric.github_link}
+                href={generic.github_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
@@ -90,7 +87,7 @@ export default () => {
                 <Icon icon="github" /> GitHub
               </a>
               <a
-                href={typedGeneric.linkedin}
+                href={generic.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
@@ -103,7 +100,7 @@ export default () => {
 
         <div class="border-t border-gray-200 pt-8 text-center">
           <p class="text-gray-600">
-            © {new Date().getFullYear()} {typedGeneric.name}. All rights reserved.
+            © {new Date().getFullYear()} {generic.name}. All rights reserved.
           </p>
         </div>
       </div>
