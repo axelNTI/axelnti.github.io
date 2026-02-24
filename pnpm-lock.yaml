@@ -16,10 +16,10 @@ importers:
         version: 10.28.4
       preact-iso:
         specifier: ^2.11.1
-        version: 2.11.1(preact-render-to-string@6.6.5(preact@10.28.4))(preact@10.28.4)
+        version: 2.11.1(preact-render-to-string@6.6.6(preact@10.28.4))(preact@10.28.4)
       preact-render-to-string:
-        specifier: ^6.6.5
-        version: 6.6.5(preact@10.28.4)
+        specifier: ^6.6.6
+        version: 6.6.6(preact@10.28.4)
       wouter-preact:
         specifier: ^3.9.0
         version: 3.9.0(preact@10.28.4)
@@ -1173,8 +1173,8 @@ packages:
       preact: '>=10 || >= 11.0.0-0'
       preact-render-to-string: '>=6.4.0'
 
-  preact-render-to-string@6.6.5:
-    resolution: {integrity: sha512-O6MHzYNIKYaiSX3bOw0gGZfEbOmlIDtDfWwN1JJdc/T3ihzRT6tGGSEWE088dWrEDGa1u7101q+6fzQnO9XCPA==}
+  preact-render-to-string@6.6.6:
+    resolution: {integrity: sha512-EfqZJytnjJldV+YaaqhthU2oXsEf5e+6rDv957p+zxAvNfFLQOPfvBOTncscQ+akzu6Wrl7s3Pa0LjUQmWJsGQ==}
     peerDependencies:
       preact: '>=10 || >= 11.0.0-0'
 
@@ -2377,12 +2377,12 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact-iso@2.11.1(preact-render-to-string@6.6.5(preact@10.28.4))(preact@10.28.4):
+  preact-iso@2.11.1(preact-render-to-string@6.6.6(preact@10.28.4))(preact@10.28.4):
     dependencies:
       preact: 10.28.4
-      preact-render-to-string: 6.6.5(preact@10.28.4)
+      preact-render-to-string: 6.6.6(preact@10.28.4)
 
-  preact-render-to-string@6.6.5(preact@10.28.4):
+  preact-render-to-string@6.6.6(preact@10.28.4):
     dependencies:
       preact: 10.28.4
 
