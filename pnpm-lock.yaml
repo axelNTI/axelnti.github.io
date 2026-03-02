@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@unocss/reset':
-        specifier: ^66.6.0
-        version: 66.6.0
+        specifier: ^66.6.3
+        version: 66.6.3
       preact:
         specifier: ^10.28.4
         version: 10.28.4
@@ -777,8 +777,8 @@ packages:
   '@unocss/preset-wind@66.6.2':
     resolution: {integrity: sha512-G0H4baUizmTByEowqGuYbKpU2TTisDhZ9W7hrIpYFbRkFv0i1kN2mIxCwj/FLmdY/6x8iSRJ7rO8Nez63YYhnw==}
 
-  '@unocss/reset@66.6.0':
-    resolution: {integrity: sha512-OQK5F7Dzx0wWDSPTYEz7NRP9pekufSAkjxfKOyKokiXOUzVTg8Yx8sOvCsA3Oi0Rx5WlsO2LN+MOBekpkrttXg==}
+  '@unocss/reset@66.6.3':
+    resolution: {integrity: sha512-K2pAHkLsGLVCT2axweUq9CgkMpn/+7FHrKOp1NHgFh/MxlIijTPf+/xNbEIsQIR7TluljdXMANBUMTMCMgVE/w==}
 
   '@unocss/rule-utils@66.6.2':
     resolution: {integrity: sha512-cygfCtkeMrqMM6si1cnyOF16sS7M2gCAqgmZybAhGV7tmH7V8Izn52JZiZIrxVRNMz9dWMVWerHEI9nLbFdbrg==}
@@ -1961,7 +1961,7 @@ snapshots:
       '@unocss/core': 66.6.2
       '@unocss/preset-wind3': 66.6.2
 
-  '@unocss/reset@66.6.0': {}
+  '@unocss/reset@66.6.3': {}
 
   '@unocss/rule-utils@66.6.2':
     dependencies:
