@@ -8,7 +8,9 @@ import Sitemap from "vite-plugin-sitemap";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    UnoCSS(),
+    UnoCSS({
+      mode: "per-module",
+    }),
     preact({
       prerender: {
         enabled: true,

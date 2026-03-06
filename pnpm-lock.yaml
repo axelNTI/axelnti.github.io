@@ -17,9 +17,6 @@ importers:
       preact-iso:
         specifier: ^2.11.1
         version: 2.11.1(preact-render-to-string@6.6.6(preact@10.28.4))(preact@10.28.4)
-      preact-render-to-string:
-        specifier: ^6.6.6
-        version: 6.6.6(preact@10.28.4)
       wouter-preact:
         specifier: ^3.9.0
         version: 3.9.0(preact@10.28.4)
