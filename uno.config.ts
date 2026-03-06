@@ -24,4 +24,9 @@ export default defineConfig({
       footer: "#e9e9ec",
     },
   },
+  content: {
+    pipeline: {
+      include: [/src\/.*\.tsx$/],
+    },
+  },
 });

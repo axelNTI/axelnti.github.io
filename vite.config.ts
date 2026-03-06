@@ -8,9 +8,7 @@ import Sitemap from "vite-plugin-sitemap";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    UnoCSS({
-      mode: "per-module",
-    }),
+    UnoCSS(),
     preact({
       prerender: {
         enabled: true,
@@ -27,6 +25,13 @@ export default defineConfig({
   build: {
     minify: "terser",
     target: "esnext",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["preact", "wouter-preact"],
+        },
+      },
+    },
   },
   css: {
     transformer: "lightningcss",
@@ -34,6 +39,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
+      react: "preact/compat",
+      "react-dom": "preact/compat",
     },
   },
 });
