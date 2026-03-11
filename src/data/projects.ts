@@ -91,6 +91,19 @@ const projects: projectsType[] = [
     ],
   },
   {
+    name: "Table Placement Optimiser",
+    type: "group",
+    description:
+      "A spiritual successor to Classroom Seating Planner, Table Placement Optimiser aims to be a general purpose tool to generate seating arrangements in a wide range of applications. With its innovative system of 'wildcards' it allows for only a small amount of constraints to be used for most situations.",
+    technology_keys: ["typescript", "nodejs", "biomejs", "express", "handlebars"],
+    links: [
+      {
+        type: "github",
+        link: "https://github.com/axelNTI/table-placement-optimiser/",
+      },
+    ],
+  },
+  {
     name: "Orbital Simulator",
     type: "group",
     description:
