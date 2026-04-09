@@ -22,7 +22,7 @@
     "lightningcss": "^1.32.0",
     "terser": "^5.46.1",
     "typescript": "^6.0.2",
-    "unocss": "^66.6.7",
+    "unocss": "^66.6.8",
     "vite": "^7.3.1",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-sitemap": "^0.8.2"
