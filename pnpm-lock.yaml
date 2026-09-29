@@ -15,8 +15,8 @@ importers:
         specifier: ^10.29.3
         version: 10.29.3
       preact-iso:
-        specifier: ^2.11.1
-        version: 2.11.1(preact-render-to-string@6.6.6(preact@10.29.3))(preact@10.29.3)
+        specifier: ^2.12.2
+        version: 2.12.2(preact-render-to-string@6.6.6(preact@10.29.3))(preact@10.29.3)
       wouter-preact:
         specifier: ^3.9.0
         version: 3.9.0(preact@10.29.3)
@@ -1066,8 +1066,8 @@ packages:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
 
-  get-tsconfig@4.14.0:
-    resolution: {integrity: sha512-yTb+8DXzDREzgvYmh6s9vHsSVCHeC0G3PI5bEXNBHtmshPnO+S5O7qgLEOn0I5QvMy6kpZN8K1NKGyilLb93wA==}
+  get-tsconfig@4.14.3:
+    resolution: {integrity: sha512-++QEw4DIY7WGoukz+/+A/8dGYPT9l9yIadnmSgZ8Rjr3YVSVDipQSO9CdnJo9ePqFqUUqh+wk9uIaoiAwsiPkA==}
 
   gzip-size@6.0.0:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
@@ -1252,8 +1252,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  preact-iso@2.11.1:
-    resolution: {integrity: sha512-rLy0RmzP/hrDjnFdnEblxFgKtzUj4njkHrpGJBGS7S4QuYw1zv0lA38qsWpeAAB10JAz/hF2CsHrLen9ufCtbw==}
+  preact-iso@2.12.2:
+    resolution: {integrity: sha512-qit+qSMiZ41K0EQkLNa3MSxnWVCm5yXvy9m3CcGf/zF1QhVJzSwVCbpiz52VSbWpg8v8nYNIYDrXJZPNFpM1uw==}
     peerDependencies:
       preact: '>=10 || >= 11.0.0-0'
       preact-render-to-string: '>=6.4.0'
@@ -2350,7 +2350,7 @@ snapshots:
 
   gensync@1.0.0-beta.2: {}
 
-  get-tsconfig@4.14.0:
+  get-tsconfig@4.14.3:
     dependencies:
       resolve-pkg-maps: 1.0.0
     optional: true
@@ -2533,7 +2533,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact-iso@2.11.1(preact-render-to-string@6.6.6(preact@10.29.3))(preact@10.29.3):
+  preact-iso@2.12.2(preact-render-to-string@6.6.6(preact@10.29.3))(preact@10.29.3):
     dependencies:
       preact: 10.29.3
       preact-render-to-string: 6.6.6(preact@10.29.3)
@@ -2633,7 +2633,7 @@ snapshots:
   tsx@4.20.6:
     dependencies:
       esbuild: 0.25.12
-      get-tsconfig: 4.14.0
+      get-tsconfig: 4.14.3
     optionalDependencies:
       fsevents: 2.3.3
     optional: true
