@@ -167,7 +167,7 @@ importers:
   .:
     dependencies:
       '@unocss/reset':
-        specifier: ^66.10.5
+        specifier: ^66.11.0
         version: 66.11.0
       preact:
         specifier: ^11.0.1
@@ -180,13 +180,13 @@ importers:
         version: 3.13.0(preact@11.0.1)
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.4.10
+        specifier: ^2.5.15
         version: 2.5.15
       '@preact/preset-vite':
         specifier: ^2.10.6
         version: 2.10.6(@babel/core@7.29.7)(preact@11.0.1)(rollup@4.64.5)(vite@7.3.7(@types/node@24.19.2)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.51.2))
       '@types/node':
-        specifier: ^24.10.0
+        specifier: ^24.19.2
         version: 24.19.2
       lightningcss:
         specifier: ^1.33.0
@@ -198,10 +198,10 @@ importers:
         specifier: ^7.0.2
         version: 7.0.2
       unocss:
-        specifier: ^66.10.5
+        specifier: ^66.11.0
         version: 66.11.0(@oxc-project/types@0.153.0)(cac@7.1.0)(rollup@4.64.5)(srvx@1.0.5)(vite@7.3.7(@types/node@24.19.2)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.51.2))
       vite:
-        specifier: ^7.3.1
+        specifier: ^7.3.7
         version: 7.3.7(@types/node@24.19.2)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.51.2)
       vite-plugin-sitemap:
         specifier: ^0.8.2
