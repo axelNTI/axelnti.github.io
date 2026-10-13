@@ -6,7 +6,8 @@
       "!**/pnpm-workspace.yaml",
       "!**/node_modules/**/*",
       "!**/dist/**/*",
-      "!**/old/**/*"
+      "!**/old/**/*",
+      "!.nvmrc"
     ]
   },
   "formatter": {
