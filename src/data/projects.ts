@@ -26,23 +26,23 @@ const projects: projectsType[] = [
       },
     ],
   },
-  {
-    name: "Horizon Modding Studio",
-    type: "solo",
-    description:
-      "Horizon Modding Studio is an open source tool currently in development to make modding Stellaris more accessible.",
-    technology_keys: ["tauri", "typescript", "react", "vite", "unocss", "githubactions", "nodejs", "husky", "biomejs"],
-    links: [
-      {
-        type: "github",
-        link: "https://github.com/axelNTI/horizon-modding-studio/",
-      },
-      {
-        type: "download",
-        link: "https://github.com/axelNTI/horizon-modding-studio/releases/",
-      },
-    ],
-  },
+  // {
+  //   name: "Horizon Modding Studio",
+  //   type: "solo",
+  //   description:
+  //     "Horizon Modding Studio is an open source tool currently in development to make modding Stellaris more accessible.",
+  //   technology_keys: ["tauri", "typescript", "react", "vite", "unocss", "githubactions", "nodejs", "husky", "biomejs"],
+  //   links: [
+  //     {
+  //       type: "github",
+  //       link: "https://github.com/axelNTI/horizon-modding-studio/",
+  //     },
+  //     {
+  //       type: "download",
+  //       link: "https://github.com/axelNTI/horizon-modding-studio/releases/",
+  //     },
+  //   ],
+  // },
   {
     name: "Portfolio",
     type: "solo",
