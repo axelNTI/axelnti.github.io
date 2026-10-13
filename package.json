@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@unocss/reset": "^66.10.5",
-    "preact": "^10.29.3",
+    "preact": "^10.29.6",
     "preact-iso": "^2.12.2",
     "wouter-preact": "^3.13.0"
   },
