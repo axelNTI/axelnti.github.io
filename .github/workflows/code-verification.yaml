@@ -12,11 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
+      - parallel:
+        - name: Checkout code
+          uses: actions/checkout@v7
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v6
+        - name: Install pnpm
+          uses: pnpm/action-setup@v6
 
       - name: Set up Node.js
         uses: actions/setup-node@v7
